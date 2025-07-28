@@ -1,36 +1,168 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Oreno3dI18n - 自动化 i18n 管理工具
 
-## Getting Started
+Oreno3dI18n 是一个基于 Next.js 构建的本地化 i18n 管理工具。它旨在自动化地从指定网站爬取源数据（默认为日语），并生成和维护多语言的 JSON 文件。
 
-First, run the development server:
+## 🚀 功能特性
 
+- **模块化设计**: 可轻松添加新的数据抓取模块
+- **自动化爬取**: 为每个模块配置专属的爬虫处理器
+- **i18n 文件生成**: 自动创建和更新多语言 JSON 文件
+- **可扩展的语言支持**: 只需修改配置文件即可增删支持的语言
+- **Web 管理界面**: 直观的仪表盘和数据管理界面
+- **在线编辑**: 支持在线编辑翻译内容
+- **智能筛选**: 快速定位未翻译的条目
+- **🌍 多语言界面**: 支持中文、英文、日文的用户界面切换
+- **⌨️ 增强编辑**: 快捷键支持、重置功能、多行翻译
+
+## 🛠️ 技术栈
+
+- **Next.js 15** - React 全栈框架
+- **TypeScript** - 类型安全
+- **Tailwind CSS** - 原子化 CSS
+- **shadcn/ui** - 现代化 UI 组件库
+- **React Query** - 服务端状态管理
+- **Axios & Cheerio** - 网页爬取
+- **Sonner** - 通知提示
+- **next-intl** - 国际化支持
+
+## 📦 安装和运行
+
+### 1. 安装依赖
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. 启动开发服务器
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. 访问应用
+打开浏览器访问 [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 项目结构
 
-## Learn More
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── admin/             # 管理后台页面
+│   └── api/v1/            # API 路由
+├── components/            # React 组件
+│   ├── ui/               # shadcn/ui 组件
+│   └── admin/            # 管理后台组件
+├── hooks/                # 自定义 React Hooks
+├── lib/                  # 核心逻辑和工具
+├── i18n/                 # 生成的 i18n 文件和国际化配置
+└── scraper-config/       # 爬虫配置和处理器
+    ├── handlers/         # 爬虫处理器
+    └── config.ts         # 全局配置
+├── messages/             # 界面翻译文件
+│   ├── zh.json          # 简体中文
+│   ├── en.json          # 英语
+│   └── ja.json          # 日语
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 配置说明
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 语言配置
+在 `scraper-config/config.ts` 中修改支持的语言：
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```typescript
+export const TARGET_LANGUAGES: string[] = ['ja', 'en', 'zh-CN', 'zh-TW'];
+export const SOURCE_LANGUAGE: string = 'ja';
+```
 
-## Deploy on Vercel
+### 添加新模块
+1. 在 `scraper-config/handlers/` 创建新的处理器文件
+2. 在 `scraper-config/config.ts` 的 `MODULES` 数组中添加配置
+3. 重启应用，新模块会自动出现在仪表盘
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🌐 API 接口
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 获取所有模块
+```bash
+GET /api/v1/modules
+```
+
+### 获取模块数据
+```bash
+GET /api/v1/modules/{moduleName}
+GET /api/v1/modules/{moduleName}?type=stats
+```
+
+### 更新翻译
+```bash
+PATCH /api/v1/modules/{moduleName}
+Content-Type: application/json
+
+{
+  "key": "tag_1",
+  "lang": "en",
+  "value": "Video Features"
+}
+```
+
+### 运行爬虫
+```bash
+POST /api/v1/scrape
+Content-Type: application/json
+
+{
+  "moduleName": "tags"  // 可选，不提供则爬取所有模块
+}
+```
+
+## 📊 使用指南
+
+### 1. 仪表盘
+- 查看所有模块的翻译进度
+- 一键更新所有模块或单个模块
+- 快速导航到模块详情页
+
+### 2. 模块管理
+- 查看模块的详细翻译数据
+- 在线编辑翻译内容
+- 筛选未翻译的条目
+- 搜索特定内容
+
+### 3. 数据更新
+- 手动触发爬虫更新数据
+- 自动保留已有的翻译
+- 新增条目会标记为"未翻译"
+
+## 🔍 开发说明
+
+### 创建新的爬虫处理器
+```typescript
+// scraper-config/handlers/exampleHandler.ts
+import type { ScrapedItem } from '@/lib/types';
+
+export default async function exampleHandler(): Promise<ScrapedItem[]> {
+  // 实现爬取逻辑
+  return [
+    { id: '1', name: '示例项目' }
+  ];
+}
+```
+
+### 数据文件格式
+- **源语言文件** (`ja.json`): `{ "key": "value" }`
+- **目标语言文件** (`en.json`): `{ "key": { "value": "translation", "translated": true } }`
+
+## 🚨 注意事项
+
+1. **爬虫频率**: 请合理设置爬虫请求间隔，避免对目标网站造成压力
+2. **数据备份**: 建议定期备份 `src/i18n/` 目录下的翻译文件
+3. **网络环境**: 确保能够访问目标网站
+
+## 📝 许可证
+
+MIT License
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+---
+
+**Oreno3dI18n** - 让 i18n 管理变得简单高效！
