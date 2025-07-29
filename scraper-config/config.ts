@@ -20,6 +20,21 @@ export const MODULES: ModuleConfig[] = [
       estimatedTime: 30
     }
   },
+  // Tag groups modules
+  ...Array.from({ length: 8 }, (_, i) => ({
+    name: `tag_group_${i + 1}`,
+    handler: () => import('./handlers/tagGroupsHandler').then(module => ({
+      default: () => module.default(i + 1)
+    })),
+    keyPrefix: `tag_group_${i + 1}_`,
+    ui: {
+      displayName: `Tag Group ${i + 1}`,
+      description: `Tags in group ${i + 1} [https://oreno3d.com/tag-groups/${i + 1}]`,
+      icon: 'Tag',
+      priority: 2 + i,
+      estimatedTime: 15
+    }
+  })),
   // More modules can be added in the future
   // {
   //   name: 'authors',
