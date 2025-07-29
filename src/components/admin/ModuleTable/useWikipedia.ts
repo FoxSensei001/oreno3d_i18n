@@ -5,7 +5,7 @@ import { useSettings } from '@/hooks/use-settings';
 import { useUpdateTranslation } from '@/hooks/use-modules';
 import type { WikiSearchResult, WikiLookupResult, SearchContext } from './types';
 
-export function useWikipedia(moduleName: string) {
+export function useWikipedia(_moduleName: string) {
   const t = useTranslations('modules');
   const { settings } = useSettings();
   const updateMutation = useUpdateTranslation();

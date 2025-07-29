@@ -6,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Tooltip, TooltipContent, TooltipTrigger } from '@/components/ui/tooltip';
 import { Search, Globe, ExternalLink } from 'lucide-react';
-import { TARGET_LANGUAGES } from '../../../../scraper-config/config';
 import type { WikiSearchResult, WikiLookupResult } from './types';
 
 interface WikipediaDialogsProps {

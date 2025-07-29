@@ -47,3 +47,14 @@ export interface PaginationState {
   currentPage: number;
   pageSize: number;
 }
+
+export type ViewMode = 'table' | 'detail';
+
+export interface DetailViewState {
+  currentIndex: number;
+  totalItems: number;
+}
+
+export interface UntranslatedNavigationState {
+  selectedLanguage: string;
+}

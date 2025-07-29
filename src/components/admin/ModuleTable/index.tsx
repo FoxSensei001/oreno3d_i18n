@@ -20,8 +20,10 @@ import { DataTablePagination } from '@/components/ui/data-table-pagination';
 import { TableFiltersComponent } from './TableFilters';
 import { TranslationTableCell } from './TableCell';
 import { WikipediaDialogs } from './WikipediaDialogs';
+import { DetailView } from './DetailView';
+import { ViewModeToggle } from './ViewModeToggle';
 import { useWikipedia } from './useWikipedia';
-import type { ModuleTableProps, EditingCell, TableFilters, PaginationState } from './types';
+import type { ModuleTableProps, EditingCell, TableFilters, PaginationState, ViewMode, DetailViewState } from './types';
 import type { TranslationValue } from '@/lib/types';
 
 export function ModuleTable({ moduleName, className }: ModuleTableProps) {
@@ -40,6 +42,12 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
   const [pagination, setPagination] = useState<PaginationState>({
     currentPage: 1,
     pageSize: UI_CONFIG.table.defaultPageSize,
+  });
+
+  const [viewMode, setViewMode] = useState<ViewMode>('table');
+  const [detailState, setDetailState] = useState<DetailViewState>({
+    currentIndex: 0,
+    totalItems: 0,
   });
 
   const [editingCell, setEditingCell] = useState<EditingCell | null>(null);
@@ -100,6 +108,15 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
     setPagination(prev => ({ ...prev, currentPage: 1 }));
   }, [filters]);
 
+  // 更新详情视图的总数
+  useEffect(() => {
+    setDetailState(prev => ({
+      ...prev,
+      totalItems: filteredData.length,
+      currentIndex: Math.min(prev.currentIndex, Math.max(0, filteredData.length - 1))
+    }));
+  }, [filteredData.length]);
+
   // 处理过滤器变化
   const handleFiltersChange = (newFilters: Partial<TableFilters>) => {
     setFilters(prev => ({ ...prev, ...newFilters }));
@@ -114,13 +131,22 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
     setPagination({ currentPage: 1, pageSize: newPageSize });
   };
 
+  // 视图模式切换
+  const handleViewModeChange = (mode: ViewMode) => {
+    setViewMode(mode);
+    if (mode === 'detail' && filteredData.length > 0) {
+      // 切换到详情模式时，如果当前页有数据，定位到当前页的第一项
+      const currentPageFirstIndex = (pagination.currentPage - 1) * pagination.pageSize;
+      setDetailState(prev => ({
+        ...prev,
+        currentIndex: Math.min(currentPageFirstIndex, filteredData.length - 1)
+      }));
+    }
+  };
+
   // 编辑相关函数
   const getTranslationValue = (translation: TranslationValue | string): string => {
     return typeof translation === 'string' ? translation : translation.value;
-  };
-
-  const isTranslated = (translation: TranslationValue | string): boolean => {
-    return typeof translation === 'string' || translation.translated;
   };
 
   const handleCellEdit = (key: string, lang: string, currentValue: string, originalValue: string, isTranslated: boolean) => {
@@ -349,81 +375,113 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
           totalRecords={filteredData.length}
         />
 
-        {/* 数据表格 */}
-        <div className="border rounded-lg overflow-hidden">
-          <div className="max-h-[70vh] overflow-auto">
-            <Table>
-              <TableHeader className="sticky top-0 bg-background z-10">
-                <TableRow>
-                  <TableHead className="w-[200px]">{t('keyName')}</TableHead>
-                  {TARGET_LANGUAGES.map((lang) => (
-                    <TableHead key={lang} className="min-w-[200px]">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          {lang}
-                          {lang === SOURCE_LANGUAGE && (
-                            <Badge variant="outline" className="ml-2 text-xs">
-                              {t('source')}
-                            </Badge>
-                          )}
-                        </div>
-                      </div>
-                    </TableHead>
-                  ))}
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {paginatedData.map((item) => (
-                  <TableRow key={item.key}>
-                    <TableCell className="font-mono text-sm">
-                      {item.key}
-                    </TableCell>
-                    {TARGET_LANGUAGES.map((lang) => {
-                      const translation = item.translations[lang];
-                      const sourceTranslation = item.translations[SOURCE_LANGUAGE];
-                      const sourceValue = sourceTranslation ? getTranslationValue(sourceTranslation) : '';
-
-                      return (
-                        <TranslationTableCell
-                          key={lang}
-                          itemKey={item.key}
-                          lang={lang}
-                          translation={translation}
-                          sourceValue={sourceValue}
-                          editingCell={editingCell}
-                          onCellEdit={handleCellEdit}
-                          onEditingCellChange={setEditingCell}
-                          onSaveEdit={handleSaveEdit}
-                          onCancelEdit={handleCancelEdit}
-                          onResetEdit={handleResetEdit}
-                          onToggleTranslated={handleToggleTranslated}
-                          onKeyDown={handleKeyDown}
-                          onWikiLookup={handleWikiLookup}
-                          onOpenWikiSearch={wikipedia.handleOpenWikiSearch}
-                          isLoading={updateMutation.isPending}
-                        />
-                      );
-                    })}
-                  </TableRow>
-                ))}
-              </TableBody>
-            </Table>
-          </div>
+        {/* 视图模式切换 */}
+        <div className="flex items-center justify-between mb-4">
+          <ViewModeToggle
+            viewMode={viewMode}
+            onViewModeChange={handleViewModeChange}
+            totalItems={filteredData.length}
+            currentIndex={viewMode === 'detail' ? detailState.currentIndex : undefined}
+          />
         </div>
 
-        {/* 分页组件 */}
-        {filteredData.length > 0 && (
-          <div className="mt-4">
-            <DataTablePagination
-              currentPage={pagination.currentPage}
-              totalPages={totalPages}
-              pageSize={pagination.pageSize}
-              totalItems={filteredData.length}
-              pageSizeOptions={UI_CONFIG.table.pageSizeOptions}
-              onPageChange={handlePageChange}
-              onPageSizeChange={handlePageSizeChange}
-            />
-          </div>
+        {/* 条件渲染：表格视图或详情视图 */}
+        {viewMode === 'table' ? (
+          <>
+            {/* 数据表格 */}
+            <div className="border rounded-lg overflow-hidden">
+              <div className="max-h-[70vh] overflow-auto">
+                <Table>
+                  <TableHeader className="sticky top-0 bg-background z-10">
+                    <TableRow>
+                      <TableHead className="w-[200px]">{t('keyName')}</TableHead>
+                      {TARGET_LANGUAGES.map((lang) => (
+                        <TableHead key={lang} className="min-w-[200px]">
+                          <div className="flex items-center justify-between">
+                            <div>
+                              {lang}
+                              {lang === SOURCE_LANGUAGE && (
+                                <Badge variant="outline" className="ml-2 text-xs">
+                                  {t('source')}
+                                </Badge>
+                              )}
+                            </div>
+                          </div>
+                        </TableHead>
+                      ))}
+                    </TableRow>
+                  </TableHeader>
+                  <TableBody>
+                    {paginatedData.map((item) => (
+                      <TableRow key={item.key}>
+                        <TableCell className="font-mono text-sm">
+                          {item.key}
+                        </TableCell>
+                        {TARGET_LANGUAGES.map((lang) => {
+                          const translation = item.translations[lang];
+                          const sourceTranslation = item.translations[SOURCE_LANGUAGE];
+                          const sourceValue = sourceTranslation ? getTranslationValue(sourceTranslation) : '';
+
+                          return (
+                            <TranslationTableCell
+                              key={lang}
+                              itemKey={item.key}
+                              lang={lang}
+                              translation={translation}
+                              sourceValue={sourceValue}
+                              editingCell={editingCell}
+                              onCellEdit={handleCellEdit}
+                              onEditingCellChange={setEditingCell}
+                              onSaveEdit={handleSaveEdit}
+                              onCancelEdit={handleCancelEdit}
+                              onResetEdit={handleResetEdit}
+                              onToggleTranslated={handleToggleTranslated}
+                              onKeyDown={handleKeyDown}
+                              onWikiLookup={handleWikiLookup}
+                              onOpenWikiSearch={wikipedia.handleOpenWikiSearch}
+                              isLoading={updateMutation.isPending}
+                            />
+                          );
+                        })}
+                      </TableRow>
+                    ))}
+                  </TableBody>
+                </Table>
+              </div>
+            </div>
+
+            {/* 分页组件 */}
+            {filteredData.length > 0 && (
+              <div className="mt-4">
+                <DataTablePagination
+                  currentPage={pagination.currentPage}
+                  totalPages={totalPages}
+                  pageSize={pagination.pageSize}
+                  totalItems={filteredData.length}
+                  pageSizeOptions={UI_CONFIG.table.pageSizeOptions}
+                  onPageChange={handlePageChange}
+                  onPageSizeChange={handlePageSizeChange}
+                />
+              </div>
+            )}
+          </>
+        ) : (
+          /* 详情视图 */
+          <DetailView
+            data={filteredData}
+            detailState={detailState}
+            onDetailStateChange={setDetailState}
+            editingCell={editingCell}
+            onCellEdit={handleCellEdit}
+            onEditingCellChange={setEditingCell}
+            onSaveEdit={handleSaveEdit}
+            onCancelEdit={handleCancelEdit}
+            onResetEdit={handleResetEdit}
+            onToggleTranslated={handleToggleTranslated}
+            onWikiLookup={handleWikiLookup}
+            onOpenWikiSearch={wikipedia.handleOpenWikiSearch}
+            isLoading={updateMutation.isPending}
+          />
         )}
 
         {filteredData.length === 0 && (
