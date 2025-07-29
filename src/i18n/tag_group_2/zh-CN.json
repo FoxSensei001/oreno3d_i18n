@@ -1,18 +1,18 @@
 {
-  "tag_group_2_8": {
+  "7": {
+    "value": "キノコル式モデル",
+    "translated": false
+  },
+  "8": {
     "value": "TDA式モデル",
     "translated": false
   },
-  "tag_group_2_9": {
+  "9": {
     "value": "つみ式モデル",
     "translated": false
   },
-  "tag_group_2_10": {
+  "10": {
     "value": "ぽんぷ長式モデル",
-    "translated": false
-  },
-  "tag_group_2_7": {
-    "value": "キノコル式モデル",
     "translated": false
   }
 }

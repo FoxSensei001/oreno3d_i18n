@@ -1,21 +1,21 @@
 {
-  "tag_group_1_3": {
-    "value": "ダンス有り",
-    "translated": false
-  },
-  "tag_group_1_2": {
-    "value": "性行為有り",
-    "translated": false
-  },
-  "tag_group_1_4": {
-    "value": "ダンス無し",
-    "translated": false
-  },
-  "tag_group_1_1": {
+  "1": {
     "value": "主観視点",
     "translated": false
   },
-  "tag_group_1_5": {
+  "2": {
+    "value": "性行為有り",
+    "translated": false
+  },
+  "3": {
+    "value": "ダンス有り",
+    "translated": false
+  },
+  "4": {
+    "value": "ダンス無し",
+    "translated": false
+  },
+  "5": {
     "value": "ボイス有り",
     "translated": false
   }

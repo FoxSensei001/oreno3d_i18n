@@ -1,3134 +1,3134 @@
 {
-  "origin_1": {
+  "1": {
     "value": "ボーカロイド",
     "translated": false
   },
-  "origin_3": {
-    "value": "Vtuber",
-    "translated": false
-  },
-  "origin_9": {
-    "value": "オリジナル",
-    "translated": false
-  },
-  "origin_276": {
-    "value": "原神",
-    "translated": false
-  },
-  "origin_4": {
-    "value": "艦隊これくしょん-艦これ-",
-    "translated": false
-  },
-  "origin_46": {
-    "value": "崩壊3rd",
-    "translated": false
-  },
-  "origin_5": {
-    "value": "東方Project",
-    "translated": false
-  },
-  "origin_14": {
-    "value": "アズールレーン",
-    "translated": false
-  },
-  "origin_392": {
-    "value": "崩壊:スターレイル",
-    "translated": false
-  },
-  "origin_319": {
-    "value": "ブルーアーカイブ",
-    "translated": false
-  },
-  "origin_2": {
+  "2": {
     "value": "アイドルマスター",
     "translated": false
   },
-  "origin_7": {
-    "value": "FGO（Fate/Grand Order）",
+  "3": {
+    "value": "Vtuber",
     "translated": false
   },
-  "origin_11": {
-    "value": "ボイスロイド",
+  "4": {
+    "value": "艦隊これくしょん-艦これ-",
     "translated": false
   },
-  "origin_449": {
-    "value": "ゼンレスゾーンゼロ(ゼンゼロ)",
+  "5": {
+    "value": "東方Project",
     "translated": false
   },
-  "origin_668": {
-    "value": "鳴潮(Wuthering Waves)",
-    "translated": false
-  },
-  "origin_17": {
-    "value": "萌王EX",
-    "translated": false
-  },
-  "origin_132": {
-    "value": "ファイナルファンタジー7",
-    "translated": false
-  },
-  "origin_13": {
-    "value": "アイドルマスターシンデレラガールズ",
-    "translated": false
-  },
-  "origin_36": {
-    "value": "RWBY",
-    "translated": false
-  },
-  "origin_29": {
-    "value": "ニーアオートマタ",
-    "translated": false
-  },
-  "origin_57": {
-    "value": "DEAD OR ALIVE",
-    "translated": false
-  },
-  "origin_367": {
-    "value": "その着せ替え人形は恋をする",
-    "translated": false
-  },
-  "origin_44": {
-    "value": "ポケットモンスター",
-    "translated": false
-  },
-  "origin_10": {
-    "value": "デート・ア・ライブ",
-    "translated": false
-  },
-  "origin_278": {
-    "value": "パニシング：グレイレイブン",
-    "translated": false
-  },
-  "origin_104": {
-    "value": "アークナイツ",
-    "translated": false
-  },
-  "origin_74": {
-    "value": "対魔忍アサギ",
-    "translated": false
-  },
-  "origin_241": {
-    "value": "アイドルマスターミリオンライブ",
-    "translated": false
-  },
-  "origin_6": {
+  "6": {
     "value": "ゼノブレイド2",
     "translated": false
   },
-  "origin_56": {
-    "value": "オーバーウォッチ",
+  "7": {
+    "value": "FGO（Fate/Grand Order）",
     "translated": false
   },
-  "origin_434": {
-    "value": "リコリス・リコイル",
-    "translated": false
-  },
-  "origin_41": {
-    "value": "Fate/kaleid liner プリズマ・イリヤ",
-    "translated": false
-  },
-  "origin_63": {
-    "value": "NARUTO",
-    "translated": false
-  },
-  "origin_115": {
-    "value": "アイドルマスターシャイニーカラーズ",
-    "translated": false
-  },
-  "origin_8": {
+  "8": {
     "value": "ガールズ&パンツァー",
     "translated": false
   },
-  "origin_503": {
-    "value": "ニケ（勝利の女神:NIKKE）",
+  "9": {
+    "value": "オリジナル",
     "translated": false
   },
-  "origin_120": {
-    "value": "この素晴らしい世界に祝福を！",
+  "10": {
+    "value": "デート・ア・ライブ",
     "translated": false
   },
-  "origin_128": {
-    "value": "League of Legends",
+  "11": {
+    "value": "ボイスロイド",
     "translated": false
   },
-  "origin_624": {
-    "value": "スノウブレイク：禁域降臨",
-    "translated": false
-  },
-  "origin_78": {
-    "value": "ドルフロ(ドールズフロントライン)",
-    "translated": false
-  },
-  "origin_30": {
-    "value": "その他",
-    "translated": false
-  },
-  "origin_84": {
-    "value": "超次元ゲイムネプテューヌ",
-    "translated": false
-  },
-  "origin_62": {
-    "value": "ライザのアトリエ",
-    "translated": false
-  },
-  "origin_399": {
-    "value": "エーテルゲイザー(深空之眼/Aether Gazer)",
-    "translated": false
-  },
-  "origin_19": {
-    "value": "閃乱カグラ",
-    "translated": false
-  },
-  "origin_20": {
-    "value": "すーぱーそに子",
-    "translated": false
-  },
-  "origin_22": {
-    "value": "To LOVEる",
-    "translated": false
-  },
-  "origin_81": {
-    "value": "僕のヒーローアカデミア",
-    "translated": false
-  },
-  "origin_121": {
-    "value": "ONE PIECE",
-    "translated": false
-  },
-  "origin_48": {
-    "value": "Re:ゼロから始める異世界生活",
-    "translated": false
-  },
-  "origin_217": {
-    "value": "プリンセスコネクト！",
-    "translated": false
-  },
-  "origin_99": {
-    "value": "鬼滅の刃",
-    "translated": false
-  },
-  "origin_72": {
-    "value": "けいおん！",
-    "translated": false
-  },
-  "origin_93": {
-    "value": "とある科学の超電磁砲",
-    "translated": false
-  },
-  "origin_27": {
-    "value": "Fateシリーズ",
-    "translated": false
-  },
-  "origin_47": {
-    "value": "五等分の花嫁",
-    "translated": false
-  },
-  "origin_50": {
-    "value": "ソードアート・オンライン",
-    "translated": false
-  },
-  "origin_53": {
-    "value": "楽園追放",
-    "translated": false
-  },
-  "origin_95": {
-    "value": "ストリートファイター",
-    "translated": false
-  },
-  "origin_442": {
-    "value": "幻塔(Tower of Fantasy)",
-    "translated": false
-  },
-  "origin_137": {
-    "value": "KOF",
-    "translated": false
-  },
-  "origin_386": {
-    "value": "スパイファミリー",
-    "translated": false
-  },
-  "origin_159": {
-    "value": "バイオハザード",
-    "translated": false
-  },
-  "origin_87": {
-    "value": "ドラゴンボール",
-    "translated": false
-  },
-  "origin_58": {
-    "value": "ラブライブ！",
-    "translated": false
-  },
-  "origin_42": {
-    "value": "クイーンズゲイト",
-    "translated": false
-  },
-  "origin_67": {
-    "value": "遊戯王",
-    "translated": false
-  },
-  "origin_337": {
-    "value": "プロジェクトセカイ",
-    "translated": false
-  },
-  "origin_39": {
-    "value": "バトルガールハイスクール",
-    "translated": false
-  },
-  "origin_61": {
-    "value": "ガールフレンド(仮)",
-    "translated": false
-  },
-  "origin_38": {
-    "value": "小林さんちのメイドラゴン",
-    "translated": false
-  },
-  "origin_638": {
-    "value": "葬送のフリーレン",
-    "translated": false
-  },
-  "origin_18": {
-    "value": "グランブルーファンタジー",
-    "translated": false
-  },
-  "origin_335": {
-    "value": "チェンソーマン",
-    "translated": false
-  },
-  "origin_387": {
-    "value": "アイドルマスタースターリットシーズン",
-    "translated": false
-  },
-  "origin_370": {
-    "value": "天下布魔",
-    "translated": false
-  },
-  "origin_35": {
-    "value": "進撃の巨人",
-    "translated": false
-  },
-  "origin_100": {
-    "value": "フラワーナイトガール",
-    "translated": false
-  },
-  "origin_122": {
-    "value": "ワンパンマン",
-    "translated": false
-  },
-  "origin_726": {
-    "value": "時々ボソッとロシア語でデレる隣のアーリャさん",
-    "translated": false
-  },
-  "origin_80": {
-    "value": "FAIRY TAIL",
-    "translated": false
-  },
-  "origin_305": {
-    "value": "古見さんは、コミュ症です。",
-    "translated": false
-  },
-  "origin_118": {
-    "value": "ハイスクールD×D",
-    "translated": false
-  },
-  "origin_116": {
-    "value": "ガンダムSEED",
-    "translated": false
-  },
-  "origin_15": {
-    "value": "スーパーマリオ",
-    "translated": false
-  },
-  "origin_603": {
-    "value": "Strinova(ストリノヴァ/卡拉彼丘)",
-    "translated": false
-  },
-  "origin_699": {
-    "value": "ドールズフロントライン2：エクシリウム（ドルフロ2：追放）",
-    "translated": false
-  },
-  "origin_228": {
-    "value": "BLEACH",
-    "translated": false
-  },
-  "origin_579": {
-    "value": "【推しの子】",
-    "translated": false
-  },
-  "origin_236": {
-    "value": "イジらないで、長瀞さん",
-    "translated": false
-  },
-  "origin_86": {
-    "value": "ゼルダの伝説",
-    "translated": false
-  },
-  "origin_23": {
-    "value": "エヴァンゲリオン",
-    "translated": false
-  },
-  "origin_471": {
-    "value": "陰陽師",
-    "translated": false
-  },
-  "origin_90": {
-    "value": "けものフレンズ",
-    "translated": false
-  },
-  "origin_158": {
-    "value": "アイアンサーガ",
-    "translated": false
-  },
-  "origin_347": {
-    "value": "BanG Dream!（バンドリ！）",
-    "translated": false
-  },
-  "origin_466": {
-    "value": "サイバーパンク エッジランナーズ",
-    "translated": false
-  },
-  "origin_529": {
-    "value": "Five Nights at Freddy's",
-    "translated": false
-  },
-  "origin_149": {
-    "value": "ラブライブ!サンシャイン!!",
-    "translated": false
-  },
-  "origin_66": {
-    "value": "テイルズオブベルセリア",
-    "translated": false
-  },
-  "origin_28": {
-    "value": "セーラームーン",
-    "translated": false
-  },
-  "origin_192": {
-    "value": "ゾンビランドサガ",
-    "translated": false
-  },
-  "origin_717": {
-    "value": "学園アイドルマスター",
-    "translated": false
-  },
-  "origin_147": {
-    "value": "ファイアーエムブレム風花雪月",
-    "translated": false
-  },
-  "origin_195": {
-    "value": "ペルソナ5",
-    "translated": false
-  },
-  "origin_222": {
-    "value": "蒼藍の誓い ブルーオース",
-    "translated": false
-  },
-  "origin_326": {
-    "value": "無職転生",
-    "translated": false
-  },
-  "origin_45": {
-    "value": "やはり俺の青春ラブコメはまちがっている。",
-    "translated": false
-  },
-  "origin_26": {
-    "value": "涼宮ハルヒの憂鬱",
-    "translated": false
-  },
-  "origin_174": {
-    "value": "黒獣",
-    "translated": false
-  },
-  "origin_82": {
-    "value": "ダンガンロンパ",
-    "translated": false
-  },
-  "origin_238": {
-    "value": "かぐや様は告らせたい",
-    "translated": false
-  },
-  "origin_777": {
-    "value": "MiSide：ミサイド",
-    "translated": false
-  },
-  "origin_265": {
-    "value": "宇崎ちゃんは遊びたい！",
-    "translated": false
-  },
-  "origin_531": {
-    "value": "ぼっち・ざ・ろっく！",
-    "translated": false
-  },
-  "origin_162": {
-    "value": "オーバーロード",
-    "translated": false
-  },
-  "origin_262": {
-    "value": "テイルズオブエクシリア",
-    "translated": false
-  },
-  "origin_37": {
-    "value": "らき☆すた",
-    "translated": false
-  },
-  "origin_16": {
-    "value": "PSO2(ファンタシースターオンライン2)",
-    "translated": false
-  },
-  "origin_280": {
-    "value": "彼女、お借りします",
-    "translated": false
-  },
-  "origin_155": {
-    "value": "転生したらスライムだった件",
-    "translated": false
-  },
-  "origin_178": {
-    "value": "SSSS.GRIDMAN",
-    "translated": false
-  },
-  "origin_200": {
-    "value": "食戟のソーマ",
-    "translated": false
-  },
-  "origin_54": {
-    "value": "ハッカドール",
-    "translated": false
-  },
-  "origin_416": {
-    "value": "スプラトゥーン",
-    "translated": false
-  },
-  "origin_117": {
-    "value": "アリス・ギア・アイギス",
-    "translated": false
-  },
-  "origin_70": {
-    "value": "デジモン",
-    "translated": false
-  },
-  "origin_109": {
-    "value": "CODE VEIN",
-    "translated": false
-  },
-  "origin_451": {
-    "value": "ファイナルファンタジー14",
-    "translated": false
-  },
-  "origin_102": {
-    "value": "ダーリン・イン・ザ・フランキス",
-    "translated": false
-  },
-  "origin_213": {
-    "value": "甘城ブリリアントパーク",
-    "translated": false
-  },
-  "origin_463": {
-    "value": "MY LITTLE PONY",
-    "translated": false
-  },
-  "origin_215": {
-    "value": "ペルソナ4",
-    "translated": false
-  },
-  "origin_101": {
-    "value": "魔法少女まどか☆マギカ",
-    "translated": false
-  },
-  "origin_124": {
-    "value": "アナと雪の女王",
-    "translated": false
-  },
-  "origin_250": {
-    "value": "キルラキル",
-    "translated": false
-  },
-  "origin_671": {
-    "value": "ニューラルクラウド",
-    "translated": false
-  },
-  "origin_243": {
-    "value": "モンスターハンター",
-    "translated": false
-  },
-  "origin_373": {
-    "value": "ボンバーガール",
-    "translated": false
-  },
-  "origin_119": {
-    "value": "ギルティギア",
-    "translated": false
-  },
-  "origin_68": {
-    "value": "うる星やつら",
-    "translated": false
-  },
-  "origin_31": {
-    "value": "鉄拳",
-    "translated": false
-  },
-  "origin_190": {
-    "value": "からかい上手の高木さん",
-    "translated": false
-  },
-  "origin_131": {
-    "value": "エルソード",
-    "translated": false
-  },
-  "origin_171": {
-    "value": "ネコぱら",
-    "translated": false
-  },
-  "origin_342": {
-    "value": "蜘蛛ですが、なにか？",
-    "translated": false
-  },
-  "origin_187": {
-    "value": "物語シリーズ",
-    "translated": false
-  },
-  "origin_457": {
-    "value": "呪術廻戦",
-    "translated": false
-  },
-  "origin_206": {
-    "value": "どうぶつの森",
-    "translated": false
-  },
-  "origin_165": {
-    "value": "通常攻撃が全体攻撃で二回攻撃のお母さんは好きですか？",
-    "translated": false
-  },
-  "origin_504": {
-    "value": "機動戦士ガンダム 水星の魔女",
-    "translated": false
-  },
-  "origin_380": {
-    "value": "エルデンリング",
-    "translated": false
-  },
-  "origin_203": {
-    "value": "メトロイド",
-    "translated": false
-  },
-  "origin_246": {
-    "value": "学園黙示録 HIGHSCHOOL OF THE DEAD",
-    "translated": false
-  },
-  "origin_287": {
-    "value": "スイートプリキュア♪",
-    "translated": false
-  },
-  "origin_189": {
-    "value": "クイーンズブレイド",
-    "translated": false
-  },
-  "origin_129": {
-    "value": "ヴァンパイアシリーズ",
-    "translated": false
-  },
-  "origin_286": {
-    "value": "トゥームレイダー",
-    "translated": false
-  },
-  "origin_245": {
-    "value": "IS<インフィニット・ストラトス>",
-    "translated": false
-  },
-  "origin_153": {
-    "value": "ダンジョンに出会いを求めるのは間違っているだろうか",
-    "translated": false
-  },
-  "origin_658": {
-    "value": "アークナイツ：エンドフィールド",
-    "translated": false
-  },
-  "origin_32": {
-    "value": "カードキャプターさくら",
-    "translated": false
-  },
-  "origin_570": {
-    "value": "陰の実力者になりたくて！",
-    "translated": false
-  },
-  "origin_12": {
+  "12": {
     "value": "月姫",
     "translated": false
   },
-  "origin_221": {
-    "value": "アイカツ！",
+  "13": {
+    "value": "アイドルマスターシンデレラガールズ",
     "translated": false
   },
-  "origin_145": {
-    "value": "マケン姫っ！",
+  "14": {
+    "value": "アズールレーン",
     "translated": false
   },
-  "origin_173": {
-    "value": "ガンダムビルドファイターズ",
+  "15": {
+    "value": "スーパーマリオ",
     "translated": false
   },
-  "origin_670": {
-    "value": "魔法少女にあこがれて",
+  "16": {
+    "value": "PSO2(ファンタシースターオンライン2)",
     "translated": false
   },
-  "origin_193": {
-    "value": "ファイナルファンタジー10",
+  "17": {
+    "value": "萌王EX",
     "translated": false
   },
-  "origin_740": {
-    "value": "黒神話:悟空",
+  "18": {
+    "value": "グランブルーファンタジー",
     "translated": false
   },
-  "origin_406": {
-    "value": "MUGEN",
+  "19": {
+    "value": "閃乱カグラ",
     "translated": false
   },
-  "origin_85": {
-    "value": "だがしかし",
+  "20": {
+    "value": "すーぱーそに子",
     "translated": false
   },
-  "origin_69": {
-    "value": "魔法少女リリカルなのは",
-    "translated": false
-  },
-  "origin_336": {
-    "value": "ラブライブ!虹ヶ咲学園スクールアイドル同好会",
-    "translated": false
-  },
-  "origin_239": {
-    "value": "魔法つかいプリキュア！",
-    "translated": false
-  },
-  "origin_175": {
-    "value": "ソウルキャリバー",
-    "translated": false
-  },
-  "origin_340": {
-    "value": "ラストオリジン",
-    "translated": false
-  },
-  "origin_708": {
-    "value": "Stellar Blade",
-    "translated": false
-  },
-  "origin_43": {
-    "value": "俺の妹がこんなに可愛いわけがない。",
-    "translated": false
-  },
-  "origin_98": {
-    "value": "私に天使が舞い降りた！",
-    "translated": false
-  },
-  "origin_297": {
-    "value": "スターフォックス",
-    "translated": false
-  },
-  "origin_83": {
-    "value": "ブラック★ロックシューター",
-    "translated": false
-  },
-  "origin_296": {
-    "value": "魔女の旅々",
-    "translated": false
-  },
-  "origin_494": {
-    "value": "アイ・アム・マジカミ",
-    "translated": false
-  },
-  "origin_59": {
-    "value": "こどものじかん",
-    "translated": false
-  },
-  "origin_441": {
-    "value": "ゼノブレイド3",
-    "translated": false
-  },
-  "origin_686": {
-    "value": "DOAXVV(デッドオアアライブエクストリームヴィーナスバケーション)",
-    "translated": false
-  },
-  "origin_111": {
-    "value": "ノーゲーム・ノーライフ",
-    "translated": false
-  },
-  "origin_73": {
-    "value": "ドリームクラブ",
-    "translated": false
-  },
-  "origin_151": {
-    "value": "BAYONETTA",
-    "translated": false
-  },
-  "origin_646": {
-    "value": "リング",
-    "translated": false
-  },
-  "origin_601": {
-    "value": "アーマード・コア",
-    "translated": false
-  },
-  "origin_766": {
-    "value": "ダンダダン",
-    "translated": false
-  },
-  "origin_341": {
-    "value": "ファイナルファンタジー13",
-    "translated": false
-  },
-  "origin_491": {
-    "value": "World of Warcraft",
-    "translated": false
-  },
-  "origin_199": {
-    "value": "ファイアーエムブレムif",
-    "translated": false
-  },
-  "origin_253": {
-    "value": "ギルティクラウン",
-    "translated": false
-  },
-  "origin_25": {
-    "value": "戦姫絶唱シンフォギア",
-    "translated": false
-  },
-  "origin_552": {
-    "value": "スパイダーマン",
-    "translated": false
-  },
-  "origin_176": {
-    "value": "ブレイブルー(BLAZBLUE)",
-    "translated": false
-  },
-  "origin_219": {
-    "value": "マクロスF",
-    "translated": false
-  },
-  "origin_188": {
-    "value": "Undertale",
-    "translated": false
-  },
-  "origin_211": {
-    "value": "グレンラガン",
-    "translated": false
-  },
-  "origin_402": {
-    "value": "名探偵コナン",
-    "translated": false
-  },
-  "origin_207": {
-    "value": "閃の軌跡",
-    "translated": false
-  },
-  "origin_167": {
-    "value": "モンスター娘のいる日常",
-    "translated": false
-  },
-  "origin_606": {
-    "value": "僕の心のヤバイやつ",
-    "translated": false
-  },
-  "origin_183": {
-    "value": "ゼノサーガ",
-    "translated": false
-  },
-  "origin_533": {
-    "value": "ヨスガノソラ",
-    "translated": false
-  },
-  "origin_282": {
-    "value": "ソニック・ザ・ヘッジホッグ",
-    "translated": false
-  },
-  "origin_343": {
-    "value": "NEWGAME!",
-    "translated": false
-  },
-  "origin_448": {
-    "value": "ベイマックス",
-    "translated": false
-  },
-  "origin_436": {
-    "value": "サイバーパンク2077",
-    "translated": false
-  },
-  "origin_205": {
-    "value": "ロックマン",
-    "translated": false
-  },
-  "origin_348": {
-    "value": "コードギアス",
-    "translated": false
-  },
-  "origin_106": {
-    "value": "GATE(ゲート) 自衛隊 彼の地にて、斯く戦えり",
-    "translated": false
-  },
-  "origin_360": {
-    "value": "魔都精兵のスレイブ",
-    "translated": false
-  },
-  "origin_75": {
-    "value": "賭ケグルイ",
-    "translated": false
-  },
-  "origin_274": {
-    "value": "プリンセスティアーズ",
-    "translated": false
-  },
-  "origin_736": {
-    "value": "THE FIRST DESCENDANT",
-    "translated": false
-  },
-  "origin_506": {
-    "value": "橘さん家ノ男性事情",
-    "translated": false
-  },
-  "origin_235": {
-    "value": "魔法科高校の劣等生",
-    "translated": false
-  },
-  "origin_290": {
-    "value": "Apex Legends",
-    "translated": false
-  },
-  "origin_40": {
-    "value": "盾の勇者の成り上がり",
-    "translated": false
-  },
-  "origin_65": {
-    "value": "ハートキャッチプリキュア",
-    "translated": false
-  },
-  "origin_198": {
-    "value": "A Hat in Time",
-    "translated": false
-  },
-  "origin_212": {
-    "value": "ゴブリンスレイヤー",
-    "translated": false
-  },
-  "origin_528": {
-    "value": "ティーンタイタンズ",
-    "translated": false
-  },
-  "origin_181": {
-    "value": "ドキドキ文芸部!(DDLC)",
-    "translated": false
-  },
-  "origin_427": {
-    "value": "ようこそ実力至上主義の教室へ",
-    "translated": false
-  },
-  "origin_257": {
-    "value": "マクロスΔ",
-    "translated": false
-  },
-  "origin_357": {
-    "value": "パルテナの鏡",
-    "translated": false
-  },
-  "origin_532": {
-    "value": "ザ・スーサイド・スクワッド",
-    "translated": false
-  },
-  "origin_754": {
-    "value": "BORUTO",
-    "translated": false
-  },
-  "origin_602": {
-    "value": "ガンダムEXA VS",
-    "translated": false
-  },
-  "origin_284": {
-    "value": "ゲゲゲの鬼太郎",
-    "translated": false
-  },
-  "origin_179": {
-    "value": "りゅうおうのおしごと！",
-    "translated": false
-  },
-  "origin_94": {
-    "value": "300英雄",
-    "translated": false
-  },
-  "origin_186": {
-    "value": "フレームアームズ・ガール",
-    "translated": false
-  },
-  "origin_547": {
-    "value": "お兄ちゃんはおしまい！",
-    "translated": false
-  },
-  "origin_112": {
-    "value": "ケンガンアシュラ",
-    "translated": false
-  },
-  "origin_781": {
-    "value": "マーベル・ライバルズ(Marvel Rivals)",
-    "translated": false
-  },
-  "origin_103": {
-    "value": "シャンティ",
-    "translated": false
-  },
-  "origin_325": {
-    "value": "ペルソナ3",
-    "translated": false
-  },
-  "origin_338": {
-    "value": "ひぐらしのなく頃に",
-    "translated": false
-  },
-  "origin_218": {
-    "value": "ファイナルファンタジー15",
-    "translated": false
-  },
-  "origin_142": {
-    "value": "CLOSERS",
-    "translated": false
-  },
-  "origin_618": {
-    "value": "ヘルヴァ・ボス(Helluvaboss)",
-    "translated": false
-  },
-  "origin_561": {
-    "value": "Atomic Heart",
-    "translated": false
-  },
-  "origin_391": {
-    "value": "IdentityV(第五人格)",
-    "translated": false
-  },
-  "origin_224": {
-    "value": "聖剣伝説3",
-    "translated": false
-  },
-  "origin_696": {
-    "value": "永遠の七日",
-    "translated": false
-  },
-  "origin_96": {
-    "value": "異種族レビュアーズ",
-    "translated": false
-  },
-  "origin_163": {
-    "value": "エロマンガ先生",
-    "translated": false
-  },
-  "origin_432": {
-    "value": "シュタインズゲート",
-    "translated": false
-  },
-  "origin_154": {
-    "value": "青春ブタ野郎シリーズ",
-    "translated": false
-  },
-  "origin_252": {
-    "value": "ドラゴンクエスト3",
-    "translated": false
-  },
-  "origin_525": {
-    "value": "Mr.インクレディブル",
-    "translated": false
-  },
-  "origin_470": {
-    "value": "冴えない彼女の育てかた",
-    "translated": false
-  },
-  "origin_365": {
-    "value": "ああっ女神さまっ",
-    "translated": false
-  },
-  "origin_275": {
-    "value": "ご注文はうさぎですか？",
-    "translated": false
-  },
-  "origin_24": {
-    "value": "Go!プリンセスプリキュア",
-    "translated": false
-  },
-  "origin_553": {
-    "value": "鬼父",
-    "translated": false
-  },
-  "origin_226": {
-    "value": "Helltaker",
-    "translated": false
-  },
-  "origin_216": {
-    "value": "世話やきキツネの仙狐さん",
-    "translated": false
-  },
-  "origin_778": {
-    "value": "インフィニティニキ",
-    "translated": false
-  },
-  "origin_308": {
-    "value": "ソウルワーカー",
-    "translated": false
-  },
-  "origin_88": {
-    "value": "TERA",
-    "translated": false
-  },
-  "origin_424": {
-    "value": "真・三國無双",
-    "translated": false
-  },
-  "origin_560": {
-    "value": "トモちゃんは女の子！",
-    "translated": false
-  },
-  "origin_182": {
-    "value": "The Last Of Us",
-    "translated": false
-  },
-  "origin_371": {
-    "value": "ファイアーエムブレム覚醒",
-    "translated": false
-  },
-  "origin_291": {
-    "value": "VALORANT",
-    "translated": false
-  },
-  "origin_52": {
-    "value": "美少女万華鏡",
-    "translated": false
-  },
-  "origin_469": {
-    "value": "監獄学園",
-    "translated": false
-  },
-  "origin_799": {
-    "value": "ガールズバンドクライ",
-    "translated": false
-  },
-  "origin_135": {
-    "value": "ニーアレプリカント",
-    "translated": false
-  },
-  "origin_127": {
-    "value": "ドラゴンクエスト5",
-    "translated": false
-  },
-  "origin_698": {
-    "value": "シャドウバース",
-    "translated": false
-  },
-  "origin_293": {
-    "value": "モータルコンバット",
-    "translated": false
-  },
-  "origin_306": {
-    "value": "ゴッドイーター",
-    "translated": false
-  },
-  "origin_446": {
-    "value": "ブラックレイヴン",
-    "translated": false
-  },
-  "origin_273": {
-    "value": "月曜日のたわわ",
-    "translated": false
-  },
-  "origin_166": {
-    "value": "魔法少女大戦",
-    "translated": false
-  },
-  "origin_536": {
-    "value": "ミストトレインガールズ",
-    "translated": false
-  },
-  "origin_493": {
-    "value": "モンスター・ホテル",
-    "translated": false
-  },
-  "origin_462": {
-    "value": "異世界迷宮でハーレムを",
-    "translated": false
-  },
-  "origin_518": {
-    "value": "テイルズオブゼスティリア",
-    "translated": false
-  },
-  "origin_312": {
-    "value": "ドラゴンクエスト11",
-    "translated": false
-  },
-  "origin_225": {
-    "value": "アルカナハート",
-    "translated": false
-  },
-  "origin_247": {
-    "value": "銀河鉄道999",
-    "translated": false
-  },
-  "origin_51": {
-    "value": "下ネタという概念が存在しない退屈な世界",
-    "translated": false
-  },
-  "origin_588": {
-    "value": "Minecraft",
-    "translated": false
-  },
-  "origin_281": {
-    "value": "サムライスピリッツ",
-    "translated": false
-  },
-  "origin_196": {
-    "value": "ゼロマキナ",
-    "translated": false
-  },
-  "origin_511": {
-    "value": "フォートナイト",
-    "translated": false
-  },
-  "origin_330": {
-    "value": "氷菓",
-    "translated": false
-  },
-  "origin_513": {
-    "value": "ベン10",
-    "translated": false
-  },
-  "origin_220": {
-    "value": "終わりのセラフ",
-    "translated": false
-  },
-  "origin_231": {
-    "value": "のんのんびより",
-    "translated": false
-  },
-  "origin_481": {
-    "value": "ぼくたちは勉強ができない",
-    "translated": false
-  },
-  "origin_447": {
-    "value": "アカメが斬る!",
-    "translated": false
-  },
-  "origin_134": {
-    "value": "ゼロの使い魔",
-    "translated": false
-  },
-  "origin_801": {
-    "value": "悪役令嬢転生おじさん",
-    "translated": false
-  },
-  "origin_515": {
-    "value": "キングダムハーツ",
-    "translated": false
-  },
-  "origin_769": {
-    "value": "2.5次元の誘惑",
-    "translated": false
-  },
-  "origin_146": {
-    "value": "メギド72",
-    "translated": false
-  },
-  "origin_136": {
-    "value": "まちカドまぞく",
-    "translated": false
-  },
-  "origin_414": {
-    "value": "回復術士のやり直し",
-    "translated": false
-  },
-  "origin_404": {
-    "value": "可愛いだけじゃない式守さん",
-    "translated": false
-  },
-  "origin_643": {
-    "value": "催眠性指導",
-    "translated": false
-  },
-  "origin_139": {
-    "value": "ゆるキャン△",
-    "translated": false
-  },
-  "origin_248": {
-    "value": "ゼノブレイド",
-    "translated": false
-  },
-  "origin_510": {
-    "value": "リトルウィッチアカデミア",
-    "translated": false
-  },
-  "origin_283": {
-    "value": "炎炎ノ消防隊",
-    "translated": false
-  },
-  "origin_251": {
-    "value": "UNI(アンダーナイト インヴァース)",
-    "translated": false
-  },
-  "origin_143": {
-    "value": "ディスガイア",
-    "translated": false
-  },
-  "origin_352": {
-    "value": "アブソリュート・デュオ",
-    "translated": false
-  },
-  "origin_55": {
-    "value": "BLACK LAGOON",
-    "translated": false
-  },
-  "origin_210": {
-    "value": "ハンターハンター",
-    "translated": false
-  },
-  "origin_593": {
-    "value": "光翼戦姫エクスティア",
-    "translated": false
-  },
-  "origin_285": {
-    "value": "うたわれるもの",
-    "translated": false
-  },
-  "origin_378": {
-    "value": "ファイアーエムブレム 烈火の剣",
-    "translated": false
-  },
-  "origin_89": {
-    "value": "絶対純白魔法少女",
-    "translated": false
-  },
-  "origin_640": {
-    "value": "ロマンシングサガ2",
-    "translated": false
-  },
-  "origin_619": {
-    "value": "お隣の天使様にいつの間にか駄目人間にされていた件",
-    "translated": false
-  },
-  "origin_277": {
-    "value": "装甲悪鬼村正",
-    "translated": false
-  },
-  "origin_267": {
-    "value": "無彩限のファントム・ワールド",
-    "translated": false
-  },
-  "origin_148": {
-    "value": "ドキドキ!プリキュア",
-    "translated": false
-  },
-  "origin_530": {
-    "value": "ジョジョの奇妙な冒険",
-    "translated": false
-  },
-  "origin_60": {
-    "value": "搾精病棟",
-    "translated": false
-  },
-  "origin_268": {
-    "value": "うみねこのなく頃に",
-    "translated": false
-  },
-  "origin_382": {
-    "value": "アバター伝説の少年アン",
-    "translated": false
-  },
-  "origin_577": {
-    "value": "LOLLIPOP CHAINSAW(ロリポップチェーンソー)",
-    "translated": false
-  },
-  "origin_520": {
-    "value": "犬夜叉",
-    "translated": false
-  },
-  "origin_622": {
-    "value": "ゾン100〜ゾンビになるまでにしたい100のこと〜",
-    "translated": false
-  },
-  "origin_259": {
-    "value": "ゆるゆり",
-    "translated": false
-  },
-  "origin_677": {
-    "value": "パルワールド",
-    "translated": false
-  },
-  "origin_384": {
-    "value": "見える子ちゃん",
-    "translated": false
-  },
-  "origin_488": {
-    "value": "ドルフィンウェーブ",
-    "translated": false
-  },
-  "origin_130": {
-    "value": "伝説対決-Arena of Valor-",
-    "translated": false
-  },
-  "origin_152": {
-    "value": "僕は友達が少ない",
-    "translated": false
-  },
-  "origin_420": {
-    "value": "おジャ魔女どれみ",
-    "translated": false
-  },
-  "origin_522": {
-    "value": "ルーニー・テューンズ",
-    "translated": false
-  },
-  "origin_753": {
-    "value": "負けヒロインが多すぎる!",
-    "translated": false
-  },
-  "origin_97": {
-    "value": "幼女戦記",
-    "translated": false
-  },
-  "origin_569": {
-    "value": "ひろがるスカイ!プリキュア",
-    "translated": false
-  },
-  "origin_648": {
-    "value": "ケロロ軍曹",
-    "translated": false
-  },
-  "origin_76": {
-    "value": "ガーリッシュナンバー",
-    "translated": false
-  },
-  "origin_659": {
-    "value": "閃乱忍忍忍者大戦ネプテューヌ",
-    "translated": false
-  },
-  "origin_526": {
-    "value": "スクービー・ドゥー",
-    "translated": false
-  },
-  "origin_34": {
-    "value": "twin Milf",
-    "translated": false
-  },
-  "origin_309": {
-    "value": "攻殻機動隊",
-    "translated": false
-  },
-  "origin_527": {
-    "value": "パロディウス",
-    "translated": false
-  },
-  "origin_639": {
-    "value": "ファイアーエムブレム エンゲージ",
-    "translated": false
-  },
-  "origin_201": {
-    "value": "BNA",
-    "translated": false
-  },
-  "origin_704": {
-    "value": "怪異と乙女と神隠し",
-    "translated": false
-  },
-  "origin_233": {
-    "value": "はたらく細胞",
-    "translated": false
-  },
-  "origin_255": {
-    "value": "ワルキューレロマンツェ",
-    "translated": false
-  },
-  "origin_322": {
-    "value": "SSSS.DYNAZENON",
-    "translated": false
-  },
-  "origin_202": {
-    "value": "七つの大罪",
-    "translated": false
-  },
-  "origin_663": {
-    "value": "JKビッチに搾られたい",
-    "translated": false
-  },
-  "origin_771": {
-    "value": "FOAMSTARS",
-    "translated": false
-  },
-  "origin_738": {
-    "value": "しかのこのこのここしたんたん",
-    "translated": false
-  },
-  "origin_475": {
-    "value": "シャイニングニキ",
-    "translated": false
-  },
-  "origin_313": {
-    "value": "超時空要塞マクロス",
-    "translated": false
-  },
-  "origin_237": {
-    "value": "スターウォーズ",
-    "translated": false
-  },
-  "origin_314": {
-    "value": "ドラえもん",
-    "translated": false
-  },
-  "origin_372": {
-    "value": "ドーナドーナ",
-    "translated": false
-  },
-  "origin_455": {
-    "value": "コイカツ！",
-    "translated": false
-  },
-  "origin_327": {
-    "value": "ストライクウィッチーズ",
-    "translated": false
-  },
-  "origin_678": {
-    "value": "薬屋のひとりごと",
-    "translated": false
-  },
-  "origin_556": {
-    "value": "マクロス7",
-    "translated": false
-  },
-  "origin_396": {
-    "value": "新妹魔王の契約者",
-    "translated": false
-  },
-  "origin_512": {
-    "value": "らんま1/2",
-    "translated": false
-  },
-  "origin_445": {
-    "value": "咲-Saki-",
-    "translated": false
-  },
-  "origin_711": {
-    "value": "魔法使いの夜",
-    "translated": false
-  },
-  "origin_614": {
-    "value": "WORKING!!",
-    "translated": false
-  },
-  "origin_723": {
-    "value": "Lv2からチートだった元勇者候補のまったり異世界ライフ",
-    "translated": false
-  },
-  "origin_691": {
-    "value": "ミラキュラス レディバグ＆シャノワール",
-    "translated": false
-  },
-  "origin_331": {
-    "value": "ブレンド・S",
-    "translated": false
-  },
-  "origin_615": {
-    "value": "ブラッククローバー",
-    "translated": false
-  },
-  "origin_388": {
-    "value": "地獄先生ぬ～べ～",
-    "translated": false
-  },
-  "origin_492": {
-    "value": "ファイアーエムブレム紋章の謎",
-    "translated": false
-  },
-  "origin_232": {
-    "value": "空の境界",
-    "translated": false
-  },
-  "origin_650": {
-    "value": "RIDDLE JOKER",
-    "translated": false
-  },
-  "origin_412": {
-    "value": "我が家のリリアナさん",
-    "translated": false
-  },
-  "origin_573": {
-    "value": "デリシャスパーティ♡プリキュア",
-    "translated": false
-  },
-  "origin_113": {
-    "value": "夜ノヤッターマン",
-    "translated": false
-  },
-  "origin_344": {
-    "value": "ジャヒー様はくじけない!",
-    "translated": false
-  },
-  "origin_191": {
-    "value": "未来日記",
-    "translated": false
-  },
-  "origin_473": {
-    "value": "先輩がうざい後輩の話",
-    "translated": false
-  },
-  "origin_169": {
-    "value": "HELLSING",
-    "translated": false
-  },
-  "origin_792": {
-    "value": "響け!ユーフォニアム",
-    "translated": false
-  },
-  "origin_369": {
-    "value": "戦国無双",
-    "translated": false
-  },
-  "origin_440": {
-    "value": "YandereSimulator",
-    "translated": false
-  },
-  "origin_324": {
-    "value": "超昂大戦エスカレーション・ヒロインズ",
-    "translated": false
-  },
-  "origin_464": {
-    "value": "ブレイドアンドソウル（Blade & Soul）",
-    "translated": false
-  },
-  "origin_664": {
-    "value": "ライズ・オブ・エロス",
-    "translated": false
-  },
-  "origin_631": {
-    "value": "アイアンマン",
-    "translated": false
-  },
-  "origin_138": {
-    "value": "白猫プロジェクト",
-    "translated": false
-  },
-  "origin_564": {
-    "value": "女拳主義F-IST",
-    "translated": false
-  },
-  "origin_655": {
-    "value": "ガキ巨乳",
-    "translated": false
-  },
-  "origin_453": {
-    "value": "ウィッチャー（The Witcher）",
-    "translated": false
-  },
-  "origin_599": {
-    "value": "GANTZ",
-    "translated": false
-  },
-  "origin_720": {
-    "value": "転生したら第七王子だったので、気ままに魔術を極めます",
-    "translated": false
-  },
-  "origin_292": {
-    "value": "カウボーイビバップ",
-    "translated": false
-  },
-  "origin_612": {
-    "value": "対魔忍GOGO",
-    "translated": false
-  },
-  "origin_742": {
-    "value": "逃げ上手の若君",
-    "translated": false
-  },
-  "origin_444": {
-    "value": "よふかしのうた",
-    "translated": false
-  },
-  "origin_141": {
-    "value": "メイドインワリオ",
-    "translated": false
-  },
-  "origin_316": {
-    "value": "うちのメイドがウザすぎる!",
-    "translated": false
-  },
-  "origin_534": {
-    "value": "あやかしランブル！",
-    "translated": false
-  },
-  "origin_647": {
-    "value": "ARIA",
-    "translated": false
-  },
-  "origin_272": {
-    "value": "Dog Days",
-    "translated": false
-  },
-  "origin_21": {
+  "21": {
     "value": "千恋＊万花",
     "translated": false
   },
-  "origin_557": {
-    "value": "COUNTER:SIDE",
+  "22": {
+    "value": "To LOVEる",
     "translated": false
   },
-  "origin_318": {
-    "value": "甲鉄城のカバネリ",
+  "23": {
+    "value": "エヴァンゲリオン",
     "translated": false
   },
-  "origin_733": {
-    "value": "落第騎士の英雄譚",
+  "24": {
+    "value": "Go!プリンセスプリキュア",
     "translated": false
   },
-  "origin_535": {
-    "value": "マビノギ英雄伝",
+  "25": {
+    "value": "戦姫絶唱シンフォギア",
     "translated": false
   },
-  "origin_363": {
-    "value": "魔法の天使クリィミーマミ",
+  "26": {
+    "value": "涼宮ハルヒの憂鬱",
     "translated": false
   },
-  "origin_177": {
-    "value": "とらドラ！",
+  "27": {
+    "value": "Fateシリーズ",
     "translated": false
   },
-  "origin_581": {
-    "value": "レジェンド･オブ･コーラ",
+  "28": {
+    "value": "セーラームーン",
     "translated": false
   },
-  "origin_712": {
-    "value": "バニーガーデン",
+  "29": {
+    "value": "ニーアオートマタ",
     "translated": false
   },
-  "origin_422": {
-    "value": "舞-HiME",
+  "30": {
+    "value": "その他",
     "translated": false
   },
-  "origin_626": {
-    "value": "ファイナルファンタジー6",
+  "31": {
+    "value": "鉄拳",
     "translated": false
   },
-  "origin_398": {
-    "value": "パリピ孔明",
+  "32": {
+    "value": "カードキャプターさくら",
     "translated": false
   },
-  "origin_242": {
-    "value": "まいてつ",
-    "translated": false
-  },
-  "origin_77": {
-    "value": "ハズビンホテル",
-    "translated": false
-  },
-  "origin_745": {
-    "value": "悪役令嬢レベル99",
-    "translated": false
-  },
-  "origin_144": {
-    "value": "未来少年コナン",
-    "translated": false
-  },
-  "origin_724": {
-    "value": "機動戦士Ζガンダム",
-    "translated": false
-  },
-  "origin_353": {
-    "value": "CLANNAD",
-    "translated": false
-  },
-  "origin_682": {
-    "value": "デジモンストーリーサイバースルゥース",
-    "translated": false
-  },
-  "origin_714": {
-    "value": "茜ハ摘マレ染メラレル",
-    "translated": false
-  },
-  "origin_813": {
-    "value": "麻雀ファイトガール",
-    "translated": false
-  },
-  "origin_516": {
-    "value": "Yes！プリキュア5",
-    "translated": false
-  },
-  "origin_747": {
-    "value": "星之翼",
-    "translated": false
-  },
-  "origin_715": {
-    "value": "魔乳秘剣帖",
-    "translated": false
-  },
-  "origin_125": {
-    "value": "淫獣聖戦",
-    "translated": false
-  },
-  "origin_629": {
-    "value": "痛いのは嫌なので防御力に極振りしたいと思います。",
-    "translated": false
-  },
-  "origin_770": {
-    "value": "アオのハコ",
-    "translated": false
-  },
-  "origin_705": {
-    "value": "ユニコーンオーバーロード",
-    "translated": false
-  },
-  "origin_539": {
-    "value": "ヨルムンガンド",
-    "translated": false
-  },
-  "origin_114": {
-    "value": "精霊使いの剣舞",
-    "translated": false
-  },
-  "origin_426": {
-    "value": "異世界おじさん",
-    "translated": false
-  },
-  "origin_214": {
-    "value": "八月のシンデレラナイン",
-    "translated": false
-  },
-  "origin_485": {
-    "value": "奴隷との生活 -Teaching Feeling-",
-    "translated": false
-  },
-  "origin_289": {
-    "value": "謎の彼女X",
-    "translated": false
-  },
-  "origin_563": {
-    "value": "To Heart",
-    "translated": false
-  },
-  "origin_805": {
-    "value": "リバース:1999",
-    "translated": false
-  },
-  "origin_417": {
-    "value": "キラッとプリ☆チャン",
-    "translated": false
-  },
-  "origin_718": {
-    "value": "NEEDY GIRL OVERDOSE",
-    "translated": false
-  },
-  "origin_429": {
-    "value": "バーチャファイター",
-    "translated": false
-  },
-  "origin_393": {
-    "value": "宝石姫",
-    "translated": false
-  },
-  "origin_509": {
-    "value": "不徳のギルド",
-    "translated": false
-  },
-  "origin_476": {
-    "value": "Warframe",
-    "translated": false
-  },
-  "origin_430": {
-    "value": "シャイニング・レゾナンス",
-    "translated": false
-  },
-  "origin_394": {
-    "value": "ありふれた職業で世界最強",
-    "translated": false
-  },
-  "origin_359": {
-    "value": "ダンベル何キロ持てる？",
-    "translated": false
-  },
-  "origin_498": {
-    "value": "千年戦争アイギス",
-    "translated": false
-  },
-  "origin_477": {
-    "value": "ハヤテのごとく",
-    "translated": false
-  },
-  "origin_303": {
-    "value": "リトルウィッチノベタ",
-    "translated": false
-  },
-  "origin_578": {
-    "value": "地獄楽",
-    "translated": false
-  },
-  "origin_709": {
-    "value": "君のことが大大大大大好きな100人の彼女",
-    "translated": false
-  },
-  "origin_419": {
-    "value": "世紀末オカルト学院",
-    "translated": false
-  },
-  "origin_271": {
-    "value": "異世界魔王と召喚少女の奴隷魔術",
-    "translated": false
-  },
-  "origin_385": {
-    "value": "小女ラムネ",
-    "translated": false
-  },
-  "origin_657": {
-    "value": "サイレントヒル",
-    "translated": false
-  },
-  "origin_350": {
-    "value": "天体のメソッド",
-    "translated": false
-  },
-  "origin_329": {
-    "value": "おーばーふろぉ",
-    "translated": false
-  },
-  "origin_567": {
-    "value": "HUGっと!プリキュア",
-    "translated": false
-  },
-  "origin_700": {
-    "value": "シャドウバースF",
-    "translated": false
-  },
-  "origin_261": {
-    "value": "デスティニーチャイルド",
-    "translated": false
-  },
-  "origin_229": {
-    "value": "ガヴリールドロップアウト",
-    "translated": false
-  },
-  "origin_361": {
-    "value": "這いよれ! ニャル子さん",
-    "translated": false
-  },
-  "origin_240": {
-    "value": "モン娘☆は〜れむ",
-    "translated": false
-  },
-  "origin_743": {
-    "value": "The Amazing Digital Circus",
-    "translated": false
-  },
-  "origin_580": {
-    "value": "ロザリオとバンパイア",
-    "translated": false
-  },
-  "origin_409": {
-    "value": "乙女ゲー世界はモブに厳しい世界です",
-    "translated": false
-  },
-  "origin_421": {
-    "value": "メイドインアビス",
-    "translated": false
-  },
-  "origin_690": {
-    "value": "フリージング",
-    "translated": false
-  },
-  "origin_490": {
-    "value": "メルクストーリア",
-    "translated": false
-  },
-  "origin_591": {
-    "value": "ファイナルファンタジー8",
-    "translated": false
-  },
-  "origin_294": {
-    "value": "プリパラ",
-    "translated": false
-  },
-  "origin_375": {
-    "value": "パパのいうことを聞きなさい!",
-    "translated": false
-  },
-  "origin_480": {
-    "value": "デ・ジ・キャラット",
-    "translated": false
-  },
-  "origin_410": {
-    "value": "このヒーラー、めんどくさい",
-    "translated": false
-  },
-  "origin_755": {
-    "value": "バルダーズゲート3",
-    "translated": false
-  },
-  "origin_767": {
-    "value": "ダンジョン飯",
-    "translated": false
-  },
-  "origin_734": {
-    "value": "UnderTheWitch",
-    "translated": false
-  },
-  "origin_33": {
+  "33": {
     "value": "この勇者が俺TUEEEくせに慎重すぎる",
     "translated": false
   },
-  "origin_295": {
-    "value": "大番長",
+  "34": {
+    "value": "twin Milf",
     "translated": false
   },
-  "origin_502": {
-    "value": "境界線上のホライゾン",
+  "35": {
+    "value": "進撃の巨人",
     "translated": false
   },
-  "origin_649": {
-    "value": "経験済みなキミと、 経験ゼロなオレが、 お付き合いする話。",
+  "36": {
+    "value": "RWBY",
     "translated": false
   },
-  "origin_411": {
-    "value": "餓狼伝説",
+  "37": {
+    "value": "らき☆すた",
     "translated": false
   },
-  "origin_320": {
-    "value": "はたらく細胞BLACK",
+  "38": {
+    "value": "小林さんちのメイドラゴン",
     "translated": false
   },
-  "origin_537": {
-    "value": "シャドーハウス",
+  "39": {
+    "value": "バトルガールハイスクール",
     "translated": false
   },
-  "origin_482": {
-    "value": "ブレイカーズ",
+  "40": {
+    "value": "盾の勇者の成り上がり",
     "translated": false
   },
-  "origin_594": {
-    "value": "スマイルプリキュア！",
+  "41": {
+    "value": "Fate/kaleid liner プリズマ・イリヤ",
     "translated": false
   },
-  "origin_693": {
-    "value": "Cult of the Lamb",
+  "42": {
+    "value": "クイーンズゲイト",
     "translated": false
   },
-  "origin_389": {
-    "value": "ルーンファクトリーシリーズ",
+  "43": {
+    "value": "俺の妹がこんなに可愛いわけがない。",
     "translated": false
   },
-  "origin_661": {
-    "value": "監獄戦艦",
+  "44": {
+    "value": "ポケットモンスター",
     "translated": false
   },
-  "origin_628": {
-    "value": "アダムス・ファミリー",
+  "45": {
+    "value": "やはり俺の青春ラブコメはまちがっている。",
     "translated": false
   },
-  "origin_757": {
-    "value": "Limbus Company",
+  "46": {
+    "value": "崩壊3rd",
     "translated": false
   },
-  "origin_321": {
-    "value": "魔法先生ネギま!",
+  "47": {
+    "value": "五等分の花嫁",
     "translated": false
   },
-  "origin_401": {
-    "value": "とある魔術の禁書目録",
+  "48": {
+    "value": "Re:ゼロから始める異世界生活",
     "translated": false
   },
-  "origin_802": {
-    "value": "ブラック・サージナイト",
+  "50": {
+    "value": "ソードアート・オンライン",
     "translated": false
   },
-  "origin_366": {
-    "value": "おしえて!ギャル子ちゃん",
+  "51": {
+    "value": "下ネタという概念が存在しない退屈な世界",
     "translated": false
   },
-  "origin_549": {
-    "value": "機動戦士ガンダムΖΖ",
+  "52": {
+    "value": "美少女万華鏡",
     "translated": false
   },
-  "origin_244": {
-    "value": "はじめてのギャル",
+  "53": {
+    "value": "楽園追放",
     "translated": false
   },
-  "origin_379": {
-    "value": "少女戦機ソウルイーター",
+  "54": {
+    "value": "ハッカドール",
     "translated": false
   },
-  "origin_79": {
-    "value": "もんむす・くえすと！",
+  "55": {
+    "value": "BLACK LAGOON",
     "translated": false
   },
-  "origin_425": {
-    "value": "ヴァンガードプリンセス",
+  "56": {
+    "value": "オーバーウォッチ",
     "translated": false
   },
-  "origin_334": {
-    "value": "ふたりはプリキュア",
+  "57": {
+    "value": "DEAD OR ALIVE",
     "translated": false
   },
-  "origin_673": {
-    "value": "純愛メロウ",
+  "58": {
+    "value": "ラブライブ！",
     "translated": false
   },
-  "origin_517": {
-    "value": "LOVELY×CATION",
+  "59": {
+    "value": "こどものじかん",
     "translated": false
   },
-  "origin_652": {
-    "value": "無双OROCHI",
+  "60": {
+    "value": "搾精病棟",
     "translated": false
   },
-  "origin_311": {
-    "value": "School Days",
+  "61": {
+    "value": "ガールフレンド(仮)",
     "translated": false
   },
-  "origin_585": {
-    "value": "キングスレイド",
+  "62": {
+    "value": "ライザのアトリエ",
     "translated": false
   },
-  "origin_596": {
-    "value": "世界樹の迷宮",
+  "63": {
+    "value": "NARUTO",
     "translated": false
   },
-  "origin_727": {
-    "value": "パワーガール",
-    "translated": false
-  },
-  "origin_562": {
-    "value": "獣魂戦隊ジュウソルジャー",
-    "translated": false
-  },
-  "origin_126": {
-    "value": "一騎当千",
-    "translated": false
-  },
-  "origin_256": {
-    "value": "ニセコイ",
-    "translated": false
-  },
-  "origin_356": {
-    "value": "ストライク・ザ・ブラッド",
-    "translated": false
-  },
-  "origin_507": {
-    "value": "ファイアーエムブレムEchoes",
-    "translated": false
-  },
-  "origin_608": {
-    "value": "神無き世界のカミサマ活動",
-    "translated": false
-  },
-  "origin_685": {
-    "value": "デジモンワールド　リ：デジタイズ",
-    "translated": false
-  },
-  "origin_71": {
-    "value": "ドロヘドロ",
-    "translated": false
-  },
-  "origin_204": {
-    "value": "ハピネスチャージプリキュア！",
-    "translated": false
-  },
-  "origin_609": {
-    "value": "ルパン三世",
-    "translated": false
-  },
-  "origin_739": {
-    "value": "ドラゴンクエスト8",
-    "translated": false
-  },
-  "origin_300": {
-    "value": "ハンドレッド",
-    "translated": false
-  },
-  "origin_541": {
-    "value": "魔法少女育成計画",
-    "translated": false
-  },
-  "origin_519": {
-    "value": "シスタープリンセス",
-    "translated": false
-  },
-  "origin_783": {
-    "value": "機動戦士Gundam GQuuuuuuX(ジークアクス)",
-    "translated": false
-  },
-  "origin_750": {
-    "value": "歸龍潮",
-    "translated": false
-  },
-  "origin_587": {
-    "value": "ゴッド・オブ・ウォー",
-    "translated": false
-  },
-  "origin_194": {
-    "value": "テイルズオブヴェスペリア",
-    "translated": false
-  },
-  "origin_598": {
-    "value": "コレクター・ユイ",
-    "translated": false
-  },
-  "origin_160": {
-    "value": "テイルズオブシンフォニア",
-    "translated": false
-  },
-  "origin_358": {
-    "value": "斗羅大陸",
-    "translated": false
-  },
-  "origin_497": {
-    "value": "トロピカル～ジュ！プリキュア",
-    "translated": false
-  },
-  "origin_632": {
-    "value": "ガンダムビルドファイターズトライ",
-    "translated": false
-  },
-  "origin_301": {
-    "value": "沙耶の唄",
-    "translated": false
-  },
-  "origin_542": {
-    "value": "魔入りました!入間くん",
-    "translated": false
-  },
-  "origin_676": {
-    "value": "X-MEN",
-    "translated": false
-  },
-  "origin_487": {
-    "value": "どろろ",
-    "translated": false
-  },
-  "origin_161": {
-    "value": "ティーンタイタンズGO!",
-    "translated": false
-  },
-  "origin_227": {
-    "value": "サモンナイト",
-    "translated": false
-  },
-  "origin_633": {
-    "value": "邪神ちゃんドロップキック",
-    "translated": false
-  },
-  "origin_763": {
-    "value": "アイドルマスターSideM",
-    "translated": false
-  },
-  "origin_645": {
-    "value": "オンゲキ",
-    "translated": false
-  },
-  "origin_140": {
-    "value": "ワイルドアームズ",
-    "translated": false
-  },
-  "origin_543": {
-    "value": "Horizon",
-    "translated": false
-  },
-  "origin_818": {
-    "value": "人付き合いが苦手な未亡人の雪女さん",
-    "translated": false
-  },
-  "origin_785": {
-    "value": "白恋サクラ＊グラム",
-    "translated": false
-  },
-  "origin_349": {
-    "value": "死神坊ちゃんと黒メイド",
-    "translated": false
-  },
-  "origin_623": {
-    "value": "ラブライブ!蓮ノ空女学院スクールアイドル",
-    "translated": false
-  },
-  "origin_589": {
-    "value": "ワンダーウーマン",
-    "translated": false
-  },
-  "origin_431": {
-    "value": "金装のヴェルメイユ",
-    "translated": false
-  },
-  "origin_260": {
-    "value": "戦場のヴァルキュリア",
-    "translated": false
-  },
-  "origin_304": {
-    "value": "サクラ大戦",
-    "translated": false
-  },
-  "origin_721": {
-    "value": "スター☆トゥインクルプリキュア",
-    "translated": false
-  },
-  "origin_689": {
-    "value": "魔界ウォーズ",
-    "translated": false
-  },
-  "origin_824": {
-    "value": "Neverness To Everness",
-    "translated": false
-  },
-  "origin_786": {
-    "value": "しゅがてん！",
-    "translated": false
-  },
-  "origin_489": {
-    "value": "七つの美徳",
-    "translated": false
-  },
-  "origin_456": {
-    "value": "インジャスティス2（Injustice2）",
-    "translated": false
-  },
-  "origin_590": {
-    "value": "NINJA GAIDEN",
-    "translated": false
-  },
-  "origin_765": {
-    "value": "ふしぎの海のナディア",
-    "translated": false
-  },
-  "origin_64": {
+  "64": {
     "value": "パウパトロール",
     "translated": false
   },
-  "origin_197": {
-    "value": "Marvel",
+  "65": {
+    "value": "ハートキャッチプリキュア",
     "translated": false
   },
-  "origin_468": {
-    "value": "アサルトリリィ",
+  "66": {
+    "value": "テイルズオブベルセリア",
     "translated": false
   },
-  "origin_732": {
-    "value": "わんだふるぷりきゅあ！",
+  "67": {
+    "value": "遊戯王",
     "translated": false
   },
-  "origin_798": {
-    "value": "DEATH NOTE",
+  "68": {
+    "value": "うる星やつら",
     "translated": false
   },
-  "origin_500": {
-    "value": "ひなビタ♪",
+  "69": {
+    "value": "魔法少女リリカルなのは",
     "translated": false
   },
-  "origin_635": {
-    "value": "逆転魔女裁判",
+  "70": {
+    "value": "デジモン",
     "translated": false
   },
-  "origin_679": {
-    "value": "究極進化したフルダイブRPGが現実よりもクソゲーだったら",
+  "71": {
+    "value": "ドロヘドロ",
     "translated": false
   },
-  "origin_809": {
-    "value": "よつばと!",
+  "72": {
+    "value": "けいおん！",
     "translated": false
   },
-  "origin_374": {
-    "value": "少女☆歌劇レヴュースタァライト",
+  "73": {
+    "value": "ドリームクラブ",
     "translated": false
   },
-  "origin_776": {
-    "value": "ダーティペア",
+  "74": {
+    "value": "対魔忍アサギ",
     "translated": false
   },
-  "origin_208": {
-    "value": "マジンガーZ",
+  "75": {
+    "value": "賭ケグルイ",
     "translated": false
   },
-  "origin_479": {
-    "value": "ピーター・グリルと賢者の時間",
+  "76": {
+    "value": "ガーリッシュナンバー",
     "translated": false
   },
-  "origin_613": {
-    "value": "ヒーリングっど♥プリキュア",
+  "77": {
+    "value": "ハズビンホテル",
     "translated": false
   },
-  "origin_545": {
-    "value": "サムライメイデン",
+  "78": {
+    "value": "ドルフロ(ドールズフロントライン)",
     "translated": false
   },
-  "origin_722": {
-    "value": "エイケン",
+  "79": {
+    "value": "もんむす・くえすと！",
     "translated": false
   },
-  "origin_523": {
-    "value": "4人はそれぞれウソをつく",
+  "80": {
+    "value": "FAIRY TAIL",
     "translated": false
   },
-  "origin_787": {
-    "value": "地縛少年花子くん",
+  "81": {
+    "value": "僕のヒーローアカデミア",
     "translated": false
   },
-  "origin_351": {
-    "value": "グランドチェイス",
+  "82": {
+    "value": "ダンガンロンパ",
     "translated": false
   },
-  "origin_625": {
-    "value": "ファイアーエムブレムヒーローズ",
+  "83": {
+    "value": "ブラック★ロックシューター",
     "translated": false
   },
-  "origin_636": {
-    "value": "バレットガールズファンタジア",
+  "84": {
+    "value": "超次元ゲイムネプテューヌ",
     "translated": false
   },
-  "origin_433": {
-    "value": "それでも町は廻っている",
+  "85": {
+    "value": "だがしかし",
     "translated": false
   },
-  "origin_701": {
-    "value": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…",
+  "86": {
+    "value": "ゼルダの伝説",
     "translated": false
   },
-  "origin_397": {
-    "value": "BIOSHOCK",
+  "87": {
+    "value": "ドラゴンボール",
     "translated": false
   },
-  "origin_669": {
-    "value": "機巧少女は傷つかない",
+  "88": {
+    "value": "TERA",
     "translated": false
   },
-  "origin_230": {
-    "value": "映像研には手を出すな！",
+  "89": {
+    "value": "絶対純白魔法少女",
     "translated": false
   },
-  "origin_501": {
-    "value": "タイムリープ",
+  "90": {
+    "value": "けものフレンズ",
     "translated": false
   },
-  "origin_680": {
-    "value": "The Citadel",
+  "93": {
+    "value": "とある科学の超電磁砲",
     "translated": false
   },
-  "origin_810": {
-    "value": "ファミレス戦士プリン",
+  "94": {
+    "value": "300英雄",
     "translated": false
   },
-  "origin_110": {
-    "value": "レッスルエンジェルス",
+  "95": {
+    "value": "ストリートファイター",
     "translated": false
   },
-  "origin_209": {
-    "value": "キリングバイツ",
+  "96": {
+    "value": "異種族レビュアーズ",
     "translated": false
   },
-  "origin_744": {
-    "value": "ヴァンドレッド",
+  "97": {
+    "value": "幼女戦記",
     "translated": false
   },
-  "origin_592": {
-    "value": "バットマン",
+  "98": {
+    "value": "私に天使が舞い降りた！",
     "translated": false
   },
-  "origin_558": {
-    "value": "ファイアーエムブレム 聖魔の光石",
+  "99": {
+    "value": "鬼滅の刃",
     "translated": false
   },
-  "origin_788": {
-    "value": "ハッピーシュガーライフ",
+  "100": {
+    "value": "フラワーナイトガール",
     "translated": false
   },
-  "origin_459": {
-    "value": "リトル・マーメイド",
+  "101": {
+    "value": "魔法少女まどか☆マギカ",
     "translated": false
   },
-  "origin_637": {
-    "value": "OCTOPATH TRAVELER(オクトパストラベラー)",
+  "102": {
+    "value": "ダーリン・イン・ザ・フランキス",
     "translated": false
   },
-  "origin_702": {
-    "value": "女神のカフェテラス",
+  "103": {
+    "value": "シャンティ",
     "translated": false
   },
-  "origin_133": {
-    "value": "アッシュアームズ",
+  "104": {
+    "value": "アークナイツ",
     "translated": false
   },
-  "origin_263": {
-    "value": "ファイナルファンタジー5",
-    "translated": false
-  },
-  "origin_800": {
-    "value": "あまいろショコラータ",
-    "translated": false
-  },
-  "origin_364": {
-    "value": "みつどもえ",
-    "translated": false
-  },
-  "origin_681": {
-    "value": "フォスターズ・ホーム",
-    "translated": false
-  },
-  "origin_811": {
-    "value": "幻想水滸伝",
-    "translated": false
-  },
-  "origin_377": {
-    "value": "ファイアーエムブレム",
-    "translated": false
-  },
-  "origin_514": {
-    "value": "カイの冒険",
-    "translated": false
-  },
-  "origin_582": {
-    "value": "天華百剣",
-    "translated": false
-  },
-  "origin_713": {
-    "value": "きんいろモザイク",
-    "translated": false
-  },
-  "origin_423": {
-    "value": "東京喰種",
-    "translated": false
-  },
-  "origin_559": {
-    "value": "ワンダーランズ",
-    "translated": false
-  },
-  "origin_692": {
-    "value": "エル・ドラド 黄金の都",
-    "translated": false
-  },
-  "origin_660": {
-    "value": "ロマンシングサガ3",
-    "translated": false
-  },
-  "origin_789": {
-    "value": "エルフさんは痩せられない。",
-    "translated": false
-  },
-  "origin_627": {
-    "value": "アクエリオンEVOL",
-    "translated": false
-  },
-  "origin_756": {
-    "value": "ズートピア",
-    "translated": false
-  },
-  "origin_460": {
-    "value": "アラジン",
-    "translated": false
-  },
-  "origin_768": {
-    "value": "幽☆遊☆白書",
-    "translated": false
-  },
-  "origin_332": {
-    "value": "俺、ツインテールになります。",
-    "translated": false
-  },
-  "origin_604": {
-    "value": "境界の彼方",
-    "translated": false
-  },
-  "origin_735": {
-    "value": "Wii Fit",
-    "translated": false
-  },
-  "origin_435": {
-    "value": "幻影異聞録♯FE",
-    "translated": false
-  },
-  "origin_571": {
-    "value": "戦国†恋姫",
-    "translated": false
-  },
-  "origin_703": {
-    "value": "蒼穹のファフナー",
-    "translated": false
-  },
-  "origin_264": {
-    "value": "狼と香辛料",
-    "translated": false
-  },
-  "origin_548": {
-    "value": "刀使ノ巫女",
-    "translated": false
-  },
-  "origin_812": {
-    "value": "魔法少女セレスフォニア",
-    "translated": false
-  },
-  "origin_779": {
-    "value": "ファイアーエムブレム 暁の女神",
-    "translated": false
-  },
-  "origin_616": {
-    "value": "SHIROBAKO",
-    "translated": false
-  },
-  "origin_746": {
-    "value": "シャイニング・ブレイド",
-    "translated": false
-  },
-  "origin_583": {
-    "value": "百花繚乱サムライブライド",
-    "translated": false
-  },
-  "origin_461": {
-    "value": "塔の上のラプンツェル",
-    "translated": false
-  },
-  "origin_725": {
-    "value": "ジュエルペットてぃんくる☆",
-    "translated": false
-  },
-  "origin_156": {
-    "value": "アドベンチャータイム",
-    "translated": false
-  },
-  "origin_254": {
-    "value": "零の軌跡",
-    "translated": false
-  },
-  "origin_790": {
-    "value": "ピーターパン",
-    "translated": false
-  },
-  "origin_354": {
-    "value": "ウィッチブレイド",
-    "translated": false
-  },
-  "origin_333": {
-    "value": "蒼き鋼のアルペジオ",
-    "translated": false
-  },
-  "origin_472": {
-    "value": "プロジェクトQT",
-    "translated": false
-  },
-  "origin_605": {
-    "value": "戦国ブレード",
-    "translated": false
-  },
-  "origin_168": {
-    "value": "つぐもも",
-    "translated": false
-  },
-  "origin_538": {
-    "value": "BLUE REFLECTION",
-    "translated": false
-  },
-  "origin_672": {
-    "value": "ニンジャスレイヤー",
-    "translated": false
-  },
-  "origin_413": {
-    "value": "阿波連さんははかれない",
-    "translated": false
-  },
-  "origin_683": {
-    "value": "望まぬ不死の冒険者",
-    "translated": false
-  },
-  "origin_651": {
-    "value": "かんなぎ",
-    "translated": false
-  },
-  "origin_780": {
-    "value": "仁王",
-    "translated": false
-  },
-  "origin_483": {
-    "value": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。",
-    "translated": false
-  },
-  "origin_180": {
-    "value": "バレットガールズ",
-    "translated": false
-  },
-  "origin_310": {
-    "value": "ときめきメモリアル2",
-    "translated": false
-  },
-  "origin_584": {
-    "value": "Honor of Kings",
-    "translated": false
-  },
-  "origin_595": {
-    "value": "Dr.STONE",
-    "translated": false
-  },
-  "origin_157": {
-    "value": "ローゼンメイデン",
-    "translated": false
-  },
-  "origin_694": {
-    "value": "怪奇ゾーングラビティフォールズ",
-    "translated": false
-  },
-  "origin_390": {
-    "value": "シャドウハーツ",
-    "translated": false
-  },
-  "origin_662": {
-    "value": "クッキーランキングダム",
-    "translated": false
-  },
-  "origin_791": {
-    "value": "ブラウンダスト2",
-    "translated": false
-  },
-  "origin_223": {
-    "value": "エミルクロニクルオンライン",
-    "translated": false
-  },
-  "origin_355": {
-    "value": "なんだかんだワンダー",
-    "translated": false
-  },
-  "origin_758": {
-    "value": "ラブライブ!スーパースター!!",
-    "translated": false
-  },
-  "origin_737": {
-    "value": "月が導く異世界道中",
-    "translated": false
-  },
-  "origin_298": {
-    "value": "軋轢のイデオローグ",
-    "translated": false
-  },
-  "origin_438": {
-    "value": "ApexLegends",
-    "translated": false
-  },
-  "origin_574": {
-    "value": "チェリーテイル",
-    "translated": false
-  },
-  "origin_266": {
-    "value": "恋姫†無双",
-    "translated": false
-  },
-  "origin_803": {
-    "value": "ユミアのアトリエ",
-    "translated": false
-  },
-  "origin_234": {
-    "value": "灼眼のシャナ",
-    "translated": false
-  },
-  "origin_551": {
-    "value": "アキバ冥途戦争",
-    "translated": false
-  },
-  "origin_684": {
-    "value": "ラストピリオド",
-    "translated": false
-  },
-  "origin_814": {
-    "value": "アベノ橋魔法☆商店街",
-    "translated": false
-  },
-  "origin_345": {
-    "value": "Meru the Succubus",
-    "translated": false
-  },
-  "origin_484": {
-    "value": "ひげを剃る。そして女子高生を拾う。",
-    "translated": false
-  },
-  "origin_748": {
-    "value": "クロノトリガー",
-    "translated": false
-  },
-  "origin_450": {
-    "value": "迷い猫オーバーラン!",
-    "translated": false
-  },
-  "origin_716": {
-    "value": "86-エイティシックス-",
-    "translated": false
-  },
-  "origin_323": {
-    "value": "神之塔",
-    "translated": false
-  },
-  "origin_288": {
-    "value": "イナズマイレブン",
-    "translated": false
-  },
-  "origin_695": {
-    "value": "放課後のプレアデス",
-    "translated": false
-  },
-  "origin_495": {
-    "value": "Spooky's Jump Scare Mansion",
-    "translated": false
-  },
-  "origin_630": {
-    "value": "ランスシリーズ",
-    "translated": false
-  },
-  "origin_759": {
-    "value": "マギ",
-    "translated": false
-  },
-  "origin_641": {
-    "value": "機動戦士ガンダム0083 STARDUST MEMORY",
-    "translated": false
-  },
-  "origin_474": {
-    "value": "はつゆきさくら",
-    "translated": false
-  },
-  "origin_299": {
-    "value": "天穂のサクナヒメ",
-    "translated": false
-  },
-  "origin_575": {
-    "value": "ソウルイーター",
-    "translated": false
-  },
-  "origin_706": {
-    "value": "モンスター娘のお医者さん",
-    "translated": false
-  },
-  "origin_403": {
-    "value": "SHOWBYROCK!!",
-    "translated": false
-  },
-  "origin_540": {
-    "value": "クラッシュ・バンディクー",
-    "translated": false
-  },
-  "origin_674": {
-    "value": "銀魂",
-    "translated": false
-  },
-  "origin_804": {
-    "value": "ガレリアの地下迷宮と魔女ノ旅団",
-    "translated": false
-  },
-  "origin_815": {
-    "value": "スティーブン・ユニバース",
-    "translated": false
-  },
-  "origin_381": {
-    "value": "UNITIA",
-    "translated": false
-  },
-  "origin_653": {
-    "value": "シンプソンズ",
-    "translated": false
-  },
-  "origin_782": {
-    "value": "ハズレ枠の【状態異常スキル】で最強になった俺がすべてを蹂躙するまで",
-    "translated": false
-  },
-  "origin_346": {
-    "value": "ファイナルファンタジー12",
-    "translated": false
-  },
-  "origin_620": {
-    "value": "くノ一ツバキの胸の内",
-    "translated": false
-  },
-  "origin_749": {
-    "value": "けんぷファー",
-    "translated": false
-  },
-  "origin_586": {
-    "value": "俺がお嬢様学校に「庶民サンプル」として拉致られた件",
-    "translated": false
-  },
-  "origin_597": {
-    "value": "異世界でチート能力を手にした俺は、現実世界をも無双する",
-    "translated": false
-  },
-  "origin_728": {
-    "value": "向日葵ハ夜ニ咲ク",
-    "translated": false
-  },
-  "origin_793": {
-    "value": "戦隊レッド 異世界で冒険者になる",
-    "translated": false
-  },
-  "origin_496": {
-    "value": "Bordelands（ボーダーランズ）",
-    "translated": false
-  },
-  "origin_760": {
-    "value": "ドラゴンクエスト4",
-    "translated": false
-  },
-  "origin_508": {
-    "value": "Ib",
-    "translated": false
-  },
-  "origin_642": {
-    "value": "機動戦士ガンダム",
-    "translated": false
-  },
-  "origin_772": {
-    "value": "黎の軌跡",
-    "translated": false
-  },
-  "origin_172": {
-    "value": "フォルト!!",
-    "translated": false
-  },
-  "origin_576": {
-    "value": "Devil May Cry",
-    "translated": false
-  },
-  "origin_707": {
-    "value": "明日ちゃんのセーラー服",
-    "translated": false
-  },
-  "origin_675": {
-    "value": "クレヨンしんちゃん",
-    "translated": false
-  },
-  "origin_279": {
-    "value": "ファイナルファンタジー9",
-    "translated": false
-  },
-  "origin_816": {
-    "value": "無限大Ananta",
-    "translated": false
-  },
-  "origin_654": {
-    "value": "スパイ教室",
-    "translated": false
-  },
-  "origin_486": {
-    "value": "ぷにるはかわいいスライム",
-    "translated": false
-  },
-  "origin_621": {
-    "value": "アニマニアックス",
-    "translated": false
-  },
-  "origin_452": {
-    "value": "メイプルストーリー",
-    "translated": false
-  },
-  "origin_465": {
-    "value": "ぷよぷよフィーバー",
-    "translated": false
-  },
-  "origin_729": {
-    "value": "BlackSurvival(ブラサバ)",
-    "translated": false
-  },
-  "origin_697": {
-    "value": "喫茶ステラと死神の蝶",
-    "translated": false
-  },
-  "origin_258": {
-    "value": "ガンダムビルドダイバーズ",
-    "translated": false
-  },
-  "origin_665": {
-    "value": "絶対可憐チルドレン",
-    "translated": false
-  },
-  "origin_794": {
-    "value": "コズミックブレイク",
-    "translated": false
-  },
-  "origin_762": {
-    "value": "好きな子がめがねを忘れた",
-    "translated": false
-  },
-  "origin_773": {
-    "value": "白聖女と黒牧師",
-    "translated": false
-  },
-  "origin_610": {
-    "value": "ロウきゅーぶ！",
-    "translated": false
-  },
-  "origin_269": {
-    "value": "Re:CREATORS",
-    "translated": false
-  },
-  "origin_405": {
-    "value": "アカツキ電光戦記",
-    "translated": false
-  },
-  "origin_806": {
-    "value": "六花の勇者",
-    "translated": false
-  },
-  "origin_105": {
+  "105": {
     "value": "てさぐれ!部活もの",
     "translated": false
   },
-  "origin_150": {
-    "value": "プリンセスと魔法のキス",
+  "106": {
+    "value": "GATE(ゲート) 自衛隊 彼の地にて、斯く戦えり",
     "translated": false
   },
-  "origin_418": {
-    "value": "エンジェルブレイド",
-    "translated": false
-  },
-  "origin_554": {
-    "value": "機動戦艦ナデシコ",
-    "translated": false
-  },
-  "origin_687": {
-    "value": "スカルガールズ",
-    "translated": false
-  },
-  "origin_817": {
-    "value": "魔装学園H×H",
-    "translated": false
-  },
-  "origin_784": {
-    "value": "ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います",
-    "translated": false
-  },
-  "origin_751": {
-    "value": "家庭教師ヒットマンREBORN!",
-    "translated": false
-  },
-  "origin_184": {
-    "value": "デモンベイン",
-    "translated": false
-  },
-  "origin_719": {
-    "value": "メリダとおそろしの森",
-    "translated": false
-  },
-  "origin_730": {
-    "value": "神次元ゲイム ネプテューヌV",
-    "translated": false
-  },
-  "origin_565": {
-    "value": "ハリーポッター",
-    "translated": false
-  },
-  "origin_666": {
-    "value": "ひきこまり吸血姫の悶々",
-    "translated": false
-  },
-  "origin_795": {
-    "value": "機動戦士ガンダム00",
-    "translated": false
-  },
-  "origin_774": {
-    "value": "嘆きの亡霊は引退したい",
-    "translated": false
-  },
-  "origin_611": {
-    "value": "ようこそ！スケベエルフの森へ",
-    "translated": false
-  },
-  "origin_741": {
-    "value": "ヴァルキリードライヴ マーメイド",
-    "translated": false
-  },
-  "origin_443": {
-    "value": "ぷよぷよ7",
-    "translated": false
-  },
-  "origin_270": {
-    "value": "アクセルワールド",
-    "translated": false
-  },
-  "origin_807": {
-    "value": "スーパーロボット大戦シリーズ",
-    "translated": false
-  },
-  "origin_555": {
-    "value": "戦艦少女",
-    "translated": false
-  },
-  "origin_688": {
-    "value": "ICEY",
-    "translated": false
-  },
-  "origin_249": {
-    "value": "色情教団",
-    "translated": false
-  },
-  "origin_521": {
-    "value": "#コンパス 戦闘摂理解析システム",
-    "translated": false
-  },
-  "origin_752": {
-    "value": "ティンクルスターナイツ",
-    "translated": false
-  },
-  "origin_185": {
-    "value": "ストラステラ",
-    "translated": false
-  },
-  "origin_315": {
-    "value": "めだかボックス",
-    "translated": false
-  },
-  "origin_467": {
-    "value": "ものべの",
-    "translated": false
-  },
-  "origin_600": {
-    "value": "虚構推理",
-    "translated": false
-  },
-  "origin_731": {
-    "value": "新次元ゲイムネプテューヌVⅡ",
-    "translated": false
-  },
-  "origin_566": {
-    "value": "超昂閃忍ハルカ",
-    "translated": false
-  },
-  "origin_667": {
-    "value": "魔法使いと黒猫のウィズ",
-    "translated": false
-  },
-  "origin_796": {
-    "value": "モンスターハンターワイルズ",
-    "translated": false
-  },
-  "origin_499": {
-    "value": "Dead by Daylight",
-    "translated": false
-  },
-  "origin_634": {
-    "value": "ふるーつふるきゅーと",
-    "translated": false
-  },
-  "origin_764": {
-    "value": "ガドガード",
-    "translated": false
-  },
-  "origin_808": {
-    "value": "テイルズオブグレイセス",
-    "translated": false
-  },
-  "origin_107": {
+  "107": {
     "value": "チップとデールの大作戦",
     "translated": false
   },
-  "origin_775": {
-    "value": "スパイダーマン:スパイダーバース",
+  "109": {
+    "value": "CODE VEIN",
     "translated": false
   },
-  "origin_339": {
+  "110": {
+    "value": "レッスルエンジェルス",
+    "translated": false
+  },
+  "111": {
+    "value": "ノーゲーム・ノーライフ",
+    "translated": false
+  },
+  "112": {
+    "value": "ケンガンアシュラ",
+    "translated": false
+  },
+  "113": {
+    "value": "夜ノヤッターマン",
+    "translated": false
+  },
+  "114": {
+    "value": "精霊使いの剣舞",
+    "translated": false
+  },
+  "115": {
+    "value": "アイドルマスターシャイニーカラーズ",
+    "translated": false
+  },
+  "116": {
+    "value": "ガンダムSEED",
+    "translated": false
+  },
+  "117": {
+    "value": "アリス・ギア・アイギス",
+    "translated": false
+  },
+  "118": {
+    "value": "ハイスクールD×D",
+    "translated": false
+  },
+  "119": {
+    "value": "ギルティギア",
+    "translated": false
+  },
+  "120": {
+    "value": "この素晴らしい世界に祝福を！",
+    "translated": false
+  },
+  "121": {
+    "value": "ONE PIECE",
+    "translated": false
+  },
+  "122": {
+    "value": "ワンパンマン",
+    "translated": false
+  },
+  "124": {
+    "value": "アナと雪の女王",
+    "translated": false
+  },
+  "125": {
+    "value": "淫獣聖戦",
+    "translated": false
+  },
+  "126": {
+    "value": "一騎当千",
+    "translated": false
+  },
+  "127": {
+    "value": "ドラゴンクエスト5",
+    "translated": false
+  },
+  "128": {
+    "value": "League of Legends",
+    "translated": false
+  },
+  "129": {
+    "value": "ヴァンパイアシリーズ",
+    "translated": false
+  },
+  "130": {
+    "value": "伝説対決-Arena of Valor-",
+    "translated": false
+  },
+  "131": {
+    "value": "エルソード",
+    "translated": false
+  },
+  "132": {
+    "value": "ファイナルファンタジー7",
+    "translated": false
+  },
+  "133": {
+    "value": "アッシュアームズ",
+    "translated": false
+  },
+  "134": {
+    "value": "ゼロの使い魔",
+    "translated": false
+  },
+  "135": {
+    "value": "ニーアレプリカント",
+    "translated": false
+  },
+  "136": {
+    "value": "まちカドまぞく",
+    "translated": false
+  },
+  "137": {
+    "value": "KOF",
+    "translated": false
+  },
+  "138": {
+    "value": "白猫プロジェクト",
+    "translated": false
+  },
+  "139": {
+    "value": "ゆるキャン△",
+    "translated": false
+  },
+  "140": {
+    "value": "ワイルドアームズ",
+    "translated": false
+  },
+  "141": {
+    "value": "メイドインワリオ",
+    "translated": false
+  },
+  "142": {
+    "value": "CLOSERS",
+    "translated": false
+  },
+  "143": {
+    "value": "ディスガイア",
+    "translated": false
+  },
+  "144": {
+    "value": "未来少年コナン",
+    "translated": false
+  },
+  "145": {
+    "value": "マケン姫っ！",
+    "translated": false
+  },
+  "146": {
+    "value": "メギド72",
+    "translated": false
+  },
+  "147": {
+    "value": "ファイアーエムブレム風花雪月",
+    "translated": false
+  },
+  "148": {
+    "value": "ドキドキ!プリキュア",
+    "translated": false
+  },
+  "149": {
+    "value": "ラブライブ!サンシャイン!!",
+    "translated": false
+  },
+  "150": {
+    "value": "プリンセスと魔法のキス",
+    "translated": false
+  },
+  "151": {
+    "value": "BAYONETTA",
+    "translated": false
+  },
+  "152": {
+    "value": "僕は友達が少ない",
+    "translated": false
+  },
+  "153": {
+    "value": "ダンジョンに出会いを求めるのは間違っているだろうか",
+    "translated": false
+  },
+  "154": {
+    "value": "青春ブタ野郎シリーズ",
+    "translated": false
+  },
+  "155": {
+    "value": "転生したらスライムだった件",
+    "translated": false
+  },
+  "156": {
+    "value": "アドベンチャータイム",
+    "translated": false
+  },
+  "157": {
+    "value": "ローゼンメイデン",
+    "translated": false
+  },
+  "158": {
+    "value": "アイアンサーガ",
+    "translated": false
+  },
+  "159": {
+    "value": "バイオハザード",
+    "translated": false
+  },
+  "160": {
+    "value": "テイルズオブシンフォニア",
+    "translated": false
+  },
+  "161": {
+    "value": "ティーンタイタンズGO!",
+    "translated": false
+  },
+  "162": {
+    "value": "オーバーロード",
+    "translated": false
+  },
+  "163": {
+    "value": "エロマンガ先生",
+    "translated": false
+  },
+  "165": {
+    "value": "通常攻撃が全体攻撃で二回攻撃のお母さんは好きですか？",
+    "translated": false
+  },
+  "166": {
+    "value": "魔法少女大戦",
+    "translated": false
+  },
+  "167": {
+    "value": "モンスター娘のいる日常",
+    "translated": false
+  },
+  "168": {
+    "value": "つぐもも",
+    "translated": false
+  },
+  "169": {
+    "value": "HELLSING",
+    "translated": false
+  },
+  "171": {
+    "value": "ネコぱら",
+    "translated": false
+  },
+  "172": {
+    "value": "フォルト!!",
+    "translated": false
+  },
+  "173": {
+    "value": "ガンダムビルドファイターズ",
+    "translated": false
+  },
+  "174": {
+    "value": "黒獣",
+    "translated": false
+  },
+  "175": {
+    "value": "ソウルキャリバー",
+    "translated": false
+  },
+  "176": {
+    "value": "ブレイブルー(BLAZBLUE)",
+    "translated": false
+  },
+  "177": {
+    "value": "とらドラ！",
+    "translated": false
+  },
+  "178": {
+    "value": "SSSS.GRIDMAN",
+    "translated": false
+  },
+  "179": {
+    "value": "りゅうおうのおしごと！",
+    "translated": false
+  },
+  "180": {
+    "value": "バレットガールズ",
+    "translated": false
+  },
+  "181": {
+    "value": "ドキドキ文芸部!(DDLC)",
+    "translated": false
+  },
+  "182": {
+    "value": "The Last Of Us",
+    "translated": false
+  },
+  "183": {
+    "value": "ゼノサーガ",
+    "translated": false
+  },
+  "184": {
+    "value": "デモンベイン",
+    "translated": false
+  },
+  "185": {
+    "value": "ストラステラ",
+    "translated": false
+  },
+  "186": {
+    "value": "フレームアームズ・ガール",
+    "translated": false
+  },
+  "187": {
+    "value": "物語シリーズ",
+    "translated": false
+  },
+  "188": {
+    "value": "Undertale",
+    "translated": false
+  },
+  "189": {
+    "value": "クイーンズブレイド",
+    "translated": false
+  },
+  "190": {
+    "value": "からかい上手の高木さん",
+    "translated": false
+  },
+  "191": {
+    "value": "未来日記",
+    "translated": false
+  },
+  "192": {
+    "value": "ゾンビランドサガ",
+    "translated": false
+  },
+  "193": {
+    "value": "ファイナルファンタジー10",
+    "translated": false
+  },
+  "194": {
+    "value": "テイルズオブヴェスペリア",
+    "translated": false
+  },
+  "195": {
+    "value": "ペルソナ5",
+    "translated": false
+  },
+  "196": {
+    "value": "ゼロマキナ",
+    "translated": false
+  },
+  "197": {
+    "value": "Marvel",
+    "translated": false
+  },
+  "198": {
+    "value": "A Hat in Time",
+    "translated": false
+  },
+  "199": {
+    "value": "ファイアーエムブレムif",
+    "translated": false
+  },
+  "200": {
+    "value": "食戟のソーマ",
+    "translated": false
+  },
+  "201": {
+    "value": "BNA",
+    "translated": false
+  },
+  "202": {
+    "value": "七つの大罪",
+    "translated": false
+  },
+  "203": {
+    "value": "メトロイド",
+    "translated": false
+  },
+  "204": {
+    "value": "ハピネスチャージプリキュア！",
+    "translated": false
+  },
+  "205": {
+    "value": "ロックマン",
+    "translated": false
+  },
+  "206": {
+    "value": "どうぶつの森",
+    "translated": false
+  },
+  "207": {
+    "value": "閃の軌跡",
+    "translated": false
+  },
+  "208": {
+    "value": "マジンガーZ",
+    "translated": false
+  },
+  "209": {
+    "value": "キリングバイツ",
+    "translated": false
+  },
+  "210": {
+    "value": "ハンターハンター",
+    "translated": false
+  },
+  "211": {
+    "value": "グレンラガン",
+    "translated": false
+  },
+  "212": {
+    "value": "ゴブリンスレイヤー",
+    "translated": false
+  },
+  "213": {
+    "value": "甘城ブリリアントパーク",
+    "translated": false
+  },
+  "214": {
+    "value": "八月のシンデレラナイン",
+    "translated": false
+  },
+  "215": {
+    "value": "ペルソナ4",
+    "translated": false
+  },
+  "216": {
+    "value": "世話やきキツネの仙狐さん",
+    "translated": false
+  },
+  "217": {
+    "value": "プリンセスコネクト！",
+    "translated": false
+  },
+  "218": {
+    "value": "ファイナルファンタジー15",
+    "translated": false
+  },
+  "219": {
+    "value": "マクロスF",
+    "translated": false
+  },
+  "220": {
+    "value": "終わりのセラフ",
+    "translated": false
+  },
+  "221": {
+    "value": "アイカツ！",
+    "translated": false
+  },
+  "222": {
+    "value": "蒼藍の誓い ブルーオース",
+    "translated": false
+  },
+  "223": {
+    "value": "エミルクロニクルオンライン",
+    "translated": false
+  },
+  "224": {
+    "value": "聖剣伝説3",
+    "translated": false
+  },
+  "225": {
+    "value": "アルカナハート",
+    "translated": false
+  },
+  "226": {
+    "value": "Helltaker",
+    "translated": false
+  },
+  "227": {
+    "value": "サモンナイト",
+    "translated": false
+  },
+  "228": {
+    "value": "BLEACH",
+    "translated": false
+  },
+  "229": {
+    "value": "ガヴリールドロップアウト",
+    "translated": false
+  },
+  "230": {
+    "value": "映像研には手を出すな！",
+    "translated": false
+  },
+  "231": {
+    "value": "のんのんびより",
+    "translated": false
+  },
+  "232": {
+    "value": "空の境界",
+    "translated": false
+  },
+  "233": {
+    "value": "はたらく細胞",
+    "translated": false
+  },
+  "234": {
+    "value": "灼眼のシャナ",
+    "translated": false
+  },
+  "235": {
+    "value": "魔法科高校の劣等生",
+    "translated": false
+  },
+  "236": {
+    "value": "イジらないで、長瀞さん",
+    "translated": false
+  },
+  "237": {
+    "value": "スターウォーズ",
+    "translated": false
+  },
+  "238": {
+    "value": "かぐや様は告らせたい",
+    "translated": false
+  },
+  "239": {
+    "value": "魔法つかいプリキュア！",
+    "translated": false
+  },
+  "240": {
+    "value": "モン娘☆は〜れむ",
+    "translated": false
+  },
+  "241": {
+    "value": "アイドルマスターミリオンライブ",
+    "translated": false
+  },
+  "242": {
+    "value": "まいてつ",
+    "translated": false
+  },
+  "243": {
+    "value": "モンスターハンター",
+    "translated": false
+  },
+  "244": {
+    "value": "はじめてのギャル",
+    "translated": false
+  },
+  "245": {
+    "value": "IS<インフィニット・ストラトス>",
+    "translated": false
+  },
+  "246": {
+    "value": "学園黙示録 HIGHSCHOOL OF THE DEAD",
+    "translated": false
+  },
+  "247": {
+    "value": "銀河鉄道999",
+    "translated": false
+  },
+  "248": {
+    "value": "ゼノブレイド",
+    "translated": false
+  },
+  "249": {
+    "value": "色情教団",
+    "translated": false
+  },
+  "250": {
+    "value": "キルラキル",
+    "translated": false
+  },
+  "251": {
+    "value": "UNI(アンダーナイト インヴァース)",
+    "translated": false
+  },
+  "252": {
+    "value": "ドラゴンクエスト3",
+    "translated": false
+  },
+  "253": {
+    "value": "ギルティクラウン",
+    "translated": false
+  },
+  "254": {
+    "value": "零の軌跡",
+    "translated": false
+  },
+  "255": {
+    "value": "ワルキューレロマンツェ",
+    "translated": false
+  },
+  "256": {
+    "value": "ニセコイ",
+    "translated": false
+  },
+  "257": {
+    "value": "マクロスΔ",
+    "translated": false
+  },
+  "258": {
+    "value": "ガンダムビルドダイバーズ",
+    "translated": false
+  },
+  "259": {
+    "value": "ゆるゆり",
+    "translated": false
+  },
+  "260": {
+    "value": "戦場のヴァルキュリア",
+    "translated": false
+  },
+  "261": {
+    "value": "デスティニーチャイルド",
+    "translated": false
+  },
+  "262": {
+    "value": "テイルズオブエクシリア",
+    "translated": false
+  },
+  "263": {
+    "value": "ファイナルファンタジー5",
+    "translated": false
+  },
+  "264": {
+    "value": "狼と香辛料",
+    "translated": false
+  },
+  "265": {
+    "value": "宇崎ちゃんは遊びたい！",
+    "translated": false
+  },
+  "266": {
+    "value": "恋姫†無双",
+    "translated": false
+  },
+  "267": {
+    "value": "無彩限のファントム・ワールド",
+    "translated": false
+  },
+  "268": {
+    "value": "うみねこのなく頃に",
+    "translated": false
+  },
+  "269": {
+    "value": "Re:CREATORS",
+    "translated": false
+  },
+  "270": {
+    "value": "アクセルワールド",
+    "translated": false
+  },
+  "271": {
+    "value": "異世界魔王と召喚少女の奴隷魔術",
+    "translated": false
+  },
+  "272": {
+    "value": "Dog Days",
+    "translated": false
+  },
+  "273": {
+    "value": "月曜日のたわわ",
+    "translated": false
+  },
+  "274": {
+    "value": "プリンセスティアーズ",
+    "translated": false
+  },
+  "275": {
+    "value": "ご注文はうさぎですか？",
+    "translated": false
+  },
+  "276": {
+    "value": "原神",
+    "translated": false
+  },
+  "277": {
+    "value": "装甲悪鬼村正",
+    "translated": false
+  },
+  "278": {
+    "value": "パニシング：グレイレイブン",
+    "translated": false
+  },
+  "279": {
+    "value": "ファイナルファンタジー9",
+    "translated": false
+  },
+  "280": {
+    "value": "彼女、お借りします",
+    "translated": false
+  },
+  "281": {
+    "value": "サムライスピリッツ",
+    "translated": false
+  },
+  "282": {
+    "value": "ソニック・ザ・ヘッジホッグ",
+    "translated": false
+  },
+  "283": {
+    "value": "炎炎ノ消防隊",
+    "translated": false
+  },
+  "284": {
+    "value": "ゲゲゲの鬼太郎",
+    "translated": false
+  },
+  "285": {
+    "value": "うたわれるもの",
+    "translated": false
+  },
+  "286": {
+    "value": "トゥームレイダー",
+    "translated": false
+  },
+  "287": {
+    "value": "スイートプリキュア♪",
+    "translated": false
+  },
+  "288": {
+    "value": "イナズマイレブン",
+    "translated": false
+  },
+  "289": {
+    "value": "謎の彼女X",
+    "translated": false
+  },
+  "290": {
+    "value": "Apex Legends",
+    "translated": false
+  },
+  "291": {
+    "value": "VALORANT",
+    "translated": false
+  },
+  "292": {
+    "value": "カウボーイビバップ",
+    "translated": false
+  },
+  "293": {
+    "value": "モータルコンバット",
+    "translated": false
+  },
+  "294": {
+    "value": "プリパラ",
+    "translated": false
+  },
+  "295": {
+    "value": "大番長",
+    "translated": false
+  },
+  "296": {
+    "value": "魔女の旅々",
+    "translated": false
+  },
+  "297": {
+    "value": "スターフォックス",
+    "translated": false
+  },
+  "298": {
+    "value": "軋轢のイデオローグ",
+    "translated": false
+  },
+  "299": {
+    "value": "天穂のサクナヒメ",
+    "translated": false
+  },
+  "300": {
+    "value": "ハンドレッド",
+    "translated": false
+  },
+  "301": {
+    "value": "沙耶の唄",
+    "translated": false
+  },
+  "303": {
+    "value": "リトルウィッチノベタ",
+    "translated": false
+  },
+  "304": {
+    "value": "サクラ大戦",
+    "translated": false
+  },
+  "305": {
+    "value": "古見さんは、コミュ症です。",
+    "translated": false
+  },
+  "306": {
+    "value": "ゴッドイーター",
+    "translated": false
+  },
+  "308": {
+    "value": "ソウルワーカー",
+    "translated": false
+  },
+  "309": {
+    "value": "攻殻機動隊",
+    "translated": false
+  },
+  "310": {
+    "value": "ときめきメモリアル2",
+    "translated": false
+  },
+  "311": {
+    "value": "School Days",
+    "translated": false
+  },
+  "312": {
+    "value": "ドラゴンクエスト11",
+    "translated": false
+  },
+  "313": {
+    "value": "超時空要塞マクロス",
+    "translated": false
+  },
+  "314": {
+    "value": "ドラえもん",
+    "translated": false
+  },
+  "315": {
+    "value": "めだかボックス",
+    "translated": false
+  },
+  "316": {
+    "value": "うちのメイドがウザすぎる!",
+    "translated": false
+  },
+  "318": {
+    "value": "甲鉄城のカバネリ",
+    "translated": false
+  },
+  "319": {
+    "value": "ブルーアーカイブ",
+    "translated": false
+  },
+  "320": {
+    "value": "はたらく細胞BLACK",
+    "translated": false
+  },
+  "321": {
+    "value": "魔法先生ネギま!",
+    "translated": false
+  },
+  "322": {
+    "value": "SSSS.DYNAZENON",
+    "translated": false
+  },
+  "323": {
+    "value": "神之塔",
+    "translated": false
+  },
+  "324": {
+    "value": "超昂大戦エスカレーション・ヒロインズ",
+    "translated": false
+  },
+  "325": {
+    "value": "ペルソナ3",
+    "translated": false
+  },
+  "326": {
+    "value": "無職転生",
+    "translated": false
+  },
+  "327": {
+    "value": "ストライクウィッチーズ",
+    "translated": false
+  },
+  "329": {
+    "value": "おーばーふろぉ",
+    "translated": false
+  },
+  "330": {
+    "value": "氷菓",
+    "translated": false
+  },
+  "331": {
+    "value": "ブレンド・S",
+    "translated": false
+  },
+  "332": {
+    "value": "俺、ツインテールになります。",
+    "translated": false
+  },
+  "333": {
+    "value": "蒼き鋼のアルペジオ",
+    "translated": false
+  },
+  "334": {
+    "value": "ふたりはプリキュア",
+    "translated": false
+  },
+  "335": {
+    "value": "チェンソーマン",
+    "translated": false
+  },
+  "336": {
+    "value": "ラブライブ!虹ヶ咲学園スクールアイドル同好会",
+    "translated": false
+  },
+  "337": {
+    "value": "プロジェクトセカイ",
+    "translated": false
+  },
+  "338": {
+    "value": "ひぐらしのなく頃に",
+    "translated": false
+  },
+  "339": {
     "value": "ぴちぴちピッチ",
     "translated": false
   },
-  "origin_478": {
-    "value": "戦翼のシグルドリーヴァ",
+  "340": {
+    "value": "ラストオリジン",
     "translated": false
   },
-  "origin_710": {
-    "value": "アマガミ",
+  "341": {
+    "value": "ファイナルファンタジー13",
     "translated": false
   },
-  "origin_407": {
+  "342": {
+    "value": "蜘蛛ですが、なにか？",
+    "translated": false
+  },
+  "343": {
+    "value": "NEWGAME!",
+    "translated": false
+  },
+  "344": {
+    "value": "ジャヒー様はくじけない!",
+    "translated": false
+  },
+  "345": {
+    "value": "Meru the Succubus",
+    "translated": false
+  },
+  "346": {
+    "value": "ファイナルファンタジー12",
+    "translated": false
+  },
+  "347": {
+    "value": "BanG Dream!（バンドリ！）",
+    "translated": false
+  },
+  "348": {
+    "value": "コードギアス",
+    "translated": false
+  },
+  "349": {
+    "value": "死神坊ちゃんと黒メイド",
+    "translated": false
+  },
+  "350": {
+    "value": "天体のメソッド",
+    "translated": false
+  },
+  "351": {
+    "value": "グランドチェイス",
+    "translated": false
+  },
+  "352": {
+    "value": "アブソリュート・デュオ",
+    "translated": false
+  },
+  "353": {
+    "value": "CLANNAD",
+    "translated": false
+  },
+  "354": {
+    "value": "ウィッチブレイド",
+    "translated": false
+  },
+  "355": {
+    "value": "なんだかんだワンダー",
+    "translated": false
+  },
+  "356": {
+    "value": "ストライク・ザ・ブラッド",
+    "translated": false
+  },
+  "357": {
+    "value": "パルテナの鏡",
+    "translated": false
+  },
+  "358": {
+    "value": "斗羅大陸",
+    "translated": false
+  },
+  "359": {
+    "value": "ダンベル何キロ持てる？",
+    "translated": false
+  },
+  "360": {
+    "value": "魔都精兵のスレイブ",
+    "translated": false
+  },
+  "361": {
+    "value": "這いよれ! ニャル子さん",
+    "translated": false
+  },
+  "363": {
+    "value": "魔法の天使クリィミーマミ",
+    "translated": false
+  },
+  "364": {
+    "value": "みつどもえ",
+    "translated": false
+  },
+  "365": {
+    "value": "ああっ女神さまっ",
+    "translated": false
+  },
+  "366": {
+    "value": "おしえて!ギャル子ちゃん",
+    "translated": false
+  },
+  "367": {
+    "value": "その着せ替え人形は恋をする",
+    "translated": false
+  },
+  "369": {
+    "value": "戦国無双",
+    "translated": false
+  },
+  "370": {
+    "value": "天下布魔",
+    "translated": false
+  },
+  "371": {
+    "value": "ファイアーエムブレム覚醒",
+    "translated": false
+  },
+  "372": {
+    "value": "ドーナドーナ",
+    "translated": false
+  },
+  "373": {
+    "value": "ボンバーガール",
+    "translated": false
+  },
+  "374": {
+    "value": "少女☆歌劇レヴュースタァライト",
+    "translated": false
+  },
+  "375": {
+    "value": "パパのいうことを聞きなさい!",
+    "translated": false
+  },
+  "377": {
+    "value": "ファイアーエムブレム",
+    "translated": false
+  },
+  "378": {
+    "value": "ファイアーエムブレム 烈火の剣",
+    "translated": false
+  },
+  "379": {
+    "value": "少女戦機ソウルイーター",
+    "translated": false
+  },
+  "380": {
+    "value": "エルデンリング",
+    "translated": false
+  },
+  "381": {
+    "value": "UNITIA",
+    "translated": false
+  },
+  "382": {
+    "value": "アバター伝説の少年アン",
+    "translated": false
+  },
+  "384": {
+    "value": "見える子ちゃん",
+    "translated": false
+  },
+  "385": {
+    "value": "小女ラムネ",
+    "translated": false
+  },
+  "386": {
+    "value": "スパイファミリー",
+    "translated": false
+  },
+  "387": {
+    "value": "アイドルマスタースターリットシーズン",
+    "translated": false
+  },
+  "388": {
+    "value": "地獄先生ぬ～べ～",
+    "translated": false
+  },
+  "389": {
+    "value": "ルーンファクトリーシリーズ",
+    "translated": false
+  },
+  "390": {
+    "value": "シャドウハーツ",
+    "translated": false
+  },
+  "391": {
+    "value": "IdentityV(第五人格)",
+    "translated": false
+  },
+  "392": {
+    "value": "崩壊:スターレイル",
+    "translated": false
+  },
+  "393": {
+    "value": "宝石姫",
+    "translated": false
+  },
+  "394": {
+    "value": "ありふれた職業で世界最強",
+    "translated": false
+  },
+  "396": {
+    "value": "新妹魔王の契約者",
+    "translated": false
+  },
+  "397": {
+    "value": "BIOSHOCK",
+    "translated": false
+  },
+  "398": {
+    "value": "パリピ孔明",
+    "translated": false
+  },
+  "399": {
+    "value": "エーテルゲイザー(深空之眼/Aether Gazer)",
+    "translated": false
+  },
+  "401": {
+    "value": "とある魔術の禁書目録",
+    "translated": false
+  },
+  "402": {
+    "value": "名探偵コナン",
+    "translated": false
+  },
+  "403": {
+    "value": "SHOWBYROCK!!",
+    "translated": false
+  },
+  "404": {
+    "value": "可愛いだけじゃない式守さん",
+    "translated": false
+  },
+  "405": {
+    "value": "アカツキ電光戦記",
+    "translated": false
+  },
+  "406": {
+    "value": "MUGEN",
+    "translated": false
+  },
+  "407": {
     "value": "骸骨騎士様、只今異世界へお出掛け中",
     "translated": false
   },
-  "origin_544": {
+  "409": {
+    "value": "乙女ゲー世界はモブに厳しい世界です",
+    "translated": false
+  },
+  "410": {
+    "value": "このヒーラー、めんどくさい",
+    "translated": false
+  },
+  "411": {
+    "value": "餓狼伝説",
+    "translated": false
+  },
+  "412": {
+    "value": "我が家のリリアナさん",
+    "translated": false
+  },
+  "413": {
+    "value": "阿波連さんははかれない",
+    "translated": false
+  },
+  "414": {
+    "value": "回復術士のやり直し",
+    "translated": false
+  },
+  "416": {
+    "value": "スプラトゥーン",
+    "translated": false
+  },
+  "417": {
+    "value": "キラッとプリ☆チャン",
+    "translated": false
+  },
+  "418": {
+    "value": "エンジェルブレイド",
+    "translated": false
+  },
+  "419": {
+    "value": "世紀末オカルト学院",
+    "translated": false
+  },
+  "420": {
+    "value": "おジャ魔女どれみ",
+    "translated": false
+  },
+  "421": {
+    "value": "メイドインアビス",
+    "translated": false
+  },
+  "422": {
+    "value": "舞-HiME",
+    "translated": false
+  },
+  "423": {
+    "value": "東京喰種",
+    "translated": false
+  },
+  "424": {
+    "value": "真・三國無双",
+    "translated": false
+  },
+  "425": {
+    "value": "ヴァンガードプリンセス",
+    "translated": false
+  },
+  "426": {
+    "value": "異世界おじさん",
+    "translated": false
+  },
+  "427": {
+    "value": "ようこそ実力至上主義の教室へ",
+    "translated": false
+  },
+  "429": {
+    "value": "バーチャファイター",
+    "translated": false
+  },
+  "430": {
+    "value": "シャイニング・レゾナンス",
+    "translated": false
+  },
+  "431": {
+    "value": "金装のヴェルメイユ",
+    "translated": false
+  },
+  "432": {
+    "value": "シュタインズゲート",
+    "translated": false
+  },
+  "433": {
+    "value": "それでも町は廻っている",
+    "translated": false
+  },
+  "434": {
+    "value": "リコリス・リコイル",
+    "translated": false
+  },
+  "435": {
+    "value": "幻影異聞録♯FE",
+    "translated": false
+  },
+  "436": {
+    "value": "サイバーパンク2077",
+    "translated": false
+  },
+  "438": {
+    "value": "ApexLegends",
+    "translated": false
+  },
+  "440": {
+    "value": "YandereSimulator",
+    "translated": false
+  },
+  "441": {
+    "value": "ゼノブレイド3",
+    "translated": false
+  },
+  "442": {
+    "value": "幻塔(Tower of Fantasy)",
+    "translated": false
+  },
+  "443": {
+    "value": "ぷよぷよ7",
+    "translated": false
+  },
+  "444": {
+    "value": "よふかしのうた",
+    "translated": false
+  },
+  "445": {
+    "value": "咲-Saki-",
+    "translated": false
+  },
+  "446": {
+    "value": "ブラックレイヴン",
+    "translated": false
+  },
+  "447": {
+    "value": "アカメが斬る!",
+    "translated": false
+  },
+  "448": {
+    "value": "ベイマックス",
+    "translated": false
+  },
+  "449": {
+    "value": "ゼンレスゾーンゼロ(ゼンゼロ)",
+    "translated": false
+  },
+  "450": {
+    "value": "迷い猫オーバーラン!",
+    "translated": false
+  },
+  "451": {
+    "value": "ファイナルファンタジー14",
+    "translated": false
+  },
+  "452": {
+    "value": "メイプルストーリー",
+    "translated": false
+  },
+  "453": {
+    "value": "ウィッチャー（The Witcher）",
+    "translated": false
+  },
+  "455": {
+    "value": "コイカツ！",
+    "translated": false
+  },
+  "456": {
+    "value": "インジャスティス2（Injustice2）",
+    "translated": false
+  },
+  "457": {
+    "value": "呪術廻戦",
+    "translated": false
+  },
+  "459": {
+    "value": "リトル・マーメイド",
+    "translated": false
+  },
+  "460": {
+    "value": "アラジン",
+    "translated": false
+  },
+  "461": {
+    "value": "塔の上のラプンツェル",
+    "translated": false
+  },
+  "462": {
+    "value": "異世界迷宮でハーレムを",
+    "translated": false
+  },
+  "463": {
+    "value": "MY LITTLE PONY",
+    "translated": false
+  },
+  "464": {
+    "value": "ブレイドアンドソウル（Blade & Soul）",
+    "translated": false
+  },
+  "465": {
+    "value": "ぷよぷよフィーバー",
+    "translated": false
+  },
+  "466": {
+    "value": "サイバーパンク エッジランナーズ",
+    "translated": false
+  },
+  "467": {
+    "value": "ものべの",
+    "translated": false
+  },
+  "468": {
+    "value": "アサルトリリィ",
+    "translated": false
+  },
+  "469": {
+    "value": "監獄学園",
+    "translated": false
+  },
+  "470": {
+    "value": "冴えない彼女の育てかた",
+    "translated": false
+  },
+  "471": {
+    "value": "陰陽師",
+    "translated": false
+  },
+  "472": {
+    "value": "プロジェクトQT",
+    "translated": false
+  },
+  "473": {
+    "value": "先輩がうざい後輩の話",
+    "translated": false
+  },
+  "474": {
+    "value": "はつゆきさくら",
+    "translated": false
+  },
+  "475": {
+    "value": "シャイニングニキ",
+    "translated": false
+  },
+  "476": {
+    "value": "Warframe",
+    "translated": false
+  },
+  "477": {
+    "value": "ハヤテのごとく",
+    "translated": false
+  },
+  "478": {
+    "value": "戦翼のシグルドリーヴァ",
+    "translated": false
+  },
+  "479": {
+    "value": "ピーター・グリルと賢者の時間",
+    "translated": false
+  },
+  "480": {
+    "value": "デ・ジ・キャラット",
+    "translated": false
+  },
+  "481": {
+    "value": "ぼくたちは勉強ができない",
+    "translated": false
+  },
+  "482": {
+    "value": "ブレイカーズ",
+    "translated": false
+  },
+  "483": {
+    "value": "追放されたチート付与魔術師は気ままなセカンドライフを謳歌する。",
+    "translated": false
+  },
+  "484": {
+    "value": "ひげを剃る。そして女子高生を拾う。",
+    "translated": false
+  },
+  "485": {
+    "value": "奴隷との生活 -Teaching Feeling-",
+    "translated": false
+  },
+  "486": {
+    "value": "ぷにるはかわいいスライム",
+    "translated": false
+  },
+  "487": {
+    "value": "どろろ",
+    "translated": false
+  },
+  "488": {
+    "value": "ドルフィンウェーブ",
+    "translated": false
+  },
+  "489": {
+    "value": "七つの美徳",
+    "translated": false
+  },
+  "490": {
+    "value": "メルクストーリア",
+    "translated": false
+  },
+  "491": {
+    "value": "World of Warcraft",
+    "translated": false
+  },
+  "492": {
+    "value": "ファイアーエムブレム紋章の謎",
+    "translated": false
+  },
+  "493": {
+    "value": "モンスター・ホテル",
+    "translated": false
+  },
+  "494": {
+    "value": "アイ・アム・マジカミ",
+    "translated": false
+  },
+  "495": {
+    "value": "Spooky's Jump Scare Mansion",
+    "translated": false
+  },
+  "496": {
+    "value": "Bordelands（ボーダーランズ）",
+    "translated": false
+  },
+  "497": {
+    "value": "トロピカル～ジュ！プリキュア",
+    "translated": false
+  },
+  "498": {
+    "value": "千年戦争アイギス",
+    "translated": false
+  },
+  "499": {
+    "value": "Dead by Daylight",
+    "translated": false
+  },
+  "500": {
+    "value": "ひなビタ♪",
+    "translated": false
+  },
+  "501": {
+    "value": "タイムリープ",
+    "translated": false
+  },
+  "502": {
+    "value": "境界線上のホライゾン",
+    "translated": false
+  },
+  "503": {
+    "value": "ニケ（勝利の女神:NIKKE）",
+    "translated": false
+  },
+  "504": {
+    "value": "機動戦士ガンダム 水星の魔女",
+    "translated": false
+  },
+  "506": {
+    "value": "橘さん家ノ男性事情",
+    "translated": false
+  },
+  "507": {
+    "value": "ファイアーエムブレムEchoes",
+    "translated": false
+  },
+  "508": {
+    "value": "Ib",
+    "translated": false
+  },
+  "509": {
+    "value": "不徳のギルド",
+    "translated": false
+  },
+  "510": {
+    "value": "リトルウィッチアカデミア",
+    "translated": false
+  },
+  "511": {
+    "value": "フォートナイト",
+    "translated": false
+  },
+  "512": {
+    "value": "らんま1/2",
+    "translated": false
+  },
+  "513": {
+    "value": "ベン10",
+    "translated": false
+  },
+  "514": {
+    "value": "カイの冒険",
+    "translated": false
+  },
+  "515": {
+    "value": "キングダムハーツ",
+    "translated": false
+  },
+  "516": {
+    "value": "Yes！プリキュア5",
+    "translated": false
+  },
+  "517": {
+    "value": "LOVELY×CATION",
+    "translated": false
+  },
+  "518": {
+    "value": "テイルズオブゼスティリア",
+    "translated": false
+  },
+  "519": {
+    "value": "シスタープリンセス",
+    "translated": false
+  },
+  "520": {
+    "value": "犬夜叉",
+    "translated": false
+  },
+  "521": {
+    "value": "#コンパス 戦闘摂理解析システム",
+    "translated": false
+  },
+  "522": {
+    "value": "ルーニー・テューンズ",
+    "translated": false
+  },
+  "523": {
+    "value": "4人はそれぞれウソをつく",
+    "translated": false
+  },
+  "525": {
+    "value": "Mr.インクレディブル",
+    "translated": false
+  },
+  "526": {
+    "value": "スクービー・ドゥー",
+    "translated": false
+  },
+  "527": {
+    "value": "パロディウス",
+    "translated": false
+  },
+  "528": {
+    "value": "ティーンタイタンズ",
+    "translated": false
+  },
+  "529": {
+    "value": "Five Nights at Freddy's",
+    "translated": false
+  },
+  "530": {
+    "value": "ジョジョの奇妙な冒険",
+    "translated": false
+  },
+  "531": {
+    "value": "ぼっち・ざ・ろっく！",
+    "translated": false
+  },
+  "532": {
+    "value": "ザ・スーサイド・スクワッド",
+    "translated": false
+  },
+  "533": {
+    "value": "ヨスガノソラ",
+    "translated": false
+  },
+  "534": {
+    "value": "あやかしランブル！",
+    "translated": false
+  },
+  "535": {
+    "value": "マビノギ英雄伝",
+    "translated": false
+  },
+  "536": {
+    "value": "ミストトレインガールズ",
+    "translated": false
+  },
+  "537": {
+    "value": "シャドーハウス",
+    "translated": false
+  },
+  "538": {
+    "value": "BLUE REFLECTION",
+    "translated": false
+  },
+  "539": {
+    "value": "ヨルムンガンド",
+    "translated": false
+  },
+  "540": {
+    "value": "クラッシュ・バンディクー",
+    "translated": false
+  },
+  "541": {
+    "value": "魔法少女育成計画",
+    "translated": false
+  },
+  "542": {
+    "value": "魔入りました!入間くん",
+    "translated": false
+  },
+  "543": {
+    "value": "Horizon",
+    "translated": false
+  },
+  "544": {
     "value": "デュエルマスターズ",
+    "translated": false
+  },
+  "545": {
+    "value": "サムライメイデン",
+    "translated": false
+  },
+  "547": {
+    "value": "お兄ちゃんはおしまい！",
+    "translated": false
+  },
+  "548": {
+    "value": "刀使ノ巫女",
+    "translated": false
+  },
+  "549": {
+    "value": "機動戦士ガンダムΖΖ",
+    "translated": false
+  },
+  "551": {
+    "value": "アキバ冥途戦争",
+    "translated": false
+  },
+  "552": {
+    "value": "スパイダーマン",
+    "translated": false
+  },
+  "553": {
+    "value": "鬼父",
+    "translated": false
+  },
+  "554": {
+    "value": "機動戦艦ナデシコ",
+    "translated": false
+  },
+  "555": {
+    "value": "戦艦少女",
+    "translated": false
+  },
+  "556": {
+    "value": "マクロス7",
+    "translated": false
+  },
+  "557": {
+    "value": "COUNTER:SIDE",
+    "translated": false
+  },
+  "558": {
+    "value": "ファイアーエムブレム 聖魔の光石",
+    "translated": false
+  },
+  "559": {
+    "value": "ワンダーランズ",
+    "translated": false
+  },
+  "560": {
+    "value": "トモちゃんは女の子！",
+    "translated": false
+  },
+  "561": {
+    "value": "Atomic Heart",
+    "translated": false
+  },
+  "562": {
+    "value": "獣魂戦隊ジュウソルジャー",
+    "translated": false
+  },
+  "563": {
+    "value": "To Heart",
+    "translated": false
+  },
+  "564": {
+    "value": "女拳主義F-IST",
+    "translated": false
+  },
+  "565": {
+    "value": "ハリーポッター",
+    "translated": false
+  },
+  "566": {
+    "value": "超昂閃忍ハルカ",
+    "translated": false
+  },
+  "567": {
+    "value": "HUGっと!プリキュア",
+    "translated": false
+  },
+  "569": {
+    "value": "ひろがるスカイ!プリキュア",
+    "translated": false
+  },
+  "570": {
+    "value": "陰の実力者になりたくて！",
+    "translated": false
+  },
+  "571": {
+    "value": "戦国†恋姫",
+    "translated": false
+  },
+  "573": {
+    "value": "デリシャスパーティ♡プリキュア",
+    "translated": false
+  },
+  "574": {
+    "value": "チェリーテイル",
+    "translated": false
+  },
+  "575": {
+    "value": "ソウルイーター",
+    "translated": false
+  },
+  "576": {
+    "value": "Devil May Cry",
+    "translated": false
+  },
+  "577": {
+    "value": "LOLLIPOP CHAINSAW(ロリポップチェーンソー)",
+    "translated": false
+  },
+  "578": {
+    "value": "地獄楽",
+    "translated": false
+  },
+  "579": {
+    "value": "【推しの子】",
+    "translated": false
+  },
+  "580": {
+    "value": "ロザリオとバンパイア",
+    "translated": false
+  },
+  "581": {
+    "value": "レジェンド･オブ･コーラ",
+    "translated": false
+  },
+  "582": {
+    "value": "天華百剣",
+    "translated": false
+  },
+  "583": {
+    "value": "百花繚乱サムライブライド",
+    "translated": false
+  },
+  "584": {
+    "value": "Honor of Kings",
+    "translated": false
+  },
+  "585": {
+    "value": "キングスレイド",
+    "translated": false
+  },
+  "586": {
+    "value": "俺がお嬢様学校に「庶民サンプル」として拉致られた件",
+    "translated": false
+  },
+  "587": {
+    "value": "ゴッド・オブ・ウォー",
+    "translated": false
+  },
+  "588": {
+    "value": "Minecraft",
+    "translated": false
+  },
+  "589": {
+    "value": "ワンダーウーマン",
+    "translated": false
+  },
+  "590": {
+    "value": "NINJA GAIDEN",
+    "translated": false
+  },
+  "591": {
+    "value": "ファイナルファンタジー8",
+    "translated": false
+  },
+  "592": {
+    "value": "バットマン",
+    "translated": false
+  },
+  "593": {
+    "value": "光翼戦姫エクスティア",
+    "translated": false
+  },
+  "594": {
+    "value": "スマイルプリキュア！",
+    "translated": false
+  },
+  "595": {
+    "value": "Dr.STONE",
+    "translated": false
+  },
+  "596": {
+    "value": "世界樹の迷宮",
+    "translated": false
+  },
+  "597": {
+    "value": "異世界でチート能力を手にした俺は、現実世界をも無双する",
+    "translated": false
+  },
+  "598": {
+    "value": "コレクター・ユイ",
+    "translated": false
+  },
+  "599": {
+    "value": "GANTZ",
+    "translated": false
+  },
+  "600": {
+    "value": "虚構推理",
+    "translated": false
+  },
+  "601": {
+    "value": "アーマード・コア",
+    "translated": false
+  },
+  "602": {
+    "value": "ガンダムEXA VS",
+    "translated": false
+  },
+  "603": {
+    "value": "Strinova(ストリノヴァ/卡拉彼丘)",
+    "translated": false
+  },
+  "604": {
+    "value": "境界の彼方",
+    "translated": false
+  },
+  "605": {
+    "value": "戦国ブレード",
+    "translated": false
+  },
+  "606": {
+    "value": "僕の心のヤバイやつ",
+    "translated": false
+  },
+  "608": {
+    "value": "神無き世界のカミサマ活動",
+    "translated": false
+  },
+  "609": {
+    "value": "ルパン三世",
+    "translated": false
+  },
+  "610": {
+    "value": "ロウきゅーぶ！",
+    "translated": false
+  },
+  "611": {
+    "value": "ようこそ！スケベエルフの森へ",
+    "translated": false
+  },
+  "612": {
+    "value": "対魔忍GOGO",
+    "translated": false
+  },
+  "613": {
+    "value": "ヒーリングっど♥プリキュア",
+    "translated": false
+  },
+  "614": {
+    "value": "WORKING!!",
+    "translated": false
+  },
+  "615": {
+    "value": "ブラッククローバー",
+    "translated": false
+  },
+  "616": {
+    "value": "SHIROBAKO",
+    "translated": false
+  },
+  "618": {
+    "value": "ヘルヴァ・ボス(Helluvaboss)",
+    "translated": false
+  },
+  "619": {
+    "value": "お隣の天使様にいつの間にか駄目人間にされていた件",
+    "translated": false
+  },
+  "620": {
+    "value": "くノ一ツバキの胸の内",
+    "translated": false
+  },
+  "621": {
+    "value": "アニマニアックス",
+    "translated": false
+  },
+  "622": {
+    "value": "ゾン100〜ゾンビになるまでにしたい100のこと〜",
+    "translated": false
+  },
+  "623": {
+    "value": "ラブライブ!蓮ノ空女学院スクールアイドル",
+    "translated": false
+  },
+  "624": {
+    "value": "スノウブレイク：禁域降臨",
+    "translated": false
+  },
+  "625": {
+    "value": "ファイアーエムブレムヒーローズ",
+    "translated": false
+  },
+  "626": {
+    "value": "ファイナルファンタジー6",
+    "translated": false
+  },
+  "627": {
+    "value": "アクエリオンEVOL",
+    "translated": false
+  },
+  "628": {
+    "value": "アダムス・ファミリー",
+    "translated": false
+  },
+  "629": {
+    "value": "痛いのは嫌なので防御力に極振りしたいと思います。",
+    "translated": false
+  },
+  "630": {
+    "value": "ランスシリーズ",
+    "translated": false
+  },
+  "631": {
+    "value": "アイアンマン",
+    "translated": false
+  },
+  "632": {
+    "value": "ガンダムビルドファイターズトライ",
+    "translated": false
+  },
+  "633": {
+    "value": "邪神ちゃんドロップキック",
+    "translated": false
+  },
+  "634": {
+    "value": "ふるーつふるきゅーと",
+    "translated": false
+  },
+  "635": {
+    "value": "逆転魔女裁判",
+    "translated": false
+  },
+  "636": {
+    "value": "バレットガールズファンタジア",
+    "translated": false
+  },
+  "637": {
+    "value": "OCTOPATH TRAVELER(オクトパストラベラー)",
+    "translated": false
+  },
+  "638": {
+    "value": "葬送のフリーレン",
+    "translated": false
+  },
+  "639": {
+    "value": "ファイアーエムブレム エンゲージ",
+    "translated": false
+  },
+  "640": {
+    "value": "ロマンシングサガ2",
+    "translated": false
+  },
+  "641": {
+    "value": "機動戦士ガンダム0083 STARDUST MEMORY",
+    "translated": false
+  },
+  "642": {
+    "value": "機動戦士ガンダム",
+    "translated": false
+  },
+  "643": {
+    "value": "催眠性指導",
+    "translated": false
+  },
+  "645": {
+    "value": "オンゲキ",
+    "translated": false
+  },
+  "646": {
+    "value": "リング",
+    "translated": false
+  },
+  "647": {
+    "value": "ARIA",
+    "translated": false
+  },
+  "648": {
+    "value": "ケロロ軍曹",
+    "translated": false
+  },
+  "649": {
+    "value": "経験済みなキミと、 経験ゼロなオレが、 お付き合いする話。",
+    "translated": false
+  },
+  "650": {
+    "value": "RIDDLE JOKER",
+    "translated": false
+  },
+  "651": {
+    "value": "かんなぎ",
+    "translated": false
+  },
+  "652": {
+    "value": "無双OROCHI",
+    "translated": false
+  },
+  "653": {
+    "value": "シンプソンズ",
+    "translated": false
+  },
+  "654": {
+    "value": "スパイ教室",
+    "translated": false
+  },
+  "655": {
+    "value": "ガキ巨乳",
+    "translated": false
+  },
+  "657": {
+    "value": "サイレントヒル",
+    "translated": false
+  },
+  "658": {
+    "value": "アークナイツ：エンドフィールド",
+    "translated": false
+  },
+  "659": {
+    "value": "閃乱忍忍忍者大戦ネプテューヌ",
+    "translated": false
+  },
+  "660": {
+    "value": "ロマンシングサガ3",
+    "translated": false
+  },
+  "661": {
+    "value": "監獄戦艦",
+    "translated": false
+  },
+  "662": {
+    "value": "クッキーランキングダム",
+    "translated": false
+  },
+  "663": {
+    "value": "JKビッチに搾られたい",
+    "translated": false
+  },
+  "664": {
+    "value": "ライズ・オブ・エロス",
+    "translated": false
+  },
+  "665": {
+    "value": "絶対可憐チルドレン",
+    "translated": false
+  },
+  "666": {
+    "value": "ひきこまり吸血姫の悶々",
+    "translated": false
+  },
+  "667": {
+    "value": "魔法使いと黒猫のウィズ",
+    "translated": false
+  },
+  "668": {
+    "value": "鳴潮(Wuthering Waves)",
+    "translated": false
+  },
+  "669": {
+    "value": "機巧少女は傷つかない",
+    "translated": false
+  },
+  "670": {
+    "value": "魔法少女にあこがれて",
+    "translated": false
+  },
+  "671": {
+    "value": "ニューラルクラウド",
+    "translated": false
+  },
+  "672": {
+    "value": "ニンジャスレイヤー",
+    "translated": false
+  },
+  "673": {
+    "value": "純愛メロウ",
+    "translated": false
+  },
+  "674": {
+    "value": "銀魂",
+    "translated": false
+  },
+  "675": {
+    "value": "クレヨンしんちゃん",
+    "translated": false
+  },
+  "676": {
+    "value": "X-MEN",
+    "translated": false
+  },
+  "677": {
+    "value": "パルワールド",
+    "translated": false
+  },
+  "678": {
+    "value": "薬屋のひとりごと",
+    "translated": false
+  },
+  "679": {
+    "value": "究極進化したフルダイブRPGが現実よりもクソゲーだったら",
+    "translated": false
+  },
+  "680": {
+    "value": "The Citadel",
+    "translated": false
+  },
+  "681": {
+    "value": "フォスターズ・ホーム",
+    "translated": false
+  },
+  "682": {
+    "value": "デジモンストーリーサイバースルゥース",
+    "translated": false
+  },
+  "683": {
+    "value": "望まぬ不死の冒険者",
+    "translated": false
+  },
+  "684": {
+    "value": "ラストピリオド",
+    "translated": false
+  },
+  "685": {
+    "value": "デジモンワールド　リ：デジタイズ",
+    "translated": false
+  },
+  "686": {
+    "value": "DOAXVV(デッドオアアライブエクストリームヴィーナスバケーション)",
+    "translated": false
+  },
+  "687": {
+    "value": "スカルガールズ",
+    "translated": false
+  },
+  "688": {
+    "value": "ICEY",
+    "translated": false
+  },
+  "689": {
+    "value": "魔界ウォーズ",
+    "translated": false
+  },
+  "690": {
+    "value": "フリージング",
+    "translated": false
+  },
+  "691": {
+    "value": "ミラキュラス レディバグ＆シャノワール",
+    "translated": false
+  },
+  "692": {
+    "value": "エル・ドラド 黄金の都",
+    "translated": false
+  },
+  "693": {
+    "value": "Cult of the Lamb",
+    "translated": false
+  },
+  "694": {
+    "value": "怪奇ゾーングラビティフォールズ",
+    "translated": false
+  },
+  "695": {
+    "value": "放課後のプレアデス",
+    "translated": false
+  },
+  "696": {
+    "value": "永遠の七日",
+    "translated": false
+  },
+  "697": {
+    "value": "喫茶ステラと死神の蝶",
+    "translated": false
+  },
+  "698": {
+    "value": "シャドウバース",
+    "translated": false
+  },
+  "699": {
+    "value": "ドールズフロントライン2：エクシリウム（ドルフロ2：追放）",
+    "translated": false
+  },
+  "700": {
+    "value": "シャドウバースF",
+    "translated": false
+  },
+  "701": {
+    "value": "乙女ゲームの破滅フラグしかない悪役令嬢に転生してしまった…",
+    "translated": false
+  },
+  "702": {
+    "value": "女神のカフェテラス",
+    "translated": false
+  },
+  "703": {
+    "value": "蒼穹のファフナー",
+    "translated": false
+  },
+  "704": {
+    "value": "怪異と乙女と神隠し",
+    "translated": false
+  },
+  "705": {
+    "value": "ユニコーンオーバーロード",
+    "translated": false
+  },
+  "706": {
+    "value": "モンスター娘のお医者さん",
+    "translated": false
+  },
+  "707": {
+    "value": "明日ちゃんのセーラー服",
+    "translated": false
+  },
+  "708": {
+    "value": "Stellar Blade",
+    "translated": false
+  },
+  "709": {
+    "value": "君のことが大大大大大好きな100人の彼女",
+    "translated": false
+  },
+  "710": {
+    "value": "アマガミ",
+    "translated": false
+  },
+  "711": {
+    "value": "魔法使いの夜",
+    "translated": false
+  },
+  "712": {
+    "value": "バニーガーデン",
+    "translated": false
+  },
+  "713": {
+    "value": "きんいろモザイク",
+    "translated": false
+  },
+  "714": {
+    "value": "茜ハ摘マレ染メラレル",
+    "translated": false
+  },
+  "715": {
+    "value": "魔乳秘剣帖",
+    "translated": false
+  },
+  "716": {
+    "value": "86-エイティシックス-",
+    "translated": false
+  },
+  "717": {
+    "value": "学園アイドルマスター",
+    "translated": false
+  },
+  "718": {
+    "value": "NEEDY GIRL OVERDOSE",
+    "translated": false
+  },
+  "719": {
+    "value": "メリダとおそろしの森",
+    "translated": false
+  },
+  "720": {
+    "value": "転生したら第七王子だったので、気ままに魔術を極めます",
+    "translated": false
+  },
+  "721": {
+    "value": "スター☆トゥインクルプリキュア",
+    "translated": false
+  },
+  "722": {
+    "value": "エイケン",
+    "translated": false
+  },
+  "723": {
+    "value": "Lv2からチートだった元勇者候補のまったり異世界ライフ",
+    "translated": false
+  },
+  "724": {
+    "value": "機動戦士Ζガンダム",
+    "translated": false
+  },
+  "725": {
+    "value": "ジュエルペットてぃんくる☆",
+    "translated": false
+  },
+  "726": {
+    "value": "時々ボソッとロシア語でデレる隣のアーリャさん",
+    "translated": false
+  },
+  "727": {
+    "value": "パワーガール",
+    "translated": false
+  },
+  "728": {
+    "value": "向日葵ハ夜ニ咲ク",
+    "translated": false
+  },
+  "729": {
+    "value": "BlackSurvival(ブラサバ)",
+    "translated": false
+  },
+  "730": {
+    "value": "神次元ゲイム ネプテューヌV",
+    "translated": false
+  },
+  "731": {
+    "value": "新次元ゲイムネプテューヌVⅡ",
+    "translated": false
+  },
+  "732": {
+    "value": "わんだふるぷりきゅあ！",
+    "translated": false
+  },
+  "733": {
+    "value": "落第騎士の英雄譚",
+    "translated": false
+  },
+  "734": {
+    "value": "UnderTheWitch",
+    "translated": false
+  },
+  "735": {
+    "value": "Wii Fit",
+    "translated": false
+  },
+  "736": {
+    "value": "THE FIRST DESCENDANT",
+    "translated": false
+  },
+  "737": {
+    "value": "月が導く異世界道中",
+    "translated": false
+  },
+  "738": {
+    "value": "しかのこのこのここしたんたん",
+    "translated": false
+  },
+  "739": {
+    "value": "ドラゴンクエスト8",
+    "translated": false
+  },
+  "740": {
+    "value": "黒神話:悟空",
+    "translated": false
+  },
+  "741": {
+    "value": "ヴァルキリードライヴ マーメイド",
+    "translated": false
+  },
+  "742": {
+    "value": "逃げ上手の若君",
+    "translated": false
+  },
+  "743": {
+    "value": "The Amazing Digital Circus",
+    "translated": false
+  },
+  "744": {
+    "value": "ヴァンドレッド",
+    "translated": false
+  },
+  "745": {
+    "value": "悪役令嬢レベル99",
+    "translated": false
+  },
+  "746": {
+    "value": "シャイニング・ブレイド",
+    "translated": false
+  },
+  "747": {
+    "value": "星之翼",
+    "translated": false
+  },
+  "748": {
+    "value": "クロノトリガー",
+    "translated": false
+  },
+  "749": {
+    "value": "けんぷファー",
+    "translated": false
+  },
+  "750": {
+    "value": "歸龍潮",
+    "translated": false
+  },
+  "751": {
+    "value": "家庭教師ヒットマンREBORN!",
+    "translated": false
+  },
+  "752": {
+    "value": "ティンクルスターナイツ",
+    "translated": false
+  },
+  "753": {
+    "value": "負けヒロインが多すぎる!",
+    "translated": false
+  },
+  "754": {
+    "value": "BORUTO",
+    "translated": false
+  },
+  "755": {
+    "value": "バルダーズゲート3",
+    "translated": false
+  },
+  "756": {
+    "value": "ズートピア",
+    "translated": false
+  },
+  "757": {
+    "value": "Limbus Company",
+    "translated": false
+  },
+  "758": {
+    "value": "ラブライブ!スーパースター!!",
+    "translated": false
+  },
+  "759": {
+    "value": "マギ",
+    "translated": false
+  },
+  "760": {
+    "value": "ドラゴンクエスト4",
+    "translated": false
+  },
+  "762": {
+    "value": "好きな子がめがねを忘れた",
+    "translated": false
+  },
+  "763": {
+    "value": "アイドルマスターSideM",
+    "translated": false
+  },
+  "764": {
+    "value": "ガドガード",
+    "translated": false
+  },
+  "765": {
+    "value": "ふしぎの海のナディア",
+    "translated": false
+  },
+  "766": {
+    "value": "ダンダダン",
+    "translated": false
+  },
+  "767": {
+    "value": "ダンジョン飯",
+    "translated": false
+  },
+  "768": {
+    "value": "幽☆遊☆白書",
+    "translated": false
+  },
+  "769": {
+    "value": "2.5次元の誘惑",
+    "translated": false
+  },
+  "770": {
+    "value": "アオのハコ",
+    "translated": false
+  },
+  "771": {
+    "value": "FOAMSTARS",
+    "translated": false
+  },
+  "772": {
+    "value": "黎の軌跡",
+    "translated": false
+  },
+  "773": {
+    "value": "白聖女と黒牧師",
+    "translated": false
+  },
+  "774": {
+    "value": "嘆きの亡霊は引退したい",
+    "translated": false
+  },
+  "775": {
+    "value": "スパイダーマン:スパイダーバース",
+    "translated": false
+  },
+  "776": {
+    "value": "ダーティペア",
+    "translated": false
+  },
+  "777": {
+    "value": "MiSide：ミサイド",
+    "translated": false
+  },
+  "778": {
+    "value": "インフィニティニキ",
+    "translated": false
+  },
+  "779": {
+    "value": "ファイアーエムブレム 暁の女神",
+    "translated": false
+  },
+  "780": {
+    "value": "仁王",
+    "translated": false
+  },
+  "781": {
+    "value": "マーベル・ライバルズ(Marvel Rivals)",
+    "translated": false
+  },
+  "782": {
+    "value": "ハズレ枠の【状態異常スキル】で最強になった俺がすべてを蹂躙するまで",
+    "translated": false
+  },
+  "783": {
+    "value": "機動戦士Gundam GQuuuuuuX(ジークアクス)",
+    "translated": false
+  },
+  "784": {
+    "value": "ギルドの受付嬢ですが、残業は嫌なのでボスをソロ討伐しようと思います",
+    "translated": false
+  },
+  "785": {
+    "value": "白恋サクラ＊グラム",
+    "translated": false
+  },
+  "786": {
+    "value": "しゅがてん！",
+    "translated": false
+  },
+  "787": {
+    "value": "地縛少年花子くん",
+    "translated": false
+  },
+  "788": {
+    "value": "ハッピーシュガーライフ",
+    "translated": false
+  },
+  "789": {
+    "value": "エルフさんは痩せられない。",
+    "translated": false
+  },
+  "790": {
+    "value": "ピーターパン",
+    "translated": false
+  },
+  "791": {
+    "value": "ブラウンダスト2",
+    "translated": false
+  },
+  "792": {
+    "value": "響け!ユーフォニアム",
+    "translated": false
+  },
+  "793": {
+    "value": "戦隊レッド 異世界で冒険者になる",
+    "translated": false
+  },
+  "794": {
+    "value": "コズミックブレイク",
+    "translated": false
+  },
+  "795": {
+    "value": "機動戦士ガンダム00",
+    "translated": false
+  },
+  "796": {
+    "value": "モンスターハンターワイルズ",
+    "translated": false
+  },
+  "798": {
+    "value": "DEATH NOTE",
+    "translated": false
+  },
+  "799": {
+    "value": "ガールズバンドクライ",
+    "translated": false
+  },
+  "800": {
+    "value": "あまいろショコラータ",
+    "translated": false
+  },
+  "801": {
+    "value": "悪役令嬢転生おじさん",
+    "translated": false
+  },
+  "802": {
+    "value": "ブラック・サージナイト",
+    "translated": false
+  },
+  "803": {
+    "value": "ユミアのアトリエ",
+    "translated": false
+  },
+  "804": {
+    "value": "ガレリアの地下迷宮と魔女ノ旅団",
+    "translated": false
+  },
+  "805": {
+    "value": "リバース:1999",
+    "translated": false
+  },
+  "806": {
+    "value": "六花の勇者",
+    "translated": false
+  },
+  "807": {
+    "value": "スーパーロボット大戦シリーズ",
+    "translated": false
+  },
+  "808": {
+    "value": "テイルズオブグレイセス",
+    "translated": false
+  },
+  "809": {
+    "value": "よつばと!",
+    "translated": false
+  },
+  "810": {
+    "value": "ファミレス戦士プリン",
+    "translated": false
+  },
+  "811": {
+    "value": "幻想水滸伝",
+    "translated": false
+  },
+  "812": {
+    "value": "魔法少女セレスフォニア",
+    "translated": false
+  },
+  "813": {
+    "value": "麻雀ファイトガール",
+    "translated": false
+  },
+  "814": {
+    "value": "アベノ橋魔法☆商店街",
+    "translated": false
+  },
+  "815": {
+    "value": "スティーブン・ユニバース",
+    "translated": false
+  },
+  "816": {
+    "value": "無限大Ananta",
+    "translated": false
+  },
+  "817": {
+    "value": "魔装学園H×H",
+    "translated": false
+  },
+  "818": {
+    "value": "人付き合いが苦手な未亡人の雪女さん",
+    "translated": false
+  },
+  "824": {
+    "value": "Neverness To Everness",
     "translated": false
   }
 }

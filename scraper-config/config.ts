@@ -23,7 +23,7 @@ export const MODULES: ModuleConfig[] = [
   {
     name: 'origins',
     handler: () => import('./handlers/originsHandler'),
-    keyPrefix: 'origin_',
+    keyPrefix: '',
     ui: {
       displayName: 'Origins',
       description: 'All origins [https://oreno3d.com/origins]',
@@ -32,13 +32,25 @@ export const MODULES: ModuleConfig[] = [
       estimatedTime: 30
     }
   },
+  {
+    name: 'characters',
+    handler: () => import('./handlers/charactersHandler'),
+    keyPrefix: '',
+    ui: {
+      displayName: 'Characters',
+      description: 'All characters [https://oreno3d.com/characters]',
+      icon: 'User',
+      priority: 11,
+      estimatedTime: 120
+    }
+  },
   // Tag groups modules
   ...Array.from({ length: 8 }, (_, i) => ({
     name: `tag_group_${i + 1}`,
     handler: () => import('./handlers/tagGroupsHandler').then(module => ({
       default: () => module.default(i + 1)
     })),
-    keyPrefix: `tag_group_${i + 1}_`,
+    keyPrefix: '',
     ui: {
       displayName: `Tag Group ${i + 1}`,
       description: `Tags in group ${i + 1} [https://oreno3d.com/tag-groups/${i + 1}]`,

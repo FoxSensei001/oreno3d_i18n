@@ -1,110 +1,110 @@
 {
-  "tag_group_6_93": {
-    "value": "タイツ・ストッキング",
-    "translated": false
-  },
-  "tag_group_6_99": {
-    "value": "ピアス・装飾品",
-    "translated": false
-  },
-  "tag_group_6_98": {
-    "value": "バニーガール",
-    "translated": false
-  },
-  "tag_group_6_152": {
-    "value": "マイクロ水着",
-    "translated": false
-  },
-  "tag_group_6_95": {
-    "value": "ディルド",
-    "translated": false
-  },
-  "tag_group_6_90": {
-    "value": "しっぽ",
-    "translated": false
-  },
-  "tag_group_6_97": {
-    "value": "バイブ・ローター",
-    "translated": false
-  },
-  "tag_group_6_88": {
-    "value": "首輪・鎖・拘束具",
-    "translated": false
-  },
-  "tag_group_6_156": {
-    "value": "メガネ",
-    "translated": false
-  },
-  "tag_group_6_96": {
-    "value": "猫耳",
-    "translated": false
-  },
-  "tag_group_6_154": {
-    "value": "水着",
-    "translated": false
-  },
-  "tag_group_6_89": {
-    "value": "コスプレ",
-    "translated": false
-  },
-  "tag_group_6_155": {
-    "value": "メイド服",
-    "translated": false
-  },
-  "tag_group_6_92": {
-    "value": "制服",
-    "translated": false
-  },
-  "tag_group_6_94": {
-    "value": "チャイナドレス",
-    "translated": false
-  },
-  "tag_group_6_157": {
-    "value": "目隠し",
-    "translated": false
-  },
-  "tag_group_6_158": {
-    "value": "レオタード",
-    "translated": false
-  },
-  "tag_group_6_160": {
-    "value": "和服・浴衣",
-    "translated": false
-  },
-  "tag_group_6_151": {
-    "value": "ブルマ・体操着",
-    "translated": false
-  },
-  "tag_group_6_91": {
-    "value": "スクール水着",
-    "translated": false
-  },
-  "tag_group_6_161": {
-    "value": "ワイシャツ",
-    "translated": false
-  },
-  "tag_group_6_87": {
-    "value": "競泳水着",
-    "translated": false
-  },
-  "tag_group_6_86": {
-    "value": "看護婦・ナース",
-    "translated": false
-  },
-  "tag_group_6_153": {
-    "value": "巫女",
-    "translated": false
-  },
-  "tag_group_6_85": {
+  "85": {
     "value": "オナホ",
     "translated": false
   },
-  "tag_group_6_100": {
+  "86": {
+    "value": "看護婦・ナース",
+    "translated": false
+  },
+  "87": {
+    "value": "競泳水着",
+    "translated": false
+  },
+  "88": {
+    "value": "首輪・鎖・拘束具",
+    "translated": false
+  },
+  "89": {
+    "value": "コスプレ",
+    "translated": false
+  },
+  "90": {
+    "value": "しっぽ",
+    "translated": false
+  },
+  "91": {
+    "value": "スクール水着",
+    "translated": false
+  },
+  "92": {
+    "value": "制服",
+    "translated": false
+  },
+  "93": {
+    "value": "タイツ・ストッキング",
+    "translated": false
+  },
+  "94": {
+    "value": "チャイナドレス",
+    "translated": false
+  },
+  "95": {
+    "value": "ディルド",
+    "translated": false
+  },
+  "96": {
+    "value": "猫耳",
+    "translated": false
+  },
+  "97": {
+    "value": "バイブ・ローター",
+    "translated": false
+  },
+  "98": {
+    "value": "バニーガール",
+    "translated": false
+  },
+  "99": {
+    "value": "ピアス・装飾品",
+    "translated": false
+  },
+  "100": {
     "value": "媚薬",
     "translated": false
   },
-  "tag_group_6_159": {
+  "151": {
+    "value": "ブルマ・体操着",
+    "translated": false
+  },
+  "152": {
+    "value": "マイクロ水着",
+    "translated": false
+  },
+  "153": {
+    "value": "巫女",
+    "translated": false
+  },
+  "154": {
+    "value": "水着",
+    "translated": false
+  },
+  "155": {
+    "value": "メイド服",
+    "translated": false
+  },
+  "156": {
+    "value": "メガネ",
+    "translated": false
+  },
+  "157": {
+    "value": "目隠し",
+    "translated": false
+  },
+  "158": {
+    "value": "レオタード",
+    "translated": false
+  },
+  "159": {
     "value": "ローション",
+    "translated": false
+  },
+  "160": {
+    "value": "和服・浴衣",
+    "translated": false
+  },
+  "161": {
+    "value": "ワイシャツ",
     "translated": false
   }
 }

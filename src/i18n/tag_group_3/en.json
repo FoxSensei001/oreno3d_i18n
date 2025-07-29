@@ -1,146 +1,146 @@
 {
-  "tag_group_3_19": {
-    "value": "極楽浄土",
-    "translated": false
-  },
-  "tag_group_3_212": {
-    "value": "Chocolate Cream",
-    "translated": false
-  },
-  "tag_group_3_39": {
-    "value": "Lamb.",
-    "translated": false
-  },
-  "tag_group_3_213": {
-    "value": "ゴーストダンス",
-    "translated": false
-  },
-  "tag_group_3_214": {
-    "value": "Conqueror",
-    "translated": false
-  },
-  "tag_group_3_211": {
-    "value": "Girls",
-    "translated": false
-  },
-  "tag_group_3_33": {
-    "value": "PiNK CAT",
-    "translated": false
-  },
-  "tag_group_3_215": {
-    "value": "[A]ddiction",
-    "translated": false
-  },
-  "tag_group_3_38": {
-    "value": "LUVORATORRRRRY!",
-    "translated": false
-  },
-  "tag_group_3_32": {
-    "value": "ハイファイレイヴァー",
-    "translated": false
-  },
-  "tag_group_3_24": {
-    "value": "腰振りダンス",
-    "translated": false
-  },
-  "tag_group_3_15": {
-    "value": "おねがいダーリン",
-    "translated": false
-  },
-  "tag_group_3_29": {
-    "value": "Deep Blue Townへおいでよ",
-    "translated": false
-  },
-  "tag_group_3_16": {
-    "value": "Apple Pie",
-    "translated": false
-  },
-  "tag_group_3_37": {
-    "value": "BAAM",
-    "translated": false
-  },
-  "tag_group_3_18": {
-    "value": "気まぐれメルシィ",
-    "translated": false
-  },
-  "tag_group_3_26": {
-    "value": "好き！雪！本気マジック",
-    "translated": false
-  },
-  "tag_group_3_22": {
-    "value": "KiLLER LADY",
-    "translated": false
-  },
-  "tag_group_3_30": {
-    "value": "ドーナツホール",
-    "translated": false
-  },
-  "tag_group_3_27": {
-    "value": "Sweet Devil",
-    "translated": false
-  },
-  "tag_group_3_17": {
-    "value": "疑心暗鬼",
-    "translated": false
-  },
-  "tag_group_3_35": {
-    "value": "ヒビカセ",
-    "translated": false
-  },
-  "tag_group_3_14": {
-    "value": "ELECT",
-    "translated": false
-  },
-  "tag_group_3_34": {
-    "value": "被害妄想携帯女子(笑)",
-    "translated": false
-  },
-  "tag_group_3_20": {
-    "value": "虎視眈々",
-    "translated": false
-  },
-  "tag_group_3_21": {
-    "value": "kiss me 愛してる",
-    "translated": false
-  },
-  "tag_group_3_13": {
-    "value": "WAVE",
-    "translated": false
-  },
-  "tag_group_3_12": {
-    "value": "威風堂々",
-    "translated": false
-  },
-  "tag_group_3_31": {
-    "value": "ねこみみスイッチ",
-    "translated": false
-  },
-  "tag_group_3_28": {
-    "value": "シュレディンガイガーのこねこ",
-    "translated": false
-  },
-  "tag_group_3_40": {
-    "value": "ライアーダンス",
-    "translated": false
-  },
-  "tag_group_3_11": {
+  "11": {
     "value": "一騎当千",
     "translated": false
   },
-  "tag_group_3_218": {
-    "value": "メズマライザー",
+  "12": {
+    "value": "威風堂々",
     "translated": false
   },
-  "tag_group_3_36": {
-    "value": "本気求愛ダンス",
+  "13": {
+    "value": "WAVE",
     "translated": false
   },
-  "tag_group_3_25": {
+  "14": {
+    "value": "ELECT",
+    "translated": false
+  },
+  "15": {
+    "value": "おねがいダーリン",
+    "translated": false
+  },
+  "16": {
+    "value": "Apple Pie",
+    "translated": false
+  },
+  "17": {
+    "value": "疑心暗鬼",
+    "translated": false
+  },
+  "18": {
+    "value": "気まぐれメルシィ",
+    "translated": false
+  },
+  "19": {
+    "value": "極楽浄土",
+    "translated": false
+  },
+  "20": {
+    "value": "虎視眈々",
+    "translated": false
+  },
+  "21": {
+    "value": "kiss me 愛してる",
+    "translated": false
+  },
+  "22": {
+    "value": "KiLLER LADY",
+    "translated": false
+  },
+  "23": {
+    "value": "こっち向いてBaby",
+    "translated": false
+  },
+  "24": {
+    "value": "腰振りダンス",
+    "translated": false
+  },
+  "25": {
     "value": "深海少女",
     "translated": false
   },
-  "tag_group_3_23": {
-    "value": "こっち向いてBaby",
+  "26": {
+    "value": "好き！雪！本気マジック",
+    "translated": false
+  },
+  "27": {
+    "value": "Sweet Devil",
+    "translated": false
+  },
+  "28": {
+    "value": "シュレディンガイガーのこねこ",
+    "translated": false
+  },
+  "29": {
+    "value": "Deep Blue Townへおいでよ",
+    "translated": false
+  },
+  "30": {
+    "value": "ドーナツホール",
+    "translated": false
+  },
+  "31": {
+    "value": "ねこみみスイッチ",
+    "translated": false
+  },
+  "32": {
+    "value": "ハイファイレイヴァー",
+    "translated": false
+  },
+  "33": {
+    "value": "PiNK CAT",
+    "translated": false
+  },
+  "34": {
+    "value": "被害妄想携帯女子(笑)",
+    "translated": false
+  },
+  "35": {
+    "value": "ヒビカセ",
+    "translated": false
+  },
+  "36": {
+    "value": "本気求愛ダンス",
+    "translated": false
+  },
+  "37": {
+    "value": "BAAM",
+    "translated": false
+  },
+  "38": {
+    "value": "LUVORATORRRRRY!",
+    "translated": false
+  },
+  "39": {
+    "value": "Lamb.",
+    "translated": false
+  },
+  "40": {
+    "value": "ライアーダンス",
+    "translated": false
+  },
+  "211": {
+    "value": "Girls",
+    "translated": false
+  },
+  "212": {
+    "value": "Chocolate Cream",
+    "translated": false
+  },
+  "213": {
+    "value": "ゴーストダンス",
+    "translated": false
+  },
+  "214": {
+    "value": "Conqueror",
+    "translated": false
+  },
+  "215": {
+    "value": "[A]ddiction",
+    "translated": false
+  },
+  "218": {
+    "value": "メズマライザー",
     "translated": false
   }
 }
