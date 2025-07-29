@@ -11,7 +11,7 @@ export default async function tagsHandler(): Promise<ScrapedItem[]> {
   const BASE_URL = 'https://oreno3d.com/tags';
   const results: ScrapedItem[] = [];
   
-  console.log('[tagsHandler] 开始爬取标签数据...');
+  console.log('[tagsHandler] Starting to scrape tag data...');
   
   try {
     let currentPage = 1;
@@ -32,7 +32,7 @@ export default async function tagsHandler(): Promise<ScrapedItem[]> {
     
     while (hasNextPage) {
       const url = currentPage === 1 ? BASE_URL : `${BASE_URL}?page=${currentPage}`;
-      console.log(`[tagsHandler] 正在处理第 ${currentPage} 页: ${url}`);
+      console.log(`[tagsHandler] Processing page ${currentPage}: ${url}`);
       
       try {
         const response = await axiosInstance.get(url);
@@ -42,7 +42,7 @@ export default async function tagsHandler(): Promise<ScrapedItem[]> {
         const tagElements = $('.group-list-li');
         
         if (tagElements.length === 0) {
-          console.log(`[tagsHandler] 第 ${currentPage} 页没有找到标签，停止爬取`);
+          console.log(`[tagsHandler] No tags found on page ${currentPage}, stopping scrape`);
           hasNextPage = false;
           break;
         }
@@ -60,7 +60,7 @@ export default async function tagsHandler(): Promise<ScrapedItem[]> {
             const id = href.split('/').pop() || '';
             if (id && !results.some(item => item.id === id)) {
               results.push({ id, name });
-              console.log(`[tagsHandler] 找到标签: ${id} - ${name}`);
+              console.log(`[tagsHandler] Found tag: ${id} - ${name}`);
             }
           }
         });
@@ -76,11 +76,11 @@ export default async function tagsHandler(): Promise<ScrapedItem[]> {
         }
         
       } catch (error) {
-        console.error(`[tagsHandler] 处理第 ${currentPage} 页时出错:`, error);
+        console.error(`[tagsHandler] Error processing page ${currentPage}:`, error);
         
         // 如果是网络错误，尝试重试
         if (axios.isAxiosError(error) && error.code === 'ECONNRESET') {
-          console.log(`[tagsHandler] 网络错误，等待后重试...`);
+          console.log(`[tagsHandler] Network error, waiting to retry...`);
           await new Promise(resolve => setTimeout(resolve, SCRAPER_CONFIG.requestDelay * 3));
           continue;
         }
@@ -90,12 +90,11 @@ export default async function tagsHandler(): Promise<ScrapedItem[]> {
       }
     }
     
-    console.log(`[tagsHandler] 爬取完成，共获取 ${results.length} 个标签`);
+    console.log(`[tagsHandler] Scraping completed, obtained ${results.length} tags`);
     return results;
     
   } catch (error) {
-    console.error('[tagsHandler] 爬取过程中发生严重错误:', error);
-    throw new Error(`标签爬取失败: ${error instanceof Error ? error.message : '未知错误'}`);
+    console.error('[tagsHandler] Serious error during scraping:', error);
+    throw new Error(`Tag scraping failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 }
-

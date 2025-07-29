@@ -2,6 +2,11 @@
 
 [English version](../README.md)
 
+## 📚 文档导航
+
+- [开发指南 (Chinese)](DEVELOPMENT-zh.md)
+- [代码规范 (Chinese)](CODE_STANDARDS-zh.md)
+
 Oreno3dI18n 是一个基于 Next.js 构建的本地化 i18n 管理工具。它旨在自动化地从指定网站爬取源数据（默认为日语），并生成和维护多语言的 JSON 文件。
 
 ## 🚀 功能特性

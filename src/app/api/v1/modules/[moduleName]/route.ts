@@ -28,11 +28,11 @@ export async function GET(
     if (!isValidModule(moduleName)) {
       return NextResponse.json<ApiResponse>({
         success: false,
-        error: `无效的模块名称: ${moduleName}`
+        error: `Invalid module name: ${moduleName}`
       }, { status: 400 });
     }
 
-    console.log(`[API] 获取模块数据: ${moduleName}, type: ${type}`);
+    console.log(`[API] Fetching module data: ${moduleName}, type: ${type}`);
 
     if (type === 'stats') {
       // 返回统计信息
@@ -47,16 +47,16 @@ export async function GET(
       return NextResponse.json<ApiResponse<ModuleData[]>>({
         success: true,
         data,
-        message: `获取模块 ${moduleName} 数据成功，共 ${data.length} 条记录`
+        message: `Successfully retrieved data for module ${moduleName}, ${data.length} records total`
       });
     }
 
   } catch (error) {
-    console.error('[API] 获取模块数据失败:', error);
+    console.error('[API] Failed to fetch module data:', error);
     
     return NextResponse.json<ApiResponse>({
       success: false,
-      error: error instanceof Error ? error.message : '服务器内部错误'
+      error: error instanceof Error ? error.message : 'Internal server error'
     }, { status: 500 });
   }
 }
@@ -108,21 +108,21 @@ export async function PATCH(
       }, { status: 400 });
     }
 
-    console.log(`[API] 更新翻译: ${moduleName}.${key}.${lang} = "${value}", translated: ${translated}`);
+    console.log(`[API] Updating translation: ${moduleName}.${key}.${lang} = "${value}", translated: ${translated}`);
 
     await updateTranslation(moduleName, { key, lang, value, translated });
 
     return NextResponse.json<ApiResponse>({
       success: true,
-      message: `翻译更新成功: ${key} (${lang})`
+      message: `Translation updated successfully: ${key} (${lang})`
     });
 
   } catch (error) {
-    console.error('[API] 更新翻译失败:', error);
+    console.error('[API] Failed to update translation:', error);
     
     return NextResponse.json<ApiResponse>({
       success: false,
-      error: error instanceof Error ? error.message : '服务器内部错误'
+      error: error instanceof Error ? error.message : 'Internal server error'
     }, { status: 500 });
   }
 }

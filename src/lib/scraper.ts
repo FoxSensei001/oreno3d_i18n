@@ -18,7 +18,7 @@ import {
 } from '../../scraper-config/config';
 
 /**
- * 确保目录存在
+ * Ensure directory exists
  */
 async function ensureDirectoryExists(dirPath: string): Promise<void> {
   try {
@@ -29,7 +29,7 @@ async function ensureDirectoryExists(dirPath: string): Promise<void> {
 }
 
 /**
- * 读取 JSON 文件，如果不存在则返回空对象
+ * Read JSON file, return empty object if not exists
  */
 async function readJsonFile<T>(filePath: string): Promise<T> {
   try {
@@ -41,7 +41,7 @@ async function readJsonFile<T>(filePath: string): Promise<T> {
 }
 
 /**
- * 写入 JSON 文件
+ * Write JSON file
  */
 async function writeJsonFile(filePath: string, data: unknown): Promise<void> {
   await ensureDirectoryExists(path.dirname(filePath));
@@ -49,27 +49,27 @@ async function writeJsonFile(filePath: string, data: unknown): Promise<void> {
 }
 
 /**
- * 为单个模块运行爬虫
+ * Run scraper for a single module
  */
 export async function runModuleScraper(moduleName: string): Promise<ScrapeResult> {
   const startTime = Date.now();
   const moduleConfig = getModuleConfig(moduleName);
   
   if (!moduleConfig) {
-    throw new Error(`未找到模块配置: ${moduleName}`);
+    throw new Error(`Module config not found: ${moduleName}`);
   }
   
-  console.log(`[Scraper] 开始处理模块: ${moduleName}`);
+  console.log(`[Scraper] Starting to process module: ${moduleName}`);
   
   try {
-    // 动态加载并执行 handler
+    // Dynamically load and execute handler
     const handlerModule = await moduleConfig.handler();
     const handler = handlerModule.default;
     const scrapedItems = await handler();
     
-    console.log(`[Scraper] ${moduleName} 爬取到 ${scrapedItems.length} 个项目`);
+    console.log(`[Scraper] ${moduleName} scraped ${scrapedItems.length} items`);
     
-    // 处理每种语言的文件
+    // Process files for each language
     let newItems = 0;
     let updatedItems = 0;
     
@@ -77,7 +77,7 @@ export async function runModuleScraper(moduleName: string): Promise<ScrapeResult
       const filePath = PATHS.getLanguageFile(moduleName, language);
       
       if (language === SOURCE_LANGUAGE) {
-        // 处理源语言文件
+        // Process source language file
         const existingData = await readJsonFile<SourceLanguageData>(filePath);
         const newData: SourceLanguageData = {};
         
@@ -94,7 +94,7 @@ export async function runModuleScraper(moduleName: string): Promise<ScrapeResult
         
         await writeJsonFile(filePath, newData);
       } else {
-        // 处理目标语言文件
+        // Process target language files
         const existingData = await readJsonFile<TargetLanguageData>(filePath);
         const newData: TargetLanguageData = {};
         
@@ -102,10 +102,10 @@ export async function runModuleScraper(moduleName: string): Promise<ScrapeResult
           const key = `${moduleConfig.keyPrefix}${item.id}`;
           
           if (existingData[key]) {
-            // 保留现有翻译
+            // Preserve existing translations
             newData[key] = existingData[key];
           } else {
-            // 新项目，使用源语言内容并标记为未翻译
+            // New item, use source language content and mark as untranslated
             newData[key] = {
               value: item.name,
               translated: false
@@ -128,14 +128,14 @@ export async function runModuleScraper(moduleName: string): Promise<ScrapeResult
       success: true
     };
     
-    console.log(`[Scraper] ${moduleName} 处理完成:`, result);
+    console.log(`[Scraper] ${moduleName} processing completed:`, result);
     return result;
     
   } catch (error) {
     const duration = Date.now() - startTime;
-    const errorMessage = error instanceof Error ? error.message : '未知错误';
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     
-    console.error(`[Scraper] ${moduleName} 处理失败:`, error);
+    console.error(`[Scraper] ${moduleName} processing failed:`, error);
     
     return {
       moduleName,
@@ -150,13 +150,13 @@ export async function runModuleScraper(moduleName: string): Promise<ScrapeResult
 }
 
 /**
- * 运行所有模块的爬虫
+ * Run scrapers for all modules
  */
 export async function runAllScrapers(): Promise<BatchScrapeResult> {
   const startTime = Date.now();
   const results: ScrapeResult[] = [];
   
-  console.log('[Scraper] 开始批量爬取所有模块...');
+  console.log('[Scraper] Starting batch scraping of all modules...');
   
   for (const moduleConfig of MODULES) {
     const result = await runModuleScraper(moduleConfig.name);
@@ -175,26 +175,26 @@ export async function runAllScrapers(): Promise<BatchScrapeResult> {
     totalDuration
   };
   
-  console.log('[Scraper] 批量爬取完成:', batchResult);
+  console.log('[Scraper] Batch scraping completed:', batchResult);
   return batchResult;
 }
 
 /**
- * 获取模块的聚合数据（用于表格显示）
+ * Get aggregated module data (for table display)
  */
 export async function getModuleData(moduleName: string): Promise<ModuleData[]> {
   const moduleConfig = getModuleConfig(moduleName);
   if (!moduleConfig) {
-    throw new Error(`未找到模块配置: ${moduleName}`);
+    throw new Error(`Module config not found: ${moduleName}`);
   }
 
   const result: ModuleData[] = [];
 
-  // 读取源语言文件获取所有 key
+  // Read source language file to get all keys
   const sourceFilePath = PATHS.getLanguageFile(moduleName, SOURCE_LANGUAGE);
   const sourceData = await readJsonFile<SourceLanguageData>(sourceFilePath);
 
-  // 读取所有目标语言文件
+  // Read all target language files
   const languageData: Record<string, TargetLanguageData | SourceLanguageData> = {};
 
   for (const language of TARGET_LANGUAGES) {
@@ -206,7 +206,7 @@ export async function getModuleData(moduleName: string): Promise<ModuleData[]> {
     }
   }
 
-  // 合并数据
+  // Merge data
   for (const key of Object.keys(sourceData)) {
     const translations: Record<string, TranslationValue | string> = {};
 
@@ -230,7 +230,7 @@ export async function getModuleData(moduleName: string): Promise<ModuleData[]> {
 }
 
 /**
- * 更新单个翻译
+ * Update a single translation
  */
 export async function updateTranslation(
   moduleName: string,
@@ -239,11 +239,11 @@ export async function updateTranslation(
   const { key, lang, value, translated } = request;
 
   if (!getModuleConfig(moduleName)) {
-    throw new Error(`未找到模块配置: ${moduleName}`);
+    throw new Error(`Module config not found: ${moduleName}`);
   }
 
   if (lang === SOURCE_LANGUAGE) {
-    throw new Error('不能直接修改源语言文件');
+    throw new Error('Cannot directly modify source language file');
   }
 
   const filePath = PATHS.getLanguageFile(moduleName, lang);
@@ -257,16 +257,16 @@ export async function updateTranslation(
   };
 
   await writeJsonFile(filePath, existingData);
-  console.log(`[Scraper] 更新翻译: ${moduleName}.${key}.${lang}, value: "${value}", translated: ${existingData[key].translated}`);
+  console.log(`[Scraper] Updated translation: ${moduleName}.${key}.${lang}, value: "${value}", translated: ${existingData[key].translated}`);
 }
 
 /**
- * 获取模块统计信息
+ * Get module statistics
  */
 export async function getModuleStats(moduleName: string) {
   const moduleConfig = getModuleConfig(moduleName);
   if (!moduleConfig) {
-    throw new Error(`未找到模块配置: ${moduleName}`);
+    throw new Error(`Module config not found: ${moduleName}`);
   }
 
   const sourceFilePath = PATHS.getLanguageFile(moduleName, SOURCE_LANGUAGE);

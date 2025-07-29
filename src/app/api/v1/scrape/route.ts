@@ -5,24 +5,24 @@ import { isValidModule } from '../../../../../scraper-config/config';
 
 /**
  * POST /api/v1/scrape
- * 触发爬虫任务
+ * Trigger scraping task
  * 
  * Body:
- * - moduleName?: string - 指定模块名称，如果不提供则爬取所有模块
+ * - moduleName?: string - Specify module name, if not provided, scrape all modules
  */
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json().catch(() => ({}));
     const { moduleName } = body;
 
-    console.log('[API] 收到爬虫请求:', { moduleName });
+    console.log('[API] Received scraping request:', { moduleName });
 
     if (moduleName) {
-      // 爬取指定模块
+      // Scrape specified module
       if (!isValidModule(moduleName)) {
         return NextResponse.json<ApiResponse>({
           success: false,
-          error: `无效的模块名称: ${moduleName}`
+          error: `Invalid module name: ${moduleName}`
         }, { status: 400 });
       }
 
@@ -32,55 +32,55 @@ export async function POST(request: NextRequest) {
         return NextResponse.json<ApiResponse<ScrapeResult>>({
           success: true,
           data: result,
-          message: `模块 ${moduleName} 爬取完成`
+          message: `Module ${moduleName} scraping completed`
         });
       } else {
         return NextResponse.json<ApiResponse>({
           success: false,
-          error: result.error || '爬取失败',
+          error: result.error || 'Scraping failed',
           data: result
         }, { status: 500 });
       }
     } else {
-      // 爬取所有模块
+      // Scrape all modules
       const result = await runAllScrapers();
       
       if (result.failedModules === 0) {
         return NextResponse.json<ApiResponse<BatchScrapeResult>>({
           success: true,
           data: result,
-          message: `所有模块爬取完成，共处理 ${result.totalModules} 个模块`
+          message: `Scraping completed for all modules, processed ${result.totalModules} modules total`
         });
       } else {
         return NextResponse.json<ApiResponse<BatchScrapeResult>>({
           success: false,
           data: result,
-          error: `部分模块爬取失败，成功: ${result.successfulModules}，失败: ${result.failedModules}`,
-          message: '批量爬取完成但有错误'
+          error: `Some modules failed to scrape, successful: ${result.successfulModules}, failed: ${result.failedModules}`,
+          message: 'Batch scraping completed with errors'
         }, { status: 207 }); // 207 Multi-Status
       }
     }
 
   } catch (error) {
-    console.error('[API] 爬虫请求处理失败:', error);
+    console.error('[API] Scraping request processing failed:', error);
     
     return NextResponse.json<ApiResponse>({
       success: false,
-      error: error instanceof Error ? error.message : '服务器内部错误'
+      error: error instanceof Error ? error.message : 'Internal server error'
     }, { status: 500 });
   }
 }
 
 /**
  * GET /api/v1/scrape
- * 获取爬虫状态信息（预留接口）
+ * Get scraper status information (reserved interface)
  */
 export async function GET() {
   return NextResponse.json<ApiResponse>({
     success: true,
     data: {
       status: 'ready',
-      message: '爬虫服务正常运行'
+      message: 'Scraper service is running normally'
     }
   });
 }

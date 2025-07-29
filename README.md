@@ -2,6 +2,11 @@
 
 [中文版本](docs/README-zh.md)
 
+## 📚 Documentation Navigation
+
+- [Development Guide](docs/DEVELOPMENT-en.md)
+- [Code Standards](docs/CODE_STANDARDS.md)
+
 Oreno3dI18n is a localization i18n management tool built on Next.js. It is designed to automatically crawl source data (defaulting to Japanese) from specified websites and generate and maintain multilingual JSON files.
 
 ## 🚀 Features

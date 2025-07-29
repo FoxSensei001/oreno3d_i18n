@@ -1,17 +1,17 @@
 import type { ModuleConfig, UIConfig } from '@/lib/types';
 
-// 支持的语言列表
+// Supported language list
 export const TARGET_LANGUAGES: string[] = ['ja', 'en', 'zh-CN', 'zh-TW'];
 
-// 源语言（爬取数据的原始语言）
+// Source language (original language of scraped data)
 export const SOURCE_LANGUAGE: string = 'ja';
 
-// 模块配置列表
+// Module configuration list
 export const MODULES: ModuleConfig[] = [
   {
     name: 'tags',
     handler: () => import('./handlers/tagsHandler'),
-    keyPrefix: 'tag_',
+    keyPrefix: '',
     ui: {
       displayName: 'Tag Groups',
       description: 'All tag groups [https://oreno3d.com/tags]',
@@ -20,14 +20,14 @@ export const MODULES: ModuleConfig[] = [
       estimatedTime: 30
     }
   },
-  // 未来可以添加更多模块
+  // More modules can be added in the future
   // {
   //   name: 'authors',
   //   handler: () => import('./handlers/authorsHandler'),
   //   keyPrefix: 'author_',
   //   ui: {
-  //     displayName: '作者',
-  //     description: '内容创作者信息',
+  //     displayName: 'Authors',
+  //     description: 'Content creator information',
   //     icon: 'User',
   //     priority: 2,
   //     estimatedTime: 45
@@ -38,8 +38,8 @@ export const MODULES: ModuleConfig[] = [
   //   handler: () => import('./handlers/seriesHandler'),
   //   keyPrefix: 'series_',
   //   ui: {
-  //     displayName: '系列',
-  //     description: '作品系列信息',
+  //     displayName: 'Series',
+  //     description: 'Work series information',
   //     icon: 'BookOpen',
   //     priority: 3,
   //     estimatedTime: 60
@@ -47,7 +47,7 @@ export const MODULES: ModuleConfig[] = [
   // }
 ];
 
-// UI 配置
+// UI configuration
 export const UI_CONFIG: UIConfig = {
   table: {
     defaultPageSize: 50,
@@ -68,21 +68,21 @@ export const UI_CONFIG: UIConfig = {
   }
 };
 
-// 爬虫配置
+// Scraper configuration
 export const SCRAPER_CONFIG = {
-  // 请求间隔（毫秒）
+  // Request interval (milliseconds)
   requestDelay: 1000,
-  // 最大重试次数
+  // Maximum retry attempts
   maxRetries: 3,
-  // 请求超时时间（毫秒）
+  // Request timeout (milliseconds)
   timeout: 10000,
-  // 并发请求数限制
+  // Concurrent request limit
   concurrency: 2,
   // User-Agent
   userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 };
 
-// 文件路径配置
+// File path configuration
 export const PATHS = {
   i18nRoot: 'src/i18n',
   getModulePath: (moduleName: string) => `src/i18n/${moduleName}`,
@@ -90,40 +90,40 @@ export const PATHS = {
     `src/i18n/${moduleName}/${language}.json`
 };
 
-// 获取模块配置
+// Get module configuration
 export function getModuleConfig(moduleName: string): ModuleConfig | undefined {
   return MODULES.find(module => module.name === moduleName);
 }
 
-// 获取所有模块名称
+// Get all module names
 export function getAllModuleNames(): string[] {
   return MODULES.map(module => module.name);
 }
 
-// 按优先级排序的模块
+// Get modules sorted by priority
 export function getModulesByPriority(): ModuleConfig[] {
   return [...MODULES].sort((a, b) => a.ui.priority - b.ui.priority);
 }
 
-// 验证语言代码
+// Validate language code
 export function isValidLanguage(language: string): boolean {
   return TARGET_LANGUAGES.includes(language);
 }
 
-// 验证模块名称
+// Validate module name
 export function isValidModule(moduleName: string): boolean {
   return MODULES.some(module => module.name === moduleName);
 }
 
-// 获取预估总时间
+// Get estimated total time
 export function getTotalEstimatedTime(): number {
   return MODULES.reduce((total, module) => total + module.ui.estimatedTime, 0);
 }
 
-// 开发环境配置
+// Development environment configuration
 export const DEV_CONFIG = {
-  // 是否启用详细日志
+  // Whether to enable verbose logging
   enableVerboseLogging: process.env.NODE_ENV === 'development',
-  // API 基础路径
+  // API base path
   apiBasePath: '/api/v1'
 };

@@ -1,33 +1,33 @@
 {
-  "tag_1": {
+  "1": {
     "value": "動画の特徴",
     "translated": false
   },
-  "tag_5": {
-    "value": "キャラの特徴",
-    "translated": false
-  },
-  "tag_7": {
-    "value": "プレイ内容",
-    "translated": false
-  },
-  "tag_6": {
-    "value": "服装・アイテム",
-    "translated": false
-  },
-  "tag_4": {
-    "value": "シチュエーション・設定",
-    "translated": false
-  },
-  "tag_2": {
+  "2": {
     "value": "モデル",
     "translated": false
   },
-  "tag_3": {
+  "3": {
     "value": "モーション",
     "translated": false
   },
-  "tag_8": {
+  "4": {
+    "value": "シチュエーション・設定",
+    "translated": false
+  },
+  "5": {
+    "value": "キャラの特徴",
+    "translated": false
+  },
+  "6": {
+    "value": "服装・アイテム",
+    "translated": false
+  },
+  "7": {
+    "value": "プレイ内容",
+    "translated": false
+  },
+  "8": {
     "value": "その他",
     "translated": false
   }

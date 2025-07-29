@@ -5,22 +5,22 @@ import { MODULES } from '../../../../../scraper-config/config';
 
 /**
  * GET /api/v1/modules
- * 获取所有模块的统计信息
+ * Get statistics for all modules
  */
 export async function GET() {
   try {
-    console.log('[API] 获取所有模块统计信息');
+    console.log('[API] Fetching statistics for all modules');
 
     const moduleInfos: ModuleInfo[] = [];
 
-    // 并行获取所有模块的统计信息
+    // Parallel fetch statistics for all modules
     const statsPromises = MODULES.map(async (moduleConfig) => {
       try {
         const stats = await getModuleStats(moduleConfig.name);
         return stats;
       } catch (error) {
-        console.error(`[API] 获取模块 ${moduleConfig.name} 统计信息失败:`, error);
-        // 返回默认统计信息
+        console.error(`[API] Failed to fetch statistics for module ${moduleConfig.name}:`, error);
+        // Return default statistics
         return {
           moduleName: moduleConfig.name,
           displayName: moduleConfig.ui.displayName,
@@ -37,7 +37,7 @@ export async function GET() {
 
     const allStats = await Promise.all(statsPromises);
     
-    // 转换为 ModuleInfo 格式
+    // Convert to ModuleInfo format
     for (const stats of allStats) {
       moduleInfos.push({
         name: stats.moduleName,
@@ -48,25 +48,25 @@ export async function GET() {
         totalItems: stats.totalItems,
         progress: stats.progress,
         estimatedTime: stats.estimatedTime,
-        // 可以添加 lastUpdated 字段，这里暂时省略
+        // Can add lastUpdated field, omitted here for now
       });
     }
 
-    // 按优先级排序
+    // Sort by priority
     moduleInfos.sort((a, b) => a.priority - b.priority);
 
     return NextResponse.json<ApiResponse<ModuleInfo[]>>({
       success: true,
       data: moduleInfos,
-      message: `获取 ${moduleInfos.length} 个模块信息成功`
+      message: `Successfully retrieved information for ${moduleInfos.length} modules`
     });
 
   } catch (error) {
-    console.error('[API] 获取模块列表失败:', error);
+    console.error('[API] Failed to fetch module list:', error);
     
     return NextResponse.json<ApiResponse>({
       success: false,
-      error: error instanceof Error ? error.message : '服务器内部错误'
+      error: error instanceof Error ? error.message : 'Internal server error'
     }, { status: 500 });
   }
 }
