@@ -5,6 +5,7 @@ import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
 import { Settings, Globe, Database } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { useSettings } from '@/hooks/use-settings';
@@ -64,6 +65,52 @@ export default function SettingsPage() {
                   disabled={!isLoaded}
                 />
               </div>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>维基百科代理设置</CardTitle>
+              <p className="text-sm text-muted-foreground">
+                配置维基百科查询是否使用代理，适用于网络访问受限的环境
+              </p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="space-y-0.5">
+                  <Label htmlFor="enable-wiki-proxy">启用维基百科代理</Label>
+                  <p className="text-sm text-muted-foreground">
+                    开启后，所有维基百科查询将通过代理服务器进行
+                  </p>
+                </div>
+                <Switch
+                  id="enable-wiki-proxy"
+                  checked={settings.enableWikipediaProxy}
+                  onCheckedChange={(checked) =>
+                    updateSettings({ enableWikipediaProxy: checked })
+                  }
+                  disabled={!isLoaded}
+                />
+              </div>
+              
+              {settings.enableWikipediaProxy && (
+                <div className="space-y-2">
+                  <Label htmlFor="wiki-proxy-url">代理服务器地址</Label>
+                  <Input
+                    id="wiki-proxy-url"
+                    type="url"
+                    placeholder="http://127.0.0.1:7890"
+                    value={settings.wikipediaProxyUrl}
+                    onChange={(e) =>
+                      updateSettings({ wikipediaProxyUrl: e.target.value })
+                    }
+                    disabled={!isLoaded}
+                  />
+                  <p className="text-xs text-muted-foreground">
+                    请输入完整的代理地址，例如：http://127.0.0.1:7890 或 socks5://127.0.0.1:1080
+                  </p>
+                </div>
+              )}
             </CardContent>
           </Card>
           <Card>

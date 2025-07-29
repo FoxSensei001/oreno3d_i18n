@@ -4,10 +4,14 @@ import { useState, useEffect } from 'react';
 
 export interface AppSettings {
   autoUpdateTranslationStatus: boolean;
+  enableWikipediaProxy: boolean;
+  wikipediaProxyUrl: string;
 }
 
 const DEFAULT_SETTINGS: AppSettings = {
   autoUpdateTranslationStatus: true,
+  enableWikipediaProxy: false,
+  wikipediaProxyUrl: 'http://127.0.0.1:7890',
 };
 
 const SETTINGS_KEY = 'lingoscraper-settings';
