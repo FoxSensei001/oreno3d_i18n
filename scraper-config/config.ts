@@ -20,6 +20,18 @@ export const MODULES: ModuleConfig[] = [
       estimatedTime: 30
     }
   },
+  {
+    name: 'origins',
+    handler: () => import('./handlers/originsHandler'),
+    keyPrefix: 'origin_',
+    ui: {
+      displayName: 'Origins',
+      description: 'All origins [https://oreno3d.com/origins]',
+      icon: 'Globe',
+      priority: 10,
+      estimatedTime: 30
+    }
+  },
   // Tag groups modules
   ...Array.from({ length: 8 }, (_, i) => ({
     name: `tag_group_${i + 1}`,
