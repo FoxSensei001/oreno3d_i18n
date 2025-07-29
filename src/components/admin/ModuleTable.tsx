@@ -16,8 +16,9 @@ import { Badge } from '@/components/ui/badge';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
-import { Search, Filter, Save, X, RotateCcw, Languages, Settings, Globe } from 'lucide-react';
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
+import { Search, Filter, Save, X, RotateCcw, Languages, Settings, Globe, ExternalLink } from 'lucide-react';
 import { useModuleData, useUpdateTranslation } from '@/hooks/use-modules';
 import { useSettings } from '@/hooks/use-settings';
 import { toast } from 'sonner';
@@ -50,7 +51,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
   const [wikiDialogOpen, setWikiDialogOpen] = useState(false);
   const [wikiSearchDialogOpen, setWikiSearchDialogOpen] = useState(false);
   const [searchKeyword, setSearchKeyword] = useState('');
-  const [searchResults, setSearchResults] = useState<{
+  const [apiSearchResults, setApiSearchResults] = useState<{
     id: number;
     key: string;
     title: string;
@@ -58,7 +59,16 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
     description: string | null;
     thumbnail: { url: string; width: number; height: number; } | null;
   }[]>([]);
-  const [searchLoading, setSearchLoading] = useState(false);
+  const [htmlSearchResults, setHtmlSearchResults] = useState<{
+    id: number;
+    key: string;
+    title: string;
+    excerpt: string;
+    description: string | null;
+    thumbnail: { url: string; width: number; height: number; } | null;
+  }[]>([]);
+  const [apiSearchLoading, setApiSearchLoading] = useState(false);
+  const [htmlSearchLoading, setHtmlSearchLoading] = useState(false);
   const [currentSearchContext, setCurrentSearchContext] = useState<{
     key: string;
   } | null>(null);
@@ -204,80 +214,101 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
 
   const handleWikiSearch = async () => {
     if (!searchKeyword.trim()) {
-      toast.error('请输入搜索关键词');
+      toast.error(t('wikiSearch.enterKeyword'));
       return;
     }
 
-    setSearchLoading(true);
-    setSearchResults([]);
-    
-    try {
-      const proxyConfig = settings.enableWikipediaProxy ? {
-        enableProxy: true,
-        proxyUrl: settings.wikipediaProxyUrl
-      } : {
-        enableProxy: false,
-        proxyUrl: ''
-      };
-      
-      console.log('[Frontend] 发送搜索请求:', { 
-        keyword: searchKeyword.trim(),
-        proxyConfig,
-        action: 'search'
-      });
-      
-      const response = await fetch('/api/v1/wikipedia', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          text: searchKeyword.trim(),
-          proxyConfig,
-          action: 'search'
-        }),
-      });
-      
-      console.log('[Frontend] 响应状态:', response.status, response.statusText);
-      console.log('[Frontend] 响应头:', Object.fromEntries(response.headers.entries()));
-      
-      const result = await response.json();
-      console.log('[Frontend] 解析后的结果:', result);
-      
-      if (!response.ok) {
-        throw new Error(result.error || '搜索失败');
-      }
-      
-      if (!result.success) {
-        throw new Error(result.error || '搜索失败');
-      }
-      
-      setSearchResults(result.data);
-      toast.success(`找到 ${result.data.length} 个搜索结果`);
-      
-    } catch (error) {
-      console.error('维基百科搜索失败:', error);
-      toast.error('搜索失败: ' + (error instanceof Error ? error.message : '未知错误'));
-    } finally {
-      setSearchLoading(false);
-    }
+    await handleWikiSearchWithKeyword(searchKeyword.trim());
   };
 
-  const handleSearchItemSelect = async (selectedItem: typeof searchResults[0]) => {
+  const handleWikiSearchWithKeyword = async (keyword: string) => {
+    // 同时启动两种搜索
+    setApiSearchLoading(true);
+    setHtmlSearchLoading(true);
+    setApiSearchResults([]);
+    setHtmlSearchResults([]);
+    
+    const proxyConfig = settings.enableWikipediaProxy ? {
+      enableProxy: true,
+      proxyUrl: settings.wikipediaProxyUrl
+    } : {
+      enableProxy: false,
+      proxyUrl: ''
+    };
+    
+    // 同时进行API搜索和HTML搜索
+    const apiSearchPromise = fetch('/api/v1/wikipedia', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ 
+        text: keyword,
+        proxyConfig,
+        action: 'search',
+        searchMethod: 'api'
+      }),
+    }).then(async (response) => {
+      const result = await response.json();
+      console.log('[Frontend] API搜索结果:', result);
+
+      if (response.ok && result.success) {
+        setApiSearchResults(result.data);
+        toast.success(t('wikiSearch.apiSearchResults', { count: result.data.length }));
+      } else {
+        throw new Error(result.error || t('wikiSearch.apiSearchFailed'));
+      }
+    }).catch((error) => {
+      console.error('API搜索失败:', error);
+      toast.error(t('wikiSearch.apiSearchFailed') + ': ' + (error instanceof Error ? error.message : t('wikiSearch.unknownError')));
+    }).finally(() => {
+      setApiSearchLoading(false);
+    });
+
+    const htmlSearchPromise = fetch('/api/v1/wikipedia', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ 
+        text: keyword,
+        proxyConfig,
+        action: 'search',
+        searchMethod: 'html'
+      }),
+    }).then(async (response) => {
+      const result = await response.json();
+      console.log('[Frontend] HTML搜索结果:', result);
+
+      if (response.ok && result.success) {
+        setHtmlSearchResults(result.data);
+        toast.success(t('wikiSearch.htmlSearchResults', { count: result.data.length }));
+      } else {
+        throw new Error(result.error || t('wikiSearch.htmlSearchFailed'));
+      }
+    }).catch((error) => {
+      console.error('HTML搜索失败:', error);
+      toast.error(t('wikiSearch.htmlSearchFailed') + ': ' + (error instanceof Error ? error.message : t('wikiSearch.unknownError')));
+    }).finally(() => {
+      setHtmlSearchLoading(false);
+    });
+
+    // 等待两个搜索都完成（不管成功还是失败）
+    await Promise.allSettled([apiSearchPromise, htmlSearchPromise]);
+  };
+
+  const handleSearchItemSelect = async (selectedItem: typeof apiSearchResults[0]) => {
     if (!currentSearchContext) return;
     
     // 关闭搜索对话框
     setWikiSearchDialogOpen(false);
-    
-    // 使用选中的key进行维基百科查询
-    const wikiUrl = `https://ja.wikipedia.org/wiki/${selectedItem.key}`;
     
     // 设置查询状态并打开结果对话框
     setCurrentWikiLookup({
       key: currentSearchContext.key,
       text: selectedItem.title,
       loading: true,
-      progress: `正在查询选中页面: ${selectedItem.title}...`,
+      progress: t('wikiSearch.queryingSelectedPage', { title: selectedItem.title }),
       results: null
     });
     setWikiDialogOpen(true);
@@ -306,54 +337,54 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
       const result = await response.json();
       
       if (!response.ok) {
-        throw new Error(result.error || '查询失败');
+        throw new Error(result.error || t('wikiSearch.queryFailed'));
       }
-      
+
       if (!result.success) {
-        throw new Error(result.error || '查询失败');
+        throw new Error(result.error || t('wikiSearch.queryFailed'));
       }
-      
+
       const { data } = result;
-      
+
       setCurrentWikiLookup(prev => prev ? {
         ...prev,
         loading: false,
-        progress: '查询完成！',
+        progress: t('wikiSearch.queryComplete'),
         results: data
       } : null);
-      
+
       const foundCount = [data.english, data.chinese].filter(Boolean).length;
-      toast.success(`维基百科查询完成！找到 ${foundCount} 个翻译`);
+      toast.success(t('wikiSearch.wikiQueryComplete', { count: foundCount }));
       
     } catch (error) {
       console.error('维基百科查询失败:', error);
       setCurrentWikiLookup(prev => prev ? {
         ...prev,
         loading: false,
-        progress: '查询失败: ' + (error instanceof Error ? error.message : '未知错误'),
+        progress: t('wikiSearch.queryFailed') + ': ' + (error instanceof Error ? error.message : t('wikiSearch.unknownError')),
         results: null
       } : null);
-      toast.error('维基百科查询失败: ' + (error instanceof Error ? error.message : '未知错误'));
+      toast.error(t('wikiSearch.wikiQueryFailed') + ': ' + (error instanceof Error ? error.message : t('wikiSearch.unknownError')));
     }
   };
 
   const handleOpenWikiSearch = (key: string, japaneseText?: string) => {
     setCurrentSearchContext({ key });
     setSearchKeyword(japaneseText || '');
-    setSearchResults([]);
+    setApiSearchResults([]);
+    setHtmlSearchResults([]);
     setWikiSearchDialogOpen(true);
     
     // 如果提供了日文文本，自动触发搜索
     if (japaneseText && japaneseText.trim()) {
-      setTimeout(() => {
-        handleWikiSearch();
-      }, 100);
+      // 直接调用搜索函数并传入关键词，避免状态更新延迟问题
+      handleWikiSearchWithKeyword(japaneseText.trim());
     }
   };
 
   const handleWikiLookup = async (key: string, japaneseText: string) => {
     if (!japaneseText.trim()) {
-      toast.error('日文内容为空');
+      toast.error(t('wikiSearch.japaneseEmpty'));
       return;
     }
 
@@ -362,14 +393,14 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
       key,
       text: japaneseText,
       loading: true,
-      progress: '正在查询日文维基百科...',
+      progress: t('wikiSearch.queryingJapaneseWiki'),
       results: null
     });
     setWikiDialogOpen(true);
 
     try {
       // 更新进度
-      setCurrentWikiLookup(prev => prev ? { ...prev, progress: '正在发送查询请求...' } : null);
+      setCurrentWikiLookup(prev => prev ? { ...prev, progress: t('wikiSearch.sendingRequest') } : null);
       
       // 准备代理配置
       const proxyConfig = settings.enableWikipediaProxy ? {
@@ -400,50 +431,56 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
         setWikiDialogOpen(false);
         
         // 设置搜索结果并打开搜索选择对话框
-        setSearchResults(result.searchResults);
+        setApiSearchResults(result.searchResults);
         setCurrentSearchContext({ key });
         setWikiSearchDialogOpen(true);
         
-        toast.info(`直接查询失败，找到 ${result.searchResults.length} 个相关搜索结果，请选择合适的条目`);
+        toast.info(t('wikiSearch.directQueryFailed', { count: result.searchResults.length }));
         return;
       }
       
       if (!response.ok) {
-        throw new Error(result.error || '查询失败');
+        throw new Error(result.error || t('wikiSearch.queryFailed'));
       }
-      
+
       if (!result.success) {
-        throw new Error(result.error || '查询失败');
+        throw new Error(result.error || t('wikiSearch.queryFailed'));
       }
-      
+
       const { data } = result;
-      
+
       // 更新进度显示找到的内容
-      setCurrentWikiLookup(prev => prev ? { 
-        ...prev, 
-        progress: `查询完成！找到日文: ${data.japanese}${data.english ? ', 英文: ' + data.english : ''}${data.chinese ? ', 中文: ' + data.chinese : ''}` 
+      const englishPart = data.english ? t('wikiSearch.englishResult', { text: data.english }) : '';
+      const chinesePart = data.chinese ? t('wikiSearch.chineseResult', { text: data.chinese }) : '';
+      setCurrentWikiLookup(prev => prev ? {
+        ...prev,
+        progress: t('wikiSearch.queryCompleteWithResults', {
+          japanese: data.japanese,
+          english: englishPart,
+          chinese: chinesePart
+        })
       } : null);
-      
+
       // 保存结果
       setCurrentWikiLookup(prev => prev ? {
         ...prev,
         loading: false,
-        progress: '查询完成！',
+        progress: t('wikiSearch.queryComplete'),
         results: data
       } : null);
-      
+
       const foundCount = [data.english, data.chinese].filter(Boolean).length;
-      toast.success(`维基百科查询完成！找到 ${foundCount} 个翻译`);
+      toast.success(t('wikiSearch.wikiQueryComplete', { count: foundCount }));
       
     } catch (error) {
       console.error('维基百科查询失败:', error);
       setCurrentWikiLookup(prev => prev ? {
         ...prev,
         loading: false,
-        progress: '查询失败: ' + (error instanceof Error ? error.message : '未知错误'),
+        progress: t('wikiSearch.queryFailed') + ': ' + (error instanceof Error ? error.message : t('wikiSearch.unknownError')),
         results: null
       } : null);
-      toast.error('维基百科查询失败: ' + (error instanceof Error ? error.message : '未知错误'));
+      toast.error(t('wikiSearch.wikiQueryFailed') + ': ' + (error instanceof Error ? error.message : t('wikiSearch.unknownError')));
     }
   };
 
@@ -460,9 +497,12 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
         translated: true,
       });
 
-      toast.success(`${lang} 翻译已更新`);
+      toast.success(t('wikiSearch.translationUpdated', { lang }));
     } catch (error) {
-      toast.error(`更新 ${lang} 翻译失败: ${error instanceof Error ? error.message : '未知错误'}`);
+      toast.error(t('wikiSearch.updateTranslationFailed', {
+        lang,
+        error: error instanceof Error ? error.message : t('wikiSearch.unknownError')
+      }));
     }
   };
 
@@ -488,10 +528,10 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
 
     try {
       await Promise.all(updates);
-      toast.success('所有翻译已更新完成');
+      toast.success(t('wikiSearch.allTranslationsUpdated'));
       setWikiDialogOpen(false);
-    } catch (error) {
-      toast.error('批量更新失败，请检查单个更新结果');
+    } catch {
+      toast.error(t('wikiSearch.batchUpdateFailed'));
     }
   };
 
@@ -514,7 +554,8 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
   }
 
   return (
-    <div className={className}>
+    <TooltipProvider>
+      <div className={className}>
       {/* 筛选和搜索栏 */}
       <div className="flex flex-col gap-4 mb-6">
         <div className="flex flex-col sm:flex-row gap-4">
@@ -714,7 +755,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                                       className="h-7 text-xs"
                                     >
                                       <Globe className="h-3 w-3 mr-1" />
-                                      尝试通过 wiki 获取翻译
+                                      {t('wikiSearch.tryGetWikiTranslation')}
                                     </Button>
                                     <Button
                                       size="sm"
@@ -726,7 +767,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                                       className="h-7 text-xs"
                                     >
                                       <Search className="h-3 w-3 mr-1" />
-                                      通过关键词查找 Wiki
+                                      {t('wikiSearch.searchWikiByKeyword')}
                                     </Button>
                                   </div>
                                 )}
@@ -762,9 +803,9 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
       <Dialog open={wikiDialogOpen} onOpenChange={setWikiDialogOpen}>
         <DialogContent className="max-w-2xl">
           <DialogHeader>
-            <DialogTitle>维基百科翻译查询</DialogTitle>
+            <DialogTitle>{t('wikiDialog.title')}</DialogTitle>
             <DialogDescription>
-              正在为 "{currentWikiLookup?.text}" 查询维基百科翻译
+              {t('wikiDialog.description', { text: currentWikiLookup?.text || '' })}
             </DialogDescription>
           </DialogHeader>
           
@@ -782,12 +823,12 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
             {/* 查询结果 */}
             {currentWikiLookup?.results && (
               <div className="space-y-4 border rounded-lg p-4 bg-muted/20">
-                <h4 className="font-medium">查询结果：</h4>
-                
+                <h4 className="font-medium">{t('wikiDialog.queryResults')}</h4>
+
                 {/* 日文原文 */}
                 <div className="flex items-center justify-between p-2 bg-blue-50 rounded">
                   <div>
-                    <span className="text-sm font-medium text-blue-800">日文：</span>
+                    <span className="text-sm font-medium text-blue-800">{t('wikiDialog.japanese')}</span>
                     <span className="ml-2">{currentWikiLookup.results.japanese}</span>
                   </div>
                 </div>
@@ -796,7 +837,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                 {currentWikiLookup.results.english && (
                   <div className="flex items-center justify-between p-2 bg-green-50 rounded">
                     <div>
-                      <span className="text-sm font-medium text-green-800">英文：</span>
+                      <span className="text-sm font-medium text-green-800">{t('wikiDialog.english')}</span>
                       <span className="ml-2">{currentWikiLookup.results.english}</span>
                     </div>
                     <Button
@@ -805,7 +846,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                       onClick={() => handleUpdateTranslation('en', currentWikiLookup.results!.english)}
                       disabled={updateMutation.isPending}
                     >
-                      更新英文
+                      {t('wikiDialog.updateEnglish')}
                     </Button>
                   </div>
                 )}
@@ -814,7 +855,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                 {currentWikiLookup.results.chinese && (
                   <div className="flex items-center justify-between p-2 bg-yellow-50 rounded">
                     <div>
-                      <span className="text-sm font-medium text-yellow-800">简中：</span>
+                      <span className="text-sm font-medium text-yellow-800">{t('wikiDialog.simplifiedChinese')}</span>
                       <span className="ml-2">{currentWikiLookup.results.chinese}</span>
                     </div>
                     <Button
@@ -823,7 +864,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                       onClick={() => handleUpdateTranslation('zh-CN', currentWikiLookup.results!.chinese)}
                       disabled={updateMutation.isPending}
                     >
-                      更新简中
+                      {t('wikiDialog.updateSimplifiedChinese')}
                     </Button>
                   </div>
                 )}
@@ -832,7 +873,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                 {currentWikiLookup.results.traditionalChinese && (
                   <div className="flex items-center justify-between p-2 bg-purple-50 rounded">
                     <div>
-                      <span className="text-sm font-medium text-purple-800">繁中：</span>
+                      <span className="text-sm font-medium text-purple-800">{t('wikiDialog.traditionalChinese')}</span>
                       <span className="ml-2">{currentWikiLookup.results.traditionalChinese}</span>
                     </div>
                     <Button
@@ -841,7 +882,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                       onClick={() => handleUpdateTranslation('zh-TW', currentWikiLookup.results!.traditionalChinese)}
                       disabled={updateMutation.isPending}
                     >
-                      更新繁中
+                      {t('wikiDialog.updateTraditionalChinese')}
                     </Button>
                   </div>
                 )}
@@ -849,7 +890,7 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                 {/* 没有找到翻译的提示 */}
                 {!currentWikiLookup.results.english && !currentWikiLookup.results.chinese && !currentWikiLookup.results.traditionalChinese && !currentWikiLookup.loading && (
                   <div className="text-center py-4 text-muted-foreground">
-                    未找到相关翻译，可能该条目在维基百科中没有对应的多语言版本。
+                    {t('wikiDialog.noTranslationFound')}
                   </div>
                 )}
               </div>
@@ -858,16 +899,16 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
 
           <DialogFooter>
             <Button variant="outline" onClick={() => setWikiDialogOpen(false)}>
-              关闭
+              {t('common.close')}
             </Button>
             {currentWikiLookup?.results && (
               currentWikiLookup.results.english || currentWikiLookup.results.chinese || currentWikiLookup.results.traditionalChinese
             ) && (
-              <Button 
+              <Button
                 onClick={handleUpdateAllTranslations}
                 disabled={updateMutation.isPending}
               >
-                {updateMutation.isPending ? '更新中...' : '更新全部翻译'}
+                {updateMutation.isPending ? t('wikiDialog.updating') : t('wikiDialog.updateAllTranslations')}
               </Button>
             )}
           </DialogFooter>
@@ -876,19 +917,19 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
 
       {/* 维基百科搜索对话框 */}
       <Dialog open={wikiSearchDialogOpen} onOpenChange={setWikiSearchDialogOpen}>
-        <DialogContent className="max-w-3xl">
+        <DialogContent className="max-w-[90vw] w-full max-h-[90vh]">{/* 增加对话框宽度到90%视口宽度 */}
           <DialogHeader>
-            <DialogTitle>通过搜索关键词查找维基百科</DialogTitle>
+            <DialogTitle>{t('wikiSearchDialog.title')}</DialogTitle>
             <DialogDescription>
-              输入搜索关键词来查找相关的维基百科页面
+              {t('wikiSearchDialog.dialogDescription')}
             </DialogDescription>
           </DialogHeader>
-          
+
           <div className="space-y-4">
             {/* 搜索输入框 */}
             <div className="flex items-center gap-2">
               <Input
-                placeholder="请输入搜索关键词（日文）"
+                placeholder={t('wikiSearchDialog.placeholder')}
                 value={searchKeyword}
                 onChange={(e) => setSearchKeyword(e.target.value)}
                 onKeyDown={(e) => {
@@ -898,74 +939,256 @@ export function ModuleTable({ moduleName, className }: ModuleTableProps) {
                 }}
                 className="flex-1"
               />
-              <Button 
+              <Button
                 onClick={handleWikiSearch}
-                disabled={searchLoading || !searchKeyword.trim()}
+                disabled={(apiSearchLoading || htmlSearchLoading) || !searchKeyword.trim()}
               >
-                {searchLoading ? (
+                {(apiSearchLoading || htmlSearchLoading) ? (
                   <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-primary mr-2"></div>
                 ) : (
                   <Search className="h-4 w-4 mr-2" />
                 )}
-                搜索
+                {t('wikiSearchDialog.search')}
               </Button>
             </div>
 
             {/* 搜索结果列表 */}
-            {searchResults.length > 0 && (
-              <div className="space-y-3 max-h-96 overflow-y-auto border rounded-lg p-4">
-                <h4 className="font-medium">搜索结果 ({searchResults.length})：</h4>
-                {searchResults.map((item) => (
-                  <div
-                    key={item.id}
-                    className="flex items-start gap-3 p-3 border rounded-lg hover:bg-muted/50 cursor-pointer transition-colors"
-                    onClick={() => handleSearchItemSelect(item)}
-                  >
-                    {item.thumbnail && (
-                      <img
-                        src={item.thumbnail.url.startsWith('//') ? `https:${item.thumbnail.url}` : item.thumbnail.url}
-                        alt={item.title}
-                        className="w-12 h-12 rounded object-cover flex-shrink-0"
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.style.display = 'none';
-                        }}
-                      />
-                    )}
-                    <div className="flex-1 min-w-0">
-                      <h5 className="font-medium text-sm truncate">{item.title}</h5>
-                      {item.description && (
-                        <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
-                          {item.description}
-                        </p>
+            {(apiSearchResults.length > 0 || htmlSearchResults.length > 0 || apiSearchLoading || htmlSearchLoading) && (
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                {/* API 搜索结果 */}
+                <div className="border rounded-lg">
+                  <div className="p-3 bg-blue-50 border-b flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Search className="h-4 w-4 text-blue-600" />
+                      <h4 className="font-medium text-blue-800">{t('wikiSearchDialog.apiSearchResults')}</h4>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      {apiSearchLoading && (
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
                       )}
-                      {item.excerpt && (
-                        <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
-                          {item.excerpt}
-                        </p>
-                      )}
-                      <p className="text-xs text-blue-600 mt-1">点击选择此条目</p>
+                      <span className="text-sm text-blue-600">
+                        {apiSearchLoading ? t('wikiSearchDialog.searching') : t('wikiSearchDialog.resultsCount', { count: apiSearchResults.length })}
+                      </span>
                     </div>
                   </div>
-                ))}
+                  <div className="max-h-96 overflow-y-auto">
+                    {apiSearchResults.length > 0 ? (
+                      <div className="space-y-2 p-3">
+                        {apiSearchResults.map((item) => (
+                          <Tooltip key={`api-${item.id}`}>
+                            <TooltipTrigger asChild>
+                              <div
+                                className="flex items-start gap-3 p-3 border rounded-lg hover:bg-blue-50/50 cursor-pointer transition-colors"
+                                onClick={() => handleSearchItemSelect(item)}
+                              >
+                                {item.thumbnail && (
+                                  <img
+                                    src={item.thumbnail.url.startsWith('//') ? `https:${item.thumbnail.url}` : item.thumbnail.url}
+                                    alt={item.title}
+                                    className="w-12 h-12 rounded object-cover flex-shrink-0"
+                                    onError={(e) => {
+                                      const target = e.target as HTMLImageElement;
+                                      target.style.display = 'none';
+                                    }}
+                                  />
+                                )}
+                                <div className="flex-1 min-w-0">
+                                  <h5 className="font-medium text-sm truncate">{item.title}</h5>
+                                  {item.description && (
+                                    <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
+                                      {item.description}
+                                    </p>
+                                  )}
+                                  {item.excerpt && (
+                                    <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
+                                      {item.excerpt}
+                                    </p>
+                                  )}
+                                  <div className="flex items-center justify-between mt-2">
+                                    <Button
+                                      size="sm"
+                                      variant="outline"
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        window.open(`https://ja.wikipedia.org/wiki/${encodeURIComponent(item.key)}`, '_blank');
+                                      }}
+                                      className="h-6 px-2 text-xs"
+                                    >
+                                      <ExternalLink className="h-3 w-3 mr-1" />
+                                      {t('wikiSearchDialog.wikiPage')}
+                                    </Button>
+                                  </div>
+                                </div>
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent side="left" className="max-w-md p-3">
+                              <div className="space-y-2">
+                                <h6 className="font-semibold text-sm">{item.title}</h6>
+                                {item.description && (
+                                  <div>
+                                    <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.itemDescription')}</p>
+                                    <p className="text-xs">{item.description}</p>
+                                  </div>
+                                )}
+                                {item.excerpt && (
+                                  <div>
+                                    <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.excerpt')}</p>
+                                    <p className="text-xs">{item.excerpt}</p>
+                                  </div>
+                                )}
+                                <div>
+                                  <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.wikipediaPage')}</p>
+                                  <p className="text-xs font-mono text-blue-600 break-all">{item.key}</p>
+                                </div>
+                                {item.thumbnail && (
+                                  <div>
+                                    <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.thumbnail')}</p>
+                                    <p className="text-xs">{t('wikiSearchDialog.thumbnailSize', { width: item.thumbnail.width, height: item.thumbnail.height })}</p>
+                                  </div>
+                                )}
+                                <div className="pt-1 border-t">
+                                  <p className="text-xs font-medium text-blue-700">{t('wikiSearchDialog.sourceApiSearch')}</p>
+                                </div>
+                              </div>
+                            </TooltipContent>
+                          </Tooltip>
+                        ))}
+                      </div>
+                    ) : !apiSearchLoading && (
+                      <div className="p-8 text-center text-muted-foreground">
+                        <Search className="h-8 w-8 mx-auto mb-2 opacity-50" />
+                        <p>{t('wikiSearchDialog.noApiResults')}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+
+                {/* HTML 搜索结果 */}
+                <div className="border rounded-lg">
+                  <div className="p-3 bg-green-50 border-b flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                      <Globe className="h-4 w-4 text-green-600" />
+                      <h4 className="font-medium text-green-800">{t('wikiSearchDialog.fullTextSearchResults')}</h4>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      {htmlSearchLoading && (
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-green-600"></div>
+                      )}
+                      <span className="text-sm text-green-600">
+                        {htmlSearchLoading ? t('wikiSearchDialog.searching') : t('wikiSearchDialog.resultsCount', { count: htmlSearchResults.length })}
+                      </span>
+                    </div>
+                  </div>
+                  <div className="max-h-96 overflow-y-auto">
+                    {htmlSearchResults.length > 0 ? (
+                      <div className="space-y-2 p-3">
+                        {htmlSearchResults.map((item) => (
+                          <Tooltip key={`html-${item.id}`}>
+                            <TooltipTrigger asChild>
+                              <div
+                                className="flex items-start gap-3 p-3 border rounded-lg hover:bg-green-50/50 cursor-pointer transition-colors"
+                                onClick={() => handleSearchItemSelect(item)}
+                              >
+                                {item.thumbnail && (
+                                  <img
+                                    src={item.thumbnail.url.startsWith('//') ? `https:${item.thumbnail.url}` : item.thumbnail.url}
+                                    alt={item.title}
+                                    className="w-12 h-12 rounded object-cover flex-shrink-0"
+                                    onError={(e) => {
+                                      const target = e.target as HTMLImageElement;
+                                      target.style.display = 'none';
+                                    }}
+                                  />
+                                )}
+                                <div className="flex-1 min-w-0">
+                                  <h5 className="font-medium text-sm truncate">{item.title}</h5>
+                                  {item.description && (
+                                    <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
+                                      {item.description}
+                                    </p>
+                                  )}
+                                  {item.excerpt && (
+                                    <p className="text-xs text-muted-foreground mt-1 line-clamp-2">
+                                      {item.excerpt}
+                                    </p>
+                                  )}
+                                  <div className="flex items-center justify-between mt-2">
+                                    <Button
+                                      size="sm"
+                                      variant="outline"
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        window.open(`https://ja.wikipedia.org/wiki/${encodeURIComponent(item.key)}`, '_blank');
+                                      }}
+                                      className="h-6 px-2 text-xs"
+                                    >
+                                      <ExternalLink className="h-3 w-3 mr-1" />
+                                      {t('wikiSearchDialog.wikiPage')}
+                                    </Button>
+                                  </div>
+                                </div>
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent side="right" className="max-w-md p-3">
+                              <div className="space-y-2">
+                                <h6 className="font-semibold text-sm">{item.title}</h6>
+                                {item.description && (
+                                  <div>
+                                    <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.contentSummary')}</p>
+                                    <p className="text-xs">{item.description}</p>
+                                  </div>
+                                )}
+                                {item.excerpt && (
+                                  <div>
+                                    <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.pageInfo')}</p>
+                                    <p className="text-xs">{item.excerpt}</p>
+                                  </div>
+                                )}
+                                <div>
+                                  <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.wikipediaPage')}</p>
+                                  <p className="text-xs font-mono text-green-600 break-all">{item.key}</p>
+                                </div>
+                                {item.thumbnail && (
+                                  <div>
+                                    <p className="text-xs font-medium text-muted-foreground mb-1">{t('wikiSearchDialog.thumbnail')}</p>
+                                    <p className="text-xs">{t('wikiSearchDialog.thumbnailSize', { width: item.thumbnail.width, height: item.thumbnail.height })}</p>
+                                  </div>
+                                )}
+                                <div className="pt-1 border-t">
+                                  <p className="text-xs font-medium text-green-700">{t('wikiSearchDialog.sourceHtmlSearch')}</p>
+                                </div>
+                              </div>
+                            </TooltipContent>
+                          </Tooltip>
+                        ))}
+                      </div>
+                    ) : !htmlSearchLoading && (
+                      <div className="p-8 text-center text-muted-foreground">
+                        <Globe className="h-8 w-8 mx-auto mb-2 opacity-50" />
+                        <p>{t('wikiSearchDialog.noHtmlResults')}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
             )}
 
             {/* 无搜索结果提示 */}
-            {!searchLoading && searchResults.length === 0 && searchKeyword && (
+            {!apiSearchLoading && !htmlSearchLoading && apiSearchResults.length === 0 && htmlSearchResults.length === 0 && searchKeyword && (
               <div className="text-center py-8 text-muted-foreground">
-                未找到相关搜索结果，请尝试其他关键词
+                {t('wikiSearchDialog.noSearchResults')}
               </div>
             )}
           </div>
 
           <DialogFooter>
             <Button variant="outline" onClick={() => setWikiSearchDialogOpen(false)}>
-              关闭
+              {t('common.close')}
             </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
-    </div>
+      </div>
+    </TooltipProvider>
   );
 }

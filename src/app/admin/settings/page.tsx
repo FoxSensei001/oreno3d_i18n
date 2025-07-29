@@ -7,12 +7,13 @@ import { Switch } from '@/components/ui/switch';
 import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Settings, Globe, Database } from 'lucide-react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useSettings } from '@/hooks/use-settings';
 import { TARGET_LANGUAGES, SOURCE_LANGUAGE, SCRAPER_CONFIG } from '../../../../scraper-config/config';
 
 export default function SettingsPage() {
   const t = useTranslations('settings');
+  const locale = useLocale();
   const { settings, updateSettings, isLoaded } = useSettings();
 
   return (
@@ -70,17 +71,17 @@ export default function SettingsPage() {
 
           <Card>
             <CardHeader>
-              <CardTitle>维基百科代理设置</CardTitle>
+              <CardTitle>{t('wikipediaProxy')}</CardTitle>
               <p className="text-sm text-muted-foreground">
-                配置维基百科查询是否使用代理，适用于网络访问受限的环境
+                {t('wikipediaProxyDesc')}
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="flex items-center justify-between">
                 <div className="space-y-0.5">
-                  <Label htmlFor="enable-wiki-proxy">启用维基百科代理</Label>
+                  <Label htmlFor="enable-wiki-proxy">{t('enableWikipediaProxy')}</Label>
                   <p className="text-sm text-muted-foreground">
-                    开启后，所有维基百科查询将通过代理服务器进行
+                    {t('enableWikipediaProxyDesc')}
                   </p>
                 </div>
                 <Switch
@@ -95,11 +96,11 @@ export default function SettingsPage() {
               
               {settings.enableWikipediaProxy && (
                 <div className="space-y-2">
-                  <Label htmlFor="wiki-proxy-url">代理服务器地址</Label>
+                  <Label htmlFor="wiki-proxy-url">{t('proxyServerUrl')}</Label>
                   <Input
                     id="wiki-proxy-url"
                     type="url"
-                    placeholder="http://127.0.0.1:7890"
+                    placeholder={t('proxyUrlPlaceholder')}
                     value={settings.wikipediaProxyUrl}
                     onChange={(e) =>
                       updateSettings({ wikipediaProxyUrl: e.target.value })
@@ -107,7 +108,7 @@ export default function SettingsPage() {
                     disabled={!isLoaded}
                   />
                   <p className="text-xs text-muted-foreground">
-                    请输入完整的代理地址，例如：http://127.0.0.1:7890 或 socks5://127.0.0.1:1080
+                    {t('proxyUrlHint')}
                   </p>
                 </div>
               )}
@@ -136,7 +137,7 @@ export default function SettingsPage() {
                 <div>
                   <label className="text-sm font-medium">{t('currentTime')}</label>
                   <p className="text-sm text-muted-foreground">
-                    {new Intl.DateTimeFormat('zh-CN', {
+                    {new Intl.DateTimeFormat(locale, {
                       year: 'numeric',
                       month: 'numeric',
                       day: 'numeric',
