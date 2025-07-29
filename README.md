@@ -1,96 +1,98 @@
-# Oreno3dI18n - 自动化 i18n 管理工具
+# Oreno3dI18n - Automated i18n Management Tool
 
-Oreno3dI18n 是一个基于 Next.js 构建的本地化 i18n 管理工具。它旨在自动化地从指定网站爬取源数据（默认为日语），并生成和维护多语言的 JSON 文件。
+[中文版本](docs/README-zh.md)
 
-## 🚀 功能特性
+Oreno3dI18n is a localization i18n management tool built on Next.js. It is designed to automatically crawl source data (defaulting to Japanese) from specified websites and generate and maintain multilingual JSON files.
 
-- **模块化设计**: 可轻松添加新的数据抓取模块
-- **自动化爬取**: 为每个模块配置专属的爬虫处理器
-- **i18n 文件生成**: 自动创建和更新多语言 JSON 文件
-- **可扩展的语言支持**: 只需修改配置文件即可增删支持的语言
-- **Web 管理界面**: 直观的仪表盘和数据管理界面
-- **在线编辑**: 支持在线编辑翻译内容
-- **智能筛选**: 快速定位未翻译的条目
-- **🌍 多语言界面**: 支持中文、英文、日文的用户界面切换
-- **⌨️ 增强编辑**: 快捷键支持、重置功能、多行翻译
+## 🚀 Features
 
-## 🛠️ 技术栈
+- **Modular Design**: Easily add new data scraping modules
+- **Automated Scraping**: Configure dedicated crawler handlers for each module
+- **i18n File Generation**: Automatically create and update multilingual JSON files
+- **Extensible Language Support**: Add or remove supported languages by simply modifying configuration files
+- **Web Management Interface**: Intuitive dashboard and data management interface
+- **Online Editing**: Support for online editing of translation content
+- **Smart Filtering**: Quickly locate untranslated entries
+- **🌍 Multilingual Interface**: Support for switching between Chinese, English, and Japanese user interfaces
+- **⌨️ Enhanced Editing**: Keyboard shortcut support, reset function, multiline translation
 
-- **Next.js 15** - React 全栈框架
-- **TypeScript** - 类型安全
-- **Tailwind CSS** - 原子化 CSS
-- **shadcn/ui** - 现代化 UI 组件库
-- **React Query** - 服务端状态管理
-- **Axios & Cheerio** - 网页爬取
-- **Sonner** - 通知提示
-- **next-intl** - 国际化支持
+## 🛠️ Tech Stack
 
-## 📦 安装和运行
+- **Next.js 15** - React full-stack framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Atomic CSS
+- **shadcn/ui** - Modern UI component library
+- **React Query** - Server state management
+- **Axios & Cheerio** - Web scraping
+- **Sonner** - Notification prompts
+- **next-intl** - Internationalization support
 
-### 1. 安装依赖
+## 📦 Installation and Running
+
+### 1. Install Dependencies
 ```bash
 npm install
 ```
 
-### 2. 启动开发服务器
+### 2. Start Development Server
 ```bash
 npm run dev
 ```
 
-### 3. 访问应用
-打开浏览器访问 [http://localhost:3000](http://localhost:3000)
+### 3. Access the Application
+Open your browser and visit [http://localhost:3000](http://localhost:3000)
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 src/
 ├── app/                    # Next.js App Router
-│   ├── admin/             # 管理后台页面
-│   └── api/v1/            # API 路由
-├── components/            # React 组件
-│   ├── ui/               # shadcn/ui 组件
-│   └── admin/            # 管理后台组件
-├── hooks/                # 自定义 React Hooks
-├── lib/                  # 核心逻辑和工具
-├── i18n/                 # 生成的 i18n 文件和国际化配置
-└── scraper-config/       # 爬虫配置和处理器
-    ├── handlers/         # 爬虫处理器
-    └── config.ts         # 全局配置
-├── messages/             # 界面翻译文件
-│   ├── zh.json          # 简体中文
-│   ├── en.json          # 英语
-│   └── ja.json          # 日语
+│   ├── admin/             # Admin dashboard pages
+│   └── api/v1/            # API routes
+├── components/            # React components
+│   ├── ui/               # shadcn/ui components
+│   └── admin/            # Admin dashboard components
+├── hooks/                # Custom React Hooks
+├── lib/                  # Core logic and utilities
+├── i18n/                 # Generated i18n files and internationalization configuration
+└── scraper-config/       # Scraper configuration and handlers
+    ├── handlers/         # Scraper handlers
+    └── config.ts         # Global configuration
+├── messages/             # UI translation files
+│   ├── zh.json          # Simplified Chinese
+│   ├── en.json          # English
+│   └── ja.json          # Japanese
 ```
 
-## 🔧 配置说明
+## 🔧 Configuration Guide
 
-### 语言配置
-在 `scraper-config/config.ts` 中修改支持的语言：
+### Language Configuration
+Modify supported languages in `scraper-config/config.ts`:
 
 ```typescript
 export const TARGET_LANGUAGES: string[] = ['ja', 'en', 'zh-CN', 'zh-TW'];
 export const SOURCE_LANGUAGE: string = 'ja';
 ```
 
-### 添加新模块
-1. 在 `scraper-config/handlers/` 创建新的处理器文件
-2. 在 `scraper-config/config.ts` 的 `MODULES` 数组中添加配置
-3. 重启应用，新模块会自动出现在仪表盘
+### Adding New Modules
+1. Create a new handler file in `scraper-config/handlers/`
+2. Add configuration to the `MODULES` array in `scraper-config/config.ts`
+3. Restart the application, and the new module will automatically appear on the dashboard
 
-## 🌐 API 接口
+## 🌐 API Endpoints
 
-### 获取所有模块
+### Get All Modules
 ```bash
 GET /api/v1/modules
 ```
 
-### 获取模块数据
+### Get Module Data
 ```bash
 GET /api/v1/modules/{moduleName}
 GET /api/v1/modules/{moduleName}?type=stats
 ```
 
-### 更新翻译
+### Update Translation
 ```bash
 PATCH /api/v1/modules/{moduleName}
 Content-Type: application/json
@@ -102,67 +104,78 @@ Content-Type: application/json
 }
 ```
 
-### 运行爬虫
+### Run Scraper
 ```bash
 POST /api/v1/scrape
 Content-Type: application/json
 
 {
-  "moduleName": "tags"  // 可选，不提供则爬取所有模块
+  "moduleName": "tags"  // Optional, if not provided, scrape all modules
 }
 ```
 
-## 📊 使用指南
+## 📊 User Guide
 
-### 1. 仪表盘
-- 查看所有模块的翻译进度
-- 一键更新所有模块或单个模块
-- 快速导航到模块详情页
+### 1. Dashboard
+- View translation progress for all modules
+- Update all modules or individual modules with one click
+- Quickly navigate to module detail pages
 
-### 2. 模块管理
-- 查看模块的详细翻译数据
-- 在线编辑翻译内容
-- 筛选未翻译的条目
-- 搜索特定内容
+### 2. Module Management
+- View detailed translation data for modules
+- Edit translation content online
+- Filter untranslated entries
+- Search for specific content
 
-### 3. 数据更新
-- 手动触发爬虫更新数据
-- 自动保留已有的翻译
-- 新增条目会标记为"未翻译"
+### 3. Data Updates
+- Manually trigger crawler to update data
+- Automatically preserve existing translations
+- New entries will be marked as "untranslated"
 
-## 🔍 开发说明
+## 🔍 Development Guide
 
-### 创建新的爬虫处理器
+### Creating New Scraper Handlers
 ```typescript
 // scraper-config/handlers/exampleHandler.ts
 import type { ScrapedItem } from '@/lib/types';
 
 export default async function exampleHandler(): Promise<ScrapedItem[]> {
-  // 实现爬取逻辑
+  // Implement scraping logic
   return [
-    { id: '1', name: '示例项目' }
+    { id: '1', name: 'Example Item' }
   ];
 }
 ```
 
-### 数据文件格式
-- **源语言文件** (`ja.json`): `{ "key": "value" }`
-- **目标语言文件** (`en.json`): `{ "key": { "value": "translation", "translated": true } }`
+### Data File Format
+- **Source language file** (`ja.json`): `{ "key": "value" }`
+- **Target language file** (`en.json`): `{ "key": { "value": "translation", "translated": true } }`
 
-## 🚨 注意事项
+## 🚨 Notes
 
-1. **爬虫频率**: 请合理设置爬虫请求间隔，避免对目标网站造成压力
-2. **数据备份**: 建议定期备份 `src/i18n/` 目录下的翻译文件
-3. **网络环境**: 确保能够访问目标网站
+1. **Scraper Frequency**: Please set appropriate scraper request intervals to avoid putting pressure on target websites
+2. **Data Backup**: It is recommended to regularly back up translation files in the `src/i18n/` directory
+3. **Network Environment**: Ensure access to target websites
 
-## 📝 许可证
+## 📝 License
 
 MIT License
 
-## 🤝 贡献
+## 🤝 Contributing
 
-欢迎提交 Issue 和 Pull Request！
+Issues and Pull Requests are welcome!
+
+If you want to contribute to internationalization translation:
+1. Clone and set up the project following the [Installation and Running](#-installation-and-running) guide
+2. Visit http://localhost:3000/admin/modules after starting the development server
+3. Select the module you want to update
+4. Translate the untranslated entries
+5. Once translation work is complete, commit and push your changes
+
+If you are a developer looking to create new scrapers, please refer to the development guide:
+- [Development Guide (English)](docs/DEVELOPMENT-en.md)
+- [开发指南 (Chinese)](docs/DEVELOPMENT-zh.md)
 
 ---
 
-**Oreno3dI18n** - 让 i18n 管理变得简单高效！
+**Oreno3dI18n** - Making i18n management simple and efficient!
